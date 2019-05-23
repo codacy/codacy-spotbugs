@@ -1,1 +1,6 @@
-This code invoked a compareTo or compare method, and checks to see if the return value is a specific value, such as 1 or -1. When invoking these methods, you should only check the sign of the result, not for any specific non-zero value. While many or most compareTo and compare methods only return -1, 0 or 1, some of them will return other values.
+# [Code checks for specific values returned by compareTo](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RV_CHECK_COMPARETO_FOR_SPECIFIC_RETURN_VALUE)
+
+ This code invoked a compareTo or compare method, and checks to see if the return value is a specific value,
+such as 1 or -1\. When invoking these methods, you should only check the sign of the result, not for any specific
+non-zero value. While many or most compareTo and compare methods only return -1, 0 or 1, some of them
+will return other values.

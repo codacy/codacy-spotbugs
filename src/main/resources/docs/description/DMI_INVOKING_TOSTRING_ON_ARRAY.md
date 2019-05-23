@@ -1,1 +1,5 @@
-The code invokes toString on an array, which will generate a fairly useless result such as [C@16f0472. Consider using Arrays.toString to convert the array into a readable String that gives the contents of the array. See Programming Puzzlers, chapter 3, puzzle 12.
+# [Invocation of toString on an array](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DMI_INVOKING_TOSTRING_ON_ARRAY)
+
+The code invokes toString on an array, which will generate a fairly useless result
+such as [C@16f0472\. Consider using Arrays.toString to convert the array into a readable
+String that gives the contents of the array. See Programming Puzzlers, chapter 3, puzzle 12.

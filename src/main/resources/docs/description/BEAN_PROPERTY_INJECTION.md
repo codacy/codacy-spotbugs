@@ -1,24 +1,24 @@
- An attacker can set arbitrary bean properties that can compromise system integrity. Bean population functions allow to set a bean property or a nested property. An attacker can leverage this functionality to access special bean properties like class.classLoader that will allow him to override system properties and potentially execute arbitrary code.
+# [JavaBeans Property Injection](http://find-sec-bugs.github.io/bugs.htm#BEAN_PROPERTY_INJECTION)
 
-**Vulnerable Code:**
+An attacker can set arbitrary bean properties that can compromise system integrity.
+Bean population functions allow to set a bean property or a nested property.
+An attacker can leverage this functionality to access special bean properties like `class.classLoader` that will allow him to override system properties and potentially execute arbitrary code.
 
-```
-MyBean bean = ...;
+    **Vulnerable Code:**  
+
+<pre>MyBean bean = ...;
 HashMap map = new HashMap();
 Enumeration names = request.getParameterNames();
 while (names.hasMoreElements()) {
     String name = (String) names.nextElement();
     map.put(name, request.getParameterValues(name));
 }
-BeanUtils.populate(bean, map);
-```
+BeanUtils.populate(bean, map);</pre>
 
-**Solution:**  
+    **Solution:**  
+
 Avoid using user controlled values to populate Bean property names.
 
-  
-
 **References**  
-[CWE-15: External Control of System or Configuration Setting](https://cwe.mitre.org/data/definitions/15.html)
 
- 
+[CWE-15: External Control of System or Configuration Setting](https://cwe.mitre.org/data/definitions/15.html)

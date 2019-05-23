@@ -1,1 +1,8 @@
-The code performs shift of a 32 bit int by a constant amount outside the range -31..31. The effect of this is to use the lower 5 bits of the integer value to decide how much to shift by (e.g., shifting by 40 bits is the same as shifting by 8 bits, and shifting by 32 bits is the same as shifting by zero bits). This probably isn't what was expected, and it is at least confusing.
+# [32 bit int shifted by an amount not in the range -31..31](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#ICAST_BAD_SHIFT_AMOUNT)
+
+The code performs shift of a 32 bit int by a constant amount outside
+the range -31..31.
+The effect of this is to use the lower 5 bits of the integer
+value to decide how much to shift by (e.g., shifting by 40 bits is the same as shifting by 8 bits,
+and shifting by 32 bits is the same as shifting by zero bits). This probably isn't what was expected,
+and it is at least confusing.

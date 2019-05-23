@@ -1,1 +1,6 @@
-The program is dereferencing a public or protected field that does not seem to ever have a non-null value written to it. Unless the field is initialized via some mechanism not seen by the analysis, dereferencing this value will generate a null pointer exception.
+# [Read of unwritten public or protected field](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD)
+
+ The program is dereferencing a public or protected
+field that does not seem to ever have a non-null value written to it.
+Unless the field is initialized via some mechanism not seen by the analysis,
+dereferencing this value will generate a null pointer exception.

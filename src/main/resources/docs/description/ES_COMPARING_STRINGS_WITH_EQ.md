@@ -1,1 +1,8 @@
-This code compares java.lang.String objects for reference equality using the == or != operators. Unless both strings are either constants in a source file, or have been interned using the String.intern() method, the same string value may be represented by two different String objects. Consider using the equals(Object) method instead.
+# [Comparison of String objects using == or !=](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#ES_COMPARING_STRINGS_WITH_EQ)
+
+This code compares `java.lang.String` objects for reference
+equality using the == or != operators.
+Unless both strings are either constants in a source file, or have been
+interned using the `String.intern()` method, the same string
+value may be represented by two different String objects. Consider
+using the `equals(Object)` method instead.

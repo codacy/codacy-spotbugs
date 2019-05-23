@@ -1,34 +1,27 @@
- A Spring expression is built with a dynamic value. The source of the value(s) should be verified to avoid that unfiltered values fall into this risky code evaluation.
+# [Dynamic variable in Spring expression](http://find-sec-bugs.github.io/bugs.htm#JSP_SPRING_EVAL)
 
-**Vulnerable Code:**
+A Spring expression is built with a dynamic value. The source of the value(s) should be verified to avoid that unfiltered values fall into this risky code evaluation.
 
-```
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+    **Vulnerable Code:**
 
-<spring:eval expression="${param.lang}" var="lang" />
-```
-  
+<pre>&lt;%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %&gt;
 
-```
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+ <spring:eval expression="${param.lang}" var="lang" /></pre>
 
-<spring:eval expression="'${param.lang}'=='fr'" var="languageIsFrench" />
-```
+<pre>&lt;%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %&gt;
 
-**Solution:**
+ <spring:eval expression="'${param.lang}'=='fr'" var="languageIsFrench" /></pre>
 
-```
-<c:set var="lang" value="${param.lang}"/>
-```
-  
+    **Solution:**
 
-```
-<c:set var="languageIsFrench" value="${param.lang == 'fr'}"/>
-```
-  
+<pre>
+ <c:set var="lang" value="${param.lang}" /></pre>
+
+<pre>
+ <c:set var="languageIsFrench" value="${param.lang == 'fr'}" /></pre>
 
 **References**  
-[CWE-94: Improper Control of Generation of Code ('Code Injection')](http://cwe.mitre.org/data/definitions/94.html)  
-[CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](http://cwe.mitre.org/data/definitions/95.html)
 
- 
+    [CWE-94: Improper Control of Generation of Code ('Code Injection')](http://cwe.mitre.org/data/definitions/94.html)  
+
+    [CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](http://cwe.mitre.org/data/definitions/95.html)

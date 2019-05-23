@@ -1,1 +1,11 @@
-This method contains a useless control flow statement, where control flow continues onto the same place regardless of whether or not the branch is taken. For example, this is caused by having an empty statement block for an if statement: if (argv.length == 0) { // TODO: handle this case }
+# [Useless control flow](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UCF_USELESS_CONTROL_FLOW)
+
+ This method contains a useless control flow statement, where
+control flow continues onto the same place regardless of whether or not
+the branch is taken. For example,
+this is caused by having an empty statement
+block for an `if` statement:
+
+    if (argv.length == 0) {
+        // TODO: handle this case
+    }

@@ -1,12 +1,14 @@
- Allowing external control of system settings can disrupt service or cause an application to behave in unexpected, and potentially malicious ways. An attacker could cause an error by providing a nonexistent catalog name or connect to an unauthorized portion of the database.  
+# [Potential external control of configuration](http://find-sec-bugs.github.io/bugs.htm#EXTERNAL_CONFIG_CONTROL)
 
-**Code at risk:**
+    Allowing external control of system settings can disrupt service or cause an application
+    to behave in unexpected, and potentially malicious ways. 
+    An attacker could cause an error by providing a nonexistent catalog name
+    or connect to an unauthorized portion of the database.
 
-```
-conn.setCatalog(request.getParameter("catalog"));
-```
-  
+**Code at risk:**  
 
-**References**  
-[CWE-15: External Control of System or Configuration Setting](http://cwe.mitre.org/data/definitions/15.html)
+<pre>conn.setCatalog(request.getParameter("catalog"));</pre>
 
+    **References**  
+
+    [CWE-15: External Control of System or Configuration Setting](http://cwe.mitre.org/data/definitions/15.html)

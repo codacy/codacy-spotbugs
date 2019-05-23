@@ -1,8 +1,10 @@
- Form inputs should have minimal input validation. Preventive validation helps provide defense in depth against a variety of risks.
+# [Struts Form without input validation](http://find-sec-bugs.github.io/bugs.htm#STRUTS_FORM_VALIDATION)
 
-Validation can be introduce by implementing a `validate` method.
+Form inputs should have minimal input validation. Preventive validation helps provide defense in depth against a variety of risks.
 
-```
+Validation can be introduced by implementing a `validate` method.
+
+<pre>
 public class RegistrationForm extends ValidatorForm {
 
     private String name;
@@ -14,10 +16,10 @@ public class RegistrationForm extends ValidatorForm {
         //Validation code for name and email parameters passed in via the HttpRequest goes here
     }
 }
-```
-  
+</pre>
 
 **References**  
-[CWE-20: Improper Input Validation](http://cwe.mitre.org/data/definitions/20.html)  
-[CWE-106: Struts: Plug-in Framework not in Use](http://cwe.mitre.org/data/definitions/106.html)
 
+[CWE-20: Improper Input Validation](http://cwe.mitre.org/data/definitions/20.html)  
+
+[CWE-106: Struts: Plug-in Framework not in Use](http://cwe.mitre.org/data/definitions/106.html)

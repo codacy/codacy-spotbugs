@@ -1,1 +1,18 @@
-A value specified as carrying a type qualifier annotation is consumed in a location or locations requiring that the value not carry that annotation.  More precisely, a value annotated with a type qualifier specifying when=ALWAYS is guaranteed to reach a use or uses where the same type qualifier specifies when=NEVER.  For example, say that @NonNegative is a nickname for the type qualifier annotation @Negative(when=When.NEVER). The following code will generate this warning because the return statement requires a @NonNegative value, but receives one that is marked as @Negative.  public @NonNegative Integer example(@Negative Integer value) { return value; }
+# [Value annotated as carrying a type qualifier used where a value that must not carry that qualifier is required](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#TQ_ALWAYS_VALUE_USED_WHERE_NEVER_REQUIRED)
+
+        A value specified as carrying a type qualifier annotation is
+        consumed in a location or locations requiring that the value not
+        carry that annotation.
+
+        More precisely, a value annotated with a type qualifier specifying when=ALWAYS
+        is guaranteed to reach a use or uses where the same type qualifier specifies when=NEVER.
+
+        For example, say that @NonNegative is a nickname for
+        the type qualifier annotation @Negative(when=When.NEVER).
+        The following code will generate this warning because
+        the return statement requires a @NonNegative value,
+        but receives one that is marked as @Negative.
+
+    public @NonNegative Integer example(@Negative Integer value) {
+        return value;
+    }

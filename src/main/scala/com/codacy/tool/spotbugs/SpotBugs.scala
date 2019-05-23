@@ -297,7 +297,7 @@ object SpotBugs extends Tool {
       )}
     </FindBugsFilter>
 
-    FileHelper.createTmpFile(xmlLiteral.toString, "spotbugs", "")
+    FileHelper.createTmpFile(xmlLiteral.toString, DocumentationGenerator.toolName, "")
   }
 
 }

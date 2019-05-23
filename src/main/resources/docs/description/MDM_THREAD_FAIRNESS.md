@@ -1,0 +1,3 @@
+# [Method ignores Lock's fairness settings by calling tryLock()](http://fb-contrib.sourceforge.net/bugdescriptions.html#MDM_THREAD_FAIRNESS)
+
+Calling `Lock.tryLock()` or `ReentrantLock.tryLock()` without a timeout does not honor the lock's fairness setting. If you want to honor the fairness setting for this lock, then use `tryLock(0, TimeUnit.SECONDS)` which is almost equivalent (it also detects interruption).

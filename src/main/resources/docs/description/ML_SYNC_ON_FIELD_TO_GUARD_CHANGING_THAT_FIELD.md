@@ -1,1 +1,18 @@
-This method synchronizes on a field in what appears to be an attempt to guard against simultaneous updates to that field. But guarding a field gets a lock on the referenced object, not on the field. This may not provide the mutual exclusion you need, and other threads might be obtaining locks on the referenced objects (for other purposes). An example of this pattern would be: private Long myNtfSeqNbrCounter = new Long(0); private Long getNotificationSequenceNumber() { Long result = null; synchronized(myNtfSeqNbrCounter) { result = new Long(myNtfSeqNbrCounter.longValue() + 1); myNtfSeqNbrCounter = new Long(result.longValue()); } return result; }
+# [Synchronization on field in futile attempt to guard that field](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD)
+
+ This method synchronizes on a field in what appears to be an attempt
+to guard against simultaneous updates to that field. But guarding a field
+gets a lock on the referenced object, not on the field. This may not
+provide the mutual exclusion you need, and other threads might
+be obtaining locks on the referenced objects (for other purposes). An example
+of this pattern would be:
+
+    private Long myNtfSeqNbrCounter = new Long(0);
+    private Long getNotificationSequenceNumber() {
+         Long result = null;
+         synchronized(myNtfSeqNbrCounter) {
+             result = new Long(myNtfSeqNbrCounter.longValue() + 1);
+             myNtfSeqNbrCounter = new Long(result.longValue());
+         }
+         return result;
+    }

@@ -1,1 +1,7 @@
-A method, field or class declares a generic signature where a non-hashable class is used in context where a hashable class is required. A class that declares an equals method but inherits a hashCode() method from Object is unhashable, since it doesn't fulfill the requirement that equal objects have equal hashCodes.
+# [Signature declares use of unhashable class in hashed construct](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS)
+
+ A method, field or class declares a generic signature where a non-hashable class
+is used in context where a hashable class is required.
+A class that declares an equals method but inherits a hashCode() method
+from Object is unhashable, since it doesn't fulfill the requirement that
+equal objects have equal hashCodes.

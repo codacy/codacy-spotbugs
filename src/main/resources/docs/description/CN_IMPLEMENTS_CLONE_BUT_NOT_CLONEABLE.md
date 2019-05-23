@@ -1,1 +1,5 @@
-This class defines a clone() method but the class doesn't implement Cloneable. There are some situations in which this is OK (e.g., you want to control how subclasses can clone themselves), but just make sure that this is what you intended.
+# [Class defines clone() but doesn't implement Cloneable](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE)
+
+ This class defines a clone() method but the class doesn't implement Cloneable.
+There are some situations in which this is OK (e.g., you want to control how subclasses
+can clone themselves), but just make sure that this is what you intended.

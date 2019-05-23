@@ -2,15 +2,12 @@ version: 2
 
 references:
 
-  sbt_jvm_defaults: &sbt_jvm_defaults
-    JAVA_OPTS: -Xmx3200m
-    AWS_REGION: eu-west-1
-
   default_sbt_job: &default_sbt_job
     machine: true
     working_directory: ~/workdir
     environment:
-      <<: *sbt_jvm_defaults
+      JAVA_OPTS: -Xmx3200m
+      AWS_REGION: eu-west-1
 
   restore_sbt_cache: &restore_sbt_cache
     restore_cache:
@@ -91,7 +88,7 @@ jobs:
       - *clean_sbt_cache
       - *save_sbt_cache
       - run:
-          name: Test json
+          name: Validate json
           working_directory: ~/codacy-plugins-test
           command: sbt -Dcodacy.tests.ignore.descriptions=true "runMain codacy.plugins.DockerTest json codacy/$CIRCLE_PROJECT_REPONAME:latest"
       - run:
@@ -99,7 +96,7 @@ jobs:
           working_directory: ~/codacy-plugins-test
           command: sbt -Dcodacy.tests.noremove=true -Dcodacy.tests.threads=8 "runMain codacy.plugins.DockerTest pattern codacy/$CIRCLE_PROJECT_REPONAME:latest"
       - deploy:
-          name: Push application Docker image
+          name: Push image to docker registry
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               docker login -u $DOCKER_USER -p $DOCKER_PASS
@@ -107,6 +104,16 @@ jobs:
               docker push codacy/$CIRCLE_PROJECT_REPONAME:$(cat .version)
               docker push codacy/$CIRCLE_PROJECT_REPONAME:latest
             fi
+      - add_ssh_keys:
+          fingerprints:
+            - "df:83:d7:c7:d5:79:06:c2:3b:d1:fd:e2:a3:d1:12:c5"
+      - run:
+          name: Tag version on git provider
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              git tag $(cat .version) && git push --tags
+            fi
+
 
 workflows:
   version: 2

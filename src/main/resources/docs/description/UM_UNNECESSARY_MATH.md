@@ -1,1 +1,106 @@
-This method uses a static method from java.lang.Math on a constant value. This method's result in this case, can be determined statically, and is faster and sometimes more accurate to just use the constant. Methods detected are:  Method Parameter abs -any- acos 0.0 or 1.0 asin 0.0 or 1.0 atan 0.0 or 1.0 atan2 0.0 cbrt 0.0 or 1.0 ceil -any- cos 0.0 cosh 0.0 exp 0.0 or 1.0 expm1 0.0 floor -any- log 0.0 or 1.0 log10 0.0 or 1.0 rint -any- round -any- sin 0.0 sinh 0.0 sqrt 0.0 or 1.0 tan 0.0 tanh 0.0 toDegrees 0.0 or 1.0 toRadians 0.0
+# [Method calls static Math class method on a constant value](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UM_UNNECESSARY_MATH)
+
+ This method uses a static method from java.lang.Math on a constant value. This method's
+result in this case, can be determined statically, and is faster and sometimes more accurate to
+just use the constant. Methods detected are:
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th>Method</th> 
+   <th>Parameter</th> 
+  </tr> 
+  <tr> 
+   <td>abs</td> 
+   <td>-any-</td> 
+  </tr> 
+  <tr> 
+   <td>acos</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>asin</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>atan</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>atan2</td> 
+   <td>0.0</td> 
+  </tr> 
+  <tr> 
+   <td>cbrt</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>ceil</td> 
+   <td>-any-</td> 
+  </tr> 
+  <tr> 
+   <td>cos</td> 
+   <td>0.0</td> 
+  </tr> 
+  <tr> 
+   <td>cosh</td> 
+   <td>0.0</td> 
+  </tr> 
+  <tr> 
+   <td>exp</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>expm1</td> 
+   <td>0.0</td> 
+  </tr> 
+  <tr> 
+   <td>floor</td> 
+   <td>-any-</td> 
+  </tr> 
+  <tr> 
+   <td>log</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>log10</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>rint</td> 
+   <td>-any-</td> 
+  </tr> 
+  <tr> 
+   <td>round</td> 
+   <td>-any-</td> 
+  </tr> 
+  <tr> 
+   <td>sin</td> 
+   <td>0.0</td> 
+  </tr> 
+  <tr> 
+   <td>sinh</td> 
+   <td>0.0</td> 
+  </tr> 
+  <tr> 
+   <td>sqrt</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>tan</td> 
+   <td>0.0</td> 
+  </tr> 
+  <tr> 
+   <td>tanh</td> 
+   <td>0.0</td> 
+  </tr> 
+  <tr> 
+   <td>toDegrees</td> 
+   <td>0.0 or 1.0</td> 
+  </tr> 
+  <tr> 
+   <td>toRadians</td> 
+   <td>0.0</td> 
+  </tr> 
+ </tbody> 
+</table>

@@ -1,1 +1,5 @@
-The code invokes toString on an (anonymous) array. Calling toString on an array generates a fairly useless result such as [C@16f0472. Consider using Arrays.toString to convert the array into a readable String that gives the contents of the array. See Programming Puzzlers, chapter 3, puzzle 12.
+# [Invocation of toString on an unnamed array](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DMI_INVOKING_TOSTRING_ON_ANONYMOUS_ARRAY)
+
+The code invokes toString on an (anonymous) array.  Calling toString on an array generates a fairly useless result
+such as [C@16f0472\. Consider using Arrays.toString to convert the array into a readable
+String that gives the contents of the array. See Programming Puzzlers, chapter 3, puzzle 12.

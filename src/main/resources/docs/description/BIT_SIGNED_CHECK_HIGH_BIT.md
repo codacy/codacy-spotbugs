@@ -1,1 +1,7 @@
-This method compares an expression such as((event.detail & SWT.SELECTED) > 0). Using bit arithmetic and then comparing with the greater than operator can lead to unexpected results (of course depending on the value of SWT.SELECTED). If SWT.SELECTED is a negative number, this is a candidate for a bug. Even when SWT.SELECTED is not negative, it seems good practice to use '!= 0' instead of '> 0'.  Boris Bokowski
+# [Check for sign of bitwise operation involving negative number](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#BIT_SIGNED_CHECK_HIGH_BIT)
+
+ This method compares a bitwise expression such as
+`((val & CONSTANT) > 0)` where CONSTANT is the negative number.
+Using bit arithmetic and then comparing with the greater than operator can
+lead to unexpected results. This comparison is unlikely to work as expected. The good practice is
+to use '!= 0' instead of '> 0'.

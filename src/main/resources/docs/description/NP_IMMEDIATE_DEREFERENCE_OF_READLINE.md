@@ -1,1 +1,4 @@
-The result of invoking readLine() is immediately dereferenced. If there are no more lines of text to read, readLine() will return null and dereferencing that will generate a null pointer exception.
+# [Immediate dereference of the result of readLine()](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#NP_IMMEDIATE_DEREFERENCE_OF_READLINE)
+
+ The result of invoking readLine() is immediately dereferenced. If there are no more lines of text
+to read, readLine() will return null and dereferencing that will generate a null pointer exception.

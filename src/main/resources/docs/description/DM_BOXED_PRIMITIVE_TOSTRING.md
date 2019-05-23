@@ -1,1 +1,41 @@
-A boxed primitive is allocated just to call toString(). It is more effective to just use the static form of toString which takes the primitive value. So, Replace...With this... new Integer(1).toString()Integer.toString(1) new Long(1).toString()Long.toString(1) new Float(1.0).toString()Float.toString(1.0) new Double(1.0).toString()Double.toString(1.0) new Byte(1).toString()Byte.toString(1) new Short(1).toString()Short.toString(1) new Boolean(true).toString()Boolean.toString(true)
+# [Method allocates a boxed primitive just to call toString](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DM_BOXED_PRIMITIVE_TOSTRING)
+
+A boxed primitive is allocated just to call toString(). It is more effective to just use the static
+  form of toString which takes the primitive value. So,
+
+<table> 
+ <tbody> 
+  <tr> 
+   <th>Replace...</th> 
+   <th>With this...</th> 
+  </tr> 
+  <tr> 
+   <td>new Integer(1).toString()</td> 
+   <td>Integer.toString(1)</td> 
+  </tr> 
+  <tr> 
+   <td>new Long(1).toString()</td> 
+   <td>Long.toString(1)</td> 
+  </tr> 
+  <tr> 
+   <td>new Float(1.0).toString()</td> 
+   <td>Float.toString(1.0)</td> 
+  </tr> 
+  <tr> 
+   <td>new Double(1.0).toString()</td> 
+   <td>Double.toString(1.0)</td> 
+  </tr> 
+  <tr> 
+   <td>new Byte(1).toString()</td> 
+   <td>Byte.toString(1)</td> 
+  </tr> 
+  <tr> 
+   <td>new Short(1).toString()</td> 
+   <td>Short.toString(1)</td> 
+  </tr> 
+  <tr> 
+   <td>new Boolean(true).toString()</td> 
+   <td>Boolean.toString(true)</td> 
+  </tr> 
+ </tbody> 
+</table>

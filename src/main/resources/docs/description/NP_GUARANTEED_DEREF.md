@@ -1,1 +1,10 @@
-There is a statement or branch that if executed guarantees that a value is null at this point, and that value that is guaranteed to be dereferenced (except on forward paths involving runtime exceptions). Note that a check such as if (x == null) throw new NullPointerException(); is treated as a dereference of x.
+# [Null value is guaranteed to be dereferenced](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#NP_GUARANTEED_DEREF)
+
+              There is a statement or branch that if executed guarantees that
+              a value is null at this point, and that
+              value that is guaranteed to be dereferenced
+              (except on forward paths involving runtime exceptions).
+
+Note that a check such as
+            `if (x == null) throw new NullPointerException();`
+            is treated as a dereference of `x`.

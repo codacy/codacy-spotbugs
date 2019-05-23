@@ -1,2541 +1,3585 @@
 {
-  "name": "SpotBugs",
-  "version": "3.1.12",
-  "patterns": [
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BIT_SIGNED_CHECK"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CN_IDIOM"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CN_IDIOM_NO_SUPER_CALL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CNT_ROUGH_CONSTANT_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CO_ABSTRACT_SELF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CO_COMPARETO_INCORRECT_FLOATING"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CO_COMPARETO_RESULTS_MIN_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CO_SELF_NO_OBJECT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DE_MIGHT_DROP"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DE_MIGHT_IGNORE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_ENTRY_SETS_MAY_REUSE_ENTRY_OBJECTS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_RANDOM_USED_ONLY_ONCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DM_EXIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DM_RUN_FINALIZERS_ON_EXIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ES_COMPARING_PARAMETER_STRING_WITH_EQ"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ES_COMPARING_STRINGS_WITH_EQ"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_ABSTRACT_SELF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_COMPARETO_USE_OBJECT_EQUALS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_GETCLASS_AND_CLASS_CONSTANT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_SELF_NO_OBJECT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FI_EMPTY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FI_EXPLICIT_INVOCATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FI_FINALIZER_NULLS_FIELDS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FI_FINALIZER_ONLY_NULLS_FIELDS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FI_MISSING_SUPER_CALL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FI_NULLIFY_SUPER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FI_USELESS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_USES_NEWLINE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "GC_UNCHECKED_TYPE_IN_GENERIC_CALL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "HE_EQUALS_NO_HASHCODE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "HE_EQUALS_USE_HASHCODE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "HE_HASHCODE_NO_EQUALS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "HE_HASHCODE_USE_OBJECT_EQUALS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "HE_INHERITS_EQUALS_USE_HASHCODE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IC_SUPERCLASS_USES_SUBCLASS_DURING_INITIALIZATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IMSE_DONT_CATCH_IMSE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ISC_INSTANTIATE_STATIC_CLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IT_NO_SUCH_ELEMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ME_ENUM_FIELD_SETTER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ME_MUTABLE_ENUM_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_BOOLEAN_RETURN_NULL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_CLONE_COULD_RETURN_NULL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_TOSTRING_COULD_RETURN_NULL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_CLASS_NAMING_CONVENTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_CLASS_NOT_EXCEPTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_CONFUSING"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_FIELD_NAMING_CONVENTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_FUTURE_KEYWORD_USED_AS_MEMBER_IDENTIFIER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_METHOD_NAMING_CONVENTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_SAME_SIMPLE_NAME_AS_INTERFACE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_SAME_SIMPLE_NAME_AS_SUPERCLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_VERY_CONFUSING_INTENTIONAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_WRONG_PACKAGE_INTENTIONAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ODR_OPEN_DATABASE_RESOURCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "OS_OPEN_STREAM"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "OS_OPEN_STREAM_EXCEPTION_PATH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "PZ_DONT_REUSE_ENTRY_OBJECTS_IN_ITERATORS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RC_REF_COMPARISON_BAD_PRACTICE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RR_NOT_CHECKED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SR_NOT_CHECKED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_NEGATING_RESULT_OF_COMPARETO"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_RETURN_VALUE_IGNORED_BAD_PRACTICE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SI_INSTANCE_BEFORE_FINALS_ASSIGNED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SW_SWING_METHODS_INVOKED_IN_SWING_THREAD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_BAD_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_BAD_FIELD_INNER_CLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_BAD_FIELD_STORE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_COMPARATOR_SHOULD_BE_SERIALIZABLE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_INNER_CLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_NONFINAL_SERIALVERSIONID"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_NONLONG_SERIALVERSIONID"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_NONSTATIC_SERIALVERSIONID"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_NO_SUITABLE_CONSTRUCTOR"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_NO_SUITABLE_CONSTRUCTOR_FOR_EXTERNALIZATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_READ_RESOLVE_MUST_RETURN_OBJECT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_TRANSIENT_FIELD_NOT_RESTORED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_NO_SERIALVERSIONID"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UI_INHERITANCE_UNSAFE_GETRESOURCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_IMPOSSIBLE_CAST"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_IMPOSSIBLE_DOWNCAST"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_IMPOSSIBLE_INSTANCEOF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BIT_ADD_OF_SIGNED_BYTE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BIT_AND"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BIT_AND_ZZ"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BIT_IOR"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BIT_IOR_OF_SIGNED_BYTE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BIT_SIGNED_CHECK_HIGH_BIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BOA_BADLY_OVERRIDDEN_ADAPTER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BSHIFT_WRONG_ADD_PRIORITY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ICAST_BAD_SHIFT_AMOUNT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DLS_DEAD_LOCAL_INCREMENT_IN_RETURN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DLS_DEAD_STORE_OF_CLASS_LITERAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DLS_OVERWRITTEN_INCREMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_ARGUMENTS_WRONG_ORDER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_BAD_MONTH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_CALLING_NEXT_FROM_HASNEXT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_COLLECTIONS_SHOULD_NOT_CONTAIN_THEMSELVES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_DOH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_INVOKING_HASHCODE_ON_ARRAY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_LONG_BITS_TO_DOUBLE_INVOKED_ON_INT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_VACUOUS_SELF_COLLECTION_CALL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_ANNOTATION_IS_NOT_VISIBLE_TO_REFLECTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_FUTILE_ATTEMPT_TO_CHANGE_MAXPOOL_SIZE_OF_SCHEDULED_THREAD_POOL_EXECUTOR"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_SCHEDULED_THREAD_POOL_EXECUTOR_WITH_ZERO_CORE_THREADS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_VACUOUS_CALL_TO_EASYMOCK_METHOD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DM_INVALID_MIN_MAX"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EC_ARRAY_AND_NONARRAY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EC_BAD_ARRAY_COMPARE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EC_INCOMPATIBLE_ARRAY_COMPARE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EC_NULL_ARG"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EC_UNRELATED_CLASS_AND_INTERFACE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EC_UNRELATED_INTERFACES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EC_UNRELATED_TYPES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EC_UNRELATED_TYPES_USING_POINTER_EQUALITY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_ALWAYS_FALSE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_ALWAYS_TRUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_COMPARING_CLASS_NAMES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_DONT_DEFINE_EQUALS_FOR_ENUM"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_OTHER_NO_OBJECT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_OTHER_USE_OBJECT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_SELF_USE_OBJECT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_BAD_ARGUMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_BAD_CONVERSION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_EXPECTED_MESSAGE_FORMAT_SUPPLIED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_EXTRA_ARGUMENTS_PASSED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_ILLEGAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_MISSING_ARGUMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_NO_PREVIOUS_ARGUMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "GC_UNRELATED_TYPES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "HE_USE_OF_UNHASHABLE_CLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ICAST_INT_2_LONG_AS_INSTANT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ICAST_INT_CAST_TO_DOUBLE_PASSED_TO_CEIL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ICAST_INT_CAST_TO_FLOAT_PASSED_TO_ROUND"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IJU_ASSERT_METHOD_INVOKED_FROM_RUN_METHOD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IJU_BAD_SUITE_METHOD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IJU_NO_TESTS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IJU_SETUP_NO_SUPER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IJU_SUITE_NOT_STATIC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IJU_TEARDOWN_NO_SUPER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IL_CONTAINER_ADDED_TO_ITSELF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IL_INFINITE_LOOP"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IL_INFINITE_RECURSIVE_LOOP"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IM_MULTIPLYING_RESULT_OF_IREM"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "INT_BAD_COMPARISON_WITH_INT_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "INT_BAD_COMPARISON_WITH_SIGNED_BYTE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IO_APPENDING_TO_OBJECT_OUTPUT_STREAM"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "MF_CLASS_MASKS_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "MF_METHOD_MASKS_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_ALWAYS_NULL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_ALWAYS_NULL_EXCEPTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_ARGUMENT_MIGHT_BE_NULL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_CLOSING_NULL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_GUARANTEED_DEREF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NONNULL_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NONNULL_PARAM_VIOLATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NONNULL_RETURN_VIOLATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NULL_INSTANCEOF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NULL_ON_SOME_PATH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NULL_ON_SOME_PATH_EXCEPTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NULL_PARAM_DEREF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NULL_PARAM_DEREF_ALL_TARGETS_DANGEROUS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NULL_PARAM_DEREF_NONVIRTUAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_OPTIONAL_RETURN_NULL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_STORE_INTO_NONNULL_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_UNWRITTEN_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_BAD_EQUAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_LCASE_HASHCODE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_LCASE_TOSTRING"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_METHOD_CONSTRUCTOR_CONFUSION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_VERY_CONFUSING"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NM_WRONG_PACKAGE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RANGE_ARRAY_INDEX"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RANGE_ARRAY_LENGTH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RANGE_ARRAY_OFFSET"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RANGE_STRING_INDEX"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RC_REF_COMPARISON"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RE_BAD_SYNTAX_FOR_REGULAR_EXPRESSION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RE_CANT_USE_FILE_SEPARATOR_AS_REGULAR_EXPRESSION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RE_POSSIBLE_UNINTENDED_PATTERN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_01_TO_INT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_ABSOLUTE_VALUE_OF_HASHCODE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_ABSOLUTE_VALUE_OF_RANDOM_INT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_CHECK_COMPARETO_FOR_SPECIFIC_RETURN_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_EXCEPTION_NOT_THROWN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_RETURN_VALUE_IGNORED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RpC_REPEATED_CONDITIONAL_TEST"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_FIELD_SELF_ASSIGNMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_FIELD_SELF_COMPARISON"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_FIELD_SELF_COMPUTATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_LOCAL_SELF_COMPARISON"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_LOCAL_SELF_COMPUTATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH_TO_THROW"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SIC_THREADLOCAL_DEADLY_EMBRACE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SIO_SUPERFLUOUS_INSTANCEOF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SQL_BAD_PREPARED_STATEMENT_ACCESS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SQL_BAD_RESULTSET_ACCESS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "STI_INTERRUPTED_ON_CURRENTTHREAD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "STI_INTERRUPTED_ON_UNKNOWNTHREAD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_METHOD_MUST_BE_PRIVATE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_READ_RESOLVE_IS_STATIC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TQ_ALWAYS_VALUE_USED_WHERE_NEVER_REQUIRED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TQ_COMPARING_VALUES_WITH_INCOMPATIBLE_TYPE_QUALIFIERS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TQ_MAYBE_SOURCE_VALUE_REACHES_ALWAYS_SINK"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TQ_MAYBE_SOURCE_VALUE_REACHES_NEVER_SINK"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TQ_NEVER_VALUE_USED_WHERE_ALWAYS_REQUIRED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TQ_UNKNOWN_VALUE_USED_WHERE_ALWAYS_STRICTLY_REQUIRED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UR_UNINIT_READ"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_INVOKING_TOSTRING_ON_ANONYMOUS_ARRAY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_INVOKING_TOSTRING_ON_ARRAY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_BAD_CONVERSION_FROM_ARRAY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UWF_NULL_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UWF_UNWRITTEN_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_PRIMITIVE_ARRAY_PASSED_TO_OBJECT_VARARG"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "LG_LOST_LOGGER_DUE_TO_WEAK_REFERENCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "OBL_UNSATISFIED_OBLIGATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DM_CONVERT_CASE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DM_DEFAULT_ENCODING"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "DP_DO_INSIDE_DO_PRIVILEGED"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "EI_EXPOSE_REP"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "EI_EXPOSE_REP2"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "FI_PUBLIC_SHOULD_BE_PROTECTED"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "EI_EXPOSE_STATIC_REP2"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_CANNOT_BE_FINAL"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_EXPOSE_REP"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_FINAL_PKGPROTECT"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_MUTABLE_ARRAY"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_MUTABLE_COLLECTION"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_MUTABLE_COLLECTION_PKGPROTECT"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_MUTABLE_HASHTABLE"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_OOI_PKGPROTECT"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_PKGPROTECT"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_SHOULD_BE_FINAL"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "MS_SHOULD_BE_REFACTORED_TO_BE_FINAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DC_DOUBLECHECK"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DC_PARTIALLY_CONSTRUCTED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DL_SYNCHRONIZATION_ON_BOOLEAN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DL_SYNCHRONIZATION_ON_BOXED_PRIMITIVE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DL_SYNCHRONIZATION_ON_SHARED_CONSTANT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DM_MONITOR_WAIT_ON_CONDITION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DM_USELESS_THREAD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ESync_EMPTY_SYNC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IS2_INCONSISTENT_SYNC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IS_FIELD_NOT_GUARDED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "JLM_JSR166_LOCK_MONITORENTER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "JLM_JSR166_UTILCONCURRENT_MONITORENTER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "JML_JSR166_CALLING_WAIT_RATHER_THAN_AWAIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "LI_LAZY_INIT_STATIC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "LI_LAZY_INIT_UPDATE_STATIC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ML_SYNC_ON_UPDATED_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "MSF_MUTABLE_SERVLET_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "MWN_MISMATCHED_NOTIFY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "MWN_MISMATCHED_WAIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NN_NAKED_NOTIFY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_SYNC_AND_NULL_CHECK_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NO_NOTIFY_NOT_NOTIFYALL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RS_READOBJECT_SYNC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RU_INVOKE_RUN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SC_START_IN_CTOR"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SP_SPIN_ON_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "STCAL_STATIC_CALENDAR_INSTANCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SWL_SLEEP_WITH_LOCK_HELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TLW_TWO_LOCK_WAIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UG_SYNC_SET_UNSYNC_GET"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UL_UNRELEASED_LOCK"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UL_UNRELEASED_LOCK_EXCEPTION_PATH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UW_UNCOND_WAIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VO_VOLATILE_INCREMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VO_VOLATILE_REFERENCE_TO_ARRAY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "WL_USING_GETCLASS_RATHER_THAN_CLASS_LITERAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "WS_WRITEOBJECT_SYNC"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "WA_AWAIT_NOT_IN_LOOP"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "WA_NOT_IN_LOOP"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "BX_BOXING_IMMEDIATELY_UNBOXED"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "BX_BOXING_IMMEDIATELY_UNBOXED_TO_PERFORM_COERCION"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "BX_UNBOXED_AND_COERCED_FOR_TERNARY_OPERATOR"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "BX_UNBOXING_IMMEDIATELY_REBOXED"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_BOXED_PRIMITIVE_FOR_COMPARE"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_BOXED_PRIMITIVE_FOR_PARSING"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_BOXED_PRIMITIVE_TOSTRING"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_FP_NUMBER_CTOR"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_NUMBER_CTOR"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DMI_BLOCKING_METHODS_ON_URL"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DMI_COLLECTION_OF_URLS"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_BOOLEAN_CTOR"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_GC"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_NEW_FOR_GETCLASS"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_NEXTINT_VIA_NEXTDOUBLE"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_STRING_CTOR"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_STRING_TOSTRING"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "DM_STRING_VOID_CTOR"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "HSC_HUGE_SHARED_STRING_CONSTANT"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "SBSC_USE_STRINGBUFFER_CONCATENATION"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "SIC_INNER_SHOULD_BE_STATIC"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "SIC_INNER_SHOULD_BE_STATIC_ANON"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "SIC_INNER_SHOULD_BE_STATIC_NEEDS_THIS"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "SS_SHOULD_BE_STATIC"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "UM_UNNECESSARY_MATH"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "UPM_UNCALLED_PRIVATE_METHOD"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "URF_UNREAD_FIELD"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "UUF_UNUSED_FIELD"
-    },
-    {
-      "category": "Performance",
-      "level": "Warning",
-      "patternId": "WMI_WRONG_MAP_ITERATOR"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "DMI_CONSTANT_DB_PASSWORD"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "DMI_EMPTY_DB_PASSWORD"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "HRS_REQUEST_PARAMETER_TO_COOKIE"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "HRS_REQUEST_PARAMETER_TO_HTTP_HEADER"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "PT_ABSOLUTE_PATH_TRAVERSAL"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "PT_RELATIVE_PATH_TRAVERSAL"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "XSS_REQUEST_PARAMETER_TO_JSP_WRITER"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "XSS_REQUEST_PARAMETER_TO_SEND_ERROR"
-    },
-    {
-      "category": "Security",
-      "level": "Error",
-      "patternId": "XSS_REQUEST_PARAMETER_TO_SERVLET_WRITER"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_BAD_CAST_TO_ABSTRACT_COLLECTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_BAD_CAST_TO_CONCRETE_COLLECTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_UNCONFIRMED_CAST"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "BC_VACUOUS_INSTANCEOF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ICAST_QUESTIONABLE_UNSIGNED_RIGHT_SHIFT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "CI_CONFUSED_INHERITANCE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DB_DUPLICATE_BRANCHES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DB_DUPLICATE_SWITCH_CLAUSES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DLS_DEAD_LOCAL_STORE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DLS_DEAD_LOCAL_STORE_IN_RETURN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DLS_DEAD_LOCAL_STORE_OF_NULL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_HARDCODED_ABSOLUTE_FILENAME"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_NONSERIALIZABLE_OBJECT_WRITTEN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_USELESS_SUBSTRING"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "DMI_THREAD_PASSED_WHERE_RUNNABLE_EXPECTED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_DOESNT_OVERRIDE_EQUALS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "EQ_UNUSUAL"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "FE_FLOATING_POINT_EQUALITY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "VA_FORMAT_STRING_BAD_CONVERSION_TO_BOOLEAN"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IC_INIT_CIRCULARITY"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ICAST_IDIV_CAST_TO_DOUBLE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ICAST_INTEGER_MULTIPLY_CAST_TO_LONG"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IM_AVERAGE_COMPUTATION_COULD_OVERFLOW"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "IM_BAD_CHECK_FOR_ODD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "INT_BAD_REM_BY_1"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "INT_VACUOUS_BIT_OPERATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "INT_VACUOUS_COMPARISON"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "MTIA_SUSPECT_SERVLET_INSTANCE_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "MTIA_SUSPECT_STRUTS_INSTANCE_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_DEREFERENCE_OF_READLINE_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_IMMEDIATE_DEREFERENCE_OF_READLINE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_LOAD_OF_KNOWN_NULL_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_METHOD_PARAMETER_TIGHTENS_ANNOTATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_METHOD_RETURN_RELAXING_ANNOTATION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_NULL_ON_SOME_PATH_MIGHT_BE_INFEASIBLE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NS_DANGEROUS_NON_SHORT_CIRCUIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "NS_NON_SHORT_CIRCUIT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "PZLA_PREFER_ZERO_LENGTH_ARRAYS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "QF_QUESTIONABLE_FOR_LOOP"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RCN_REDUNDANT_COMPARISON_OF_NULL_AND_NONNULL_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RCN_REDUNDANT_COMPARISON_TWO_NULL_VALUES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "REC_CATCH_EXCEPTION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RI_REDUNDANT_INTERFACES"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_CHECK_FOR_POSITIVE_INDEXOF"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_DONT_JUST_NULL_CHECK_READLINE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_REM_OF_HASHCODE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_REM_OF_RANDOM_INT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_RETURN_VALUE_IGNORED_INFERRED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_FIELD_DOUBLE_ASSIGNMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_LOCAL_DOUBLE_ASSIGNMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SA_LOCAL_SELF_ASSIGNMENT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SF_SWITCH_FALLTHROUGH"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SF_SWITCH_NO_DEFAULT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_PRIVATE_READ_RESOLVE_NOT_INHERITED"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "SE_TRANSIENT_FIELD_OF_NONSERIALIZABLE_CLASS"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_ALWAYS_SINK"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_NEVER_SINK"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UC_USELESS_CONDITION"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UC_USELESS_CONDITION_TYPE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UC_USELESS_OBJECT"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UC_USELESS_OBJECT_STACK"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UC_USELESS_VOID_METHOD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UCF_USELESS_CONTROL_FLOW"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UCF_USELESS_CONTROL_FLOW_NEXT_LINE"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD"
-    },
-    {
-      "category": "UnusedCode",
-      "level": "Warning",
-      "patternId": "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"
-    },
-    {
-      "category": "ErrorProne",
-      "level": "Error",
-      "patternId": "XFB_XML_FACTORY_BYPASS"
-    },
-    {
-      "patternId": "PREDICTABLE_RANDOM",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "PREDICTABLE_RANDOM_SCALA",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SERVLET_PARAMETER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SERVLET_CONTENT_TYPE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SERVLET_SERVER_NAME",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SERVLET_SESSION_ID",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SERVLET_QUERY_STRING",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SERVLET_HEADER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SERVLET_HEADER_REFERER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SERVLET_HEADER_USER_AGENT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "COOKIE_USAGE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "INSECURE_COOKIE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "HTTPONLY_COOKIE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "PATH_TRAVERSAL_IN",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "PATH_TRAVERSAL_OUT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "COMMAND_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SCALA_COMMAND_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "WEAK_FILENAMEUTILS",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "WEAK_TRUST_MANAGER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "WEAK_HOSTNAME_VERIFIER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "JAXWS_ENDPOINT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "JAXRS_ENDPOINT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "TAPESTRY_ENDPOINT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "WICKET_ENDPOINT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "WEAK_MESSAGE_DIGEST_MD5",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "WEAK_MESSAGE_DIGEST_SHA1",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "CUSTOM_MESSAGE_DIGEST",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "FILE_UPLOAD_FILENAME",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "REDOS",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "XXE_SAXPARSER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "XXE_XMLREADER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "XXE_DOCUMENT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "XPATH_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "STRUTS1_ENDPOINT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "STRUTS2_ENDPOINT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SPRING_ENDPOINT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "CUSTOM_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SQL_INJECTION_HIBERNATE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SQL_INJECTION_JDO",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SQL_INJECTION_JPA",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SQL_INJECTION_SPRING_JDBC",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SQL_INJECTION_JDBC",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "LDAP_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "BAD_HEXA_CONVERSION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "HAZELCAST_SYMMETRIC_ENCRYPTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "NULL_CIPHER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "UNENCRYPTED_SOCKET",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "DES_USAGE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "RSA_NO_PADDING",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "HARD_CODE_PASSWORD",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "HARD_CODE_KEY",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "STRUTS_FORM_VALIDATION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "XSS_REQUEST_WRAPPER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "RSA_KEY_SIZE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "BLOWFISH_KEY_SIZE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "UNVALIDATED_REDIRECT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "PLAY_UNVALIDATED_REDIRECT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "XSS_JSP_PRINT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "JSP_INCLUDE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "JSP_SPRING_EVAL",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "JSP_JSTL_OUT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "XSS_SERVLET",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "XML_DECODER",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "STATIC_IV",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "ECB_MODE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "PADDING_ORACLE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "CIPHER_INTEGRITY",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "ESAPI_ENCRYPTOR",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SCRIPT_ENGINE_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SPEL_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "EL_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "SEAM_LOG_INJECTION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "HTTP_RESPONSE_SPLITTING",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "CRLF_INJECTION_LOGS",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "EXTERNAL_CONFIG_CONTROL",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "ANDROID_EXTERNAL_FILE_ACCESS",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "ANDROID_BROADCAST",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "ANDROID_WORLD_WRITABLE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "ANDROID_GEOLOCATION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "ANDROID_WEB_VIEW_JAVASCRIPT",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "ANDROID_WEB_VIEW_JAVASCRIPT_INTERFACE",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "OBJECT_DESERIALIZATION",
-      "level": "Error",
-      "category": "Security"
-    },
-    {
-      "patternId": "TRUST_BOUNDARY_VIOLATION",
-      "level": "Error",
-      "category": "Security"
-    }
-  ]
+  "name" : "spotbugs",
+  "version" : "3.1.12",
+  "patterns" : [ {
+    "patternId" : "ABC_ARRAY_BASED_COLLECTIONS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ACEM_ABSTRACT_CLASS_EMPTY_METHODS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "AFBR_ABNORMAL_FINALLY_BLOCK_RETURN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "AIOB_ARRAY_INDEX_OUT_OF_BOUNDS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "AIOB_ARRAY_STORE_TO_NULL_REFERENCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "AI_ANNOTATION_ISSUES_NEEDS_NULLABLE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "AM_CREATES_EMPTY_JAR_FILE_ENTRY",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "AM_CREATES_EMPTY_ZIP_FILE_ENTRY",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "ANDROID_BROADCAST",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "ANDROID_EXTERNAL_FILE_ACCESS",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "ANDROID_GEOLOCATION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "ANDROID_WEB_VIEW_JAVASCRIPT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "ANDROID_WEB_VIEW_JAVASCRIPT_INTERFACE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "ANDROID_WORLD_WRITABLE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "AOM_ABSTRACT_OVERRIDDEN_METHOD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "AWCBR_ARRAY_WRAPPED_CALL_BY_REFERENCE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "AWS_QUERY_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "BAC_BAD_APPLET_CONSTRUCTOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BAD_HEXA_CONVERSION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "BAS_BLOATED_ASSIGNMENT_SCOPE",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "BC_BAD_CAST_TO_ABSTRACT_COLLECTION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "BC_BAD_CAST_TO_CONCRETE_COLLECTION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "BC_IMPOSSIBLE_CAST",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BC_IMPOSSIBLE_CAST_PRIMITIVE_ARRAY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BC_IMPOSSIBLE_DOWNCAST",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BC_IMPOSSIBLE_INSTANCEOF",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BC_NULL_INSTANCEOF",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BC_UNCONFIRMED_CAST",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "BC_VACUOUS_INSTANCEOF",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "BEAN_PROPERTY_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "BED_BOGUS_EXCEPTION_DECLARATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BED_HIERARCHICAL_EXCEPTION_DECLARATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BIT_ADD_OF_SIGNED_BYTE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BIT_AND",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BIT_AND_ZZ",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BIT_IOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BIT_IOR_OF_SIGNED_BYTE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BIT_SIGNED_CHECK",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "BIT_SIGNED_CHECK_HIGH_BIT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BLOWFISH_KEY_SIZE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "BL_BURYING_LOGIC",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "BOA_BADLY_OVERRIDDEN_ADAPTER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BRPI_BACKPORT_REUSE_PUBLIC_IDENTIFIERS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "BRSA_BAD_RESULTSET_ACCESS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BSB_BLOATED_SYNCHRONIZED_BLOCK",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "BSHIFT_WRONG_ADD_PRIORITY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "BX_BOXING_IMMEDIATELY_UNBOXED",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "BX_BOXING_IMMEDIATELY_UNBOXED_TO_PERFORM_COERCION",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "BX_UNBOXED_AND_COERCED_FOR_TERNARY_OPERATOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "BX_UNBOXING_IMMEDIATELY_REBOXED",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "CAAL_CONFUSING_ARRAY_AS_LIST",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CAA_COVARIANT_ARRAY_ELEMENT_STORE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CAA_COVARIANT_ARRAY_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CAA_COVARIANT_ARRAY_LOCAL",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CAA_COVARIANT_ARRAY_RETURN",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CAO_CONFUSING_AUTOBOXED_OVERLOADING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CBC_CONTAINS_BASED_CONDITIONAL",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CBX_CUSTOM_BUILT_XML",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CCI_CONCURRENT_COLLECTION_ISSUES_USE_PUT_IS_RACY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CCNE_COMPARE_CLASS_EQUALS_NAME",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CC_CYCLOMATIC_COMPLEXITY",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CD_CIRCULAR_DEPENDENCY",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CEBE_COMMONS_EQUALS_BUILDER_ISEQUALS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CE_CLASS_ENVY",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CFS_CONFUSING_FUNCTION_SEMANTICS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CHTH_COMMONS_HASHCODE_BUILDER_TOHASHCODE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CIPHER_INTEGRITY",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "CI_CONFUSED_INHERITANCE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CLI_CONSTANT_LIST_INDEX",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CNC_COLLECTION_NAMING_CONFUSION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CNT_ROUGH_CONSTANT_VALUE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "CN_IDIOM",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "CN_IDIOM_NO_SUPER_CALL",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "COMMAND_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "COM_COPIED_OVERRIDDEN_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "COM_PARENT_DELEGATED_CALL",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "COOKIE_PERSISTENT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "COOKIE_USAGE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "CO_ABSTRACT_SELF",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "CO_COMPARETO_INCORRECT_FLOATING",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "CO_COMPARETO_RESULTS_MIN_VALUE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "CO_SELF_NO_OBJECT",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "CRF_CONFLATING_RESOURCES_AND_FILES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CRLF_INJECTION_LOGS",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "CSBTS_COMMONS_STRING_BUILDER_TOSTRING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CSI_CHAR_SET_ISSUES_UNKNOWN_ENCODING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CSI_CHAR_SET_ISSUES_USE_STANDARD_CHARSET",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CSI_CHAR_SET_ISSUES_USE_STANDARD_CHARSET_NAME",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CTU_CONFLICTING_TIME_UNITS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CUSTOM_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "CUSTOM_MESSAGE_DIGEST",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "CU_CLONE_USABILITY_MISMATCHED_RETURN",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CU_CLONE_USABILITY_OBJECT_RETURN",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CU_CLONE_USABILITY_THROWS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "CVAA_CONTRAVARIANT_ARRAY_ASSIGNMENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "CVAA_CONTRAVARIANT_ELEMENT_ASSIGNMENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DB_DUPLICATE_BRANCHES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DB_DUPLICATE_SWITCH_CLAUSES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DC_DOUBLECHECK",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DC_PARTIALLY_CONSTRUCTED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DDC_DOUBLE_DATE_COMPARISON",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DEFAULT_HTTP_CLIENT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "DESERIALIZATION_GADGET",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "DES_USAGE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "DE_MIGHT_DROP",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DE_MIGHT_IGNORE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DLC_DUBIOUS_LIST_COLLECTION",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DLS_DEAD_LOCAL_INCREMENT_IN_RETURN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DLS_DEAD_LOCAL_STORE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DLS_DEAD_LOCAL_STORE_IN_RETURN",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DLS_DEAD_LOCAL_STORE_OF_NULL",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DLS_DEAD_STORE_OF_CLASS_LITERAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DLS_OVERWRITTEN_INCREMENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DL_SYNCHRONIZATION_ON_BOOLEAN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DL_SYNCHRONIZATION_ON_BOXED_PRIMITIVE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DL_SYNCHRONIZATION_ON_SHARED_CONSTANT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMC_DUBIOUS_MAP_COLLECTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_ANNOTATION_IS_NOT_VISIBLE_TO_REFLECTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_ARGUMENTS_WRONG_ORDER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_BAD_MONTH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_BLOCKING_METHODS_ON_URL",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DMI_CALLING_NEXT_FROM_HASNEXT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_COLLECTIONS_SHOULD_NOT_CONTAIN_THEMSELVES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_COLLECTION_OF_URLS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DMI_CONSTANT_DB_PASSWORD",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "DMI_DOH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_EMPTY_DB_PASSWORD",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "DMI_ENTRY_SETS_MAY_REUSE_ENTRY_OBJECTS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DMI_FUTILE_ATTEMPT_TO_CHANGE_MAXPOOL_SIZE_OF_SCHEDULED_THREAD_POOL_EXECUTOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_HARDCODED_ABSOLUTE_FILENAME",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DMI_INVOKING_HASHCODE_ON_ARRAY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_INVOKING_TOSTRING_ON_ANONYMOUS_ARRAY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_INVOKING_TOSTRING_ON_ARRAY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_LONG_BITS_TO_DOUBLE_INVOKED_ON_INT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_NONSERIALIZABLE_OBJECT_WRITTEN",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DMI_RANDOM_USED_ONLY_ONCE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DMI_SCHEDULED_THREAD_POOL_EXECUTOR_WITH_ZERO_CORE_THREADS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_THREAD_PASSED_WHERE_RUNNABLE_EXPECTED",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DMI_UNSUPPORTED_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DMI_USELESS_SUBSTRING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DMI_VACUOUS_CALL_TO_EASYMOCK_METHOD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DMI_VACUOUS_SELF_COLLECTION_CALL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DM_BOOLEAN_CTOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_BOXED_PRIMITIVE_FOR_COMPARE",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_BOXED_PRIMITIVE_FOR_PARSING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_BOXED_PRIMITIVE_TOSTRING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_CONVERT_CASE",
+    "level" : "Info",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DM_DEFAULT_ENCODING",
+    "level" : "Info",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DM_EXIT",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DM_FP_NUMBER_CTOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_GC",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_INVALID_MIN_MAX",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DM_MONITOR_WAIT_ON_CONDITION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DM_NEW_FOR_GETCLASS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_NEXTINT_VIA_NEXTDOUBLE",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_NUMBER_CTOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_RUN_FINALIZERS_ON_EXIT",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "DM_STRING_CTOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_STRING_TOSTRING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_STRING_VOID_CTOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DM_USELESS_THREAD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "DP_DO_INSIDE_DO_PRIVILEGED",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "DRE_DECLARED_RUNTIME_EXCEPTION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DSOC_DUBIOUS_SET_OF_COLLECTIONS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "DTEP_DEPRECATED_TYPESAFE_ENUM_PATTERN",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "DWI_DELETING_WHILE_ITERATING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "DWI_MODIFYING_WHILE_ITERATING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ECB_MODE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "EC_ARRAY_AND_NONARRAY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EC_BAD_ARRAY_COMPARE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EC_INCOMPATIBLE_ARRAY_COMPARE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EC_NULL_ARG",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EC_UNRELATED_CLASS_AND_INTERFACE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EC_UNRELATED_INTERFACES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EC_UNRELATED_TYPES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EC_UNRELATED_TYPES_USING_POINTER_EQUALITY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EI_EXPOSE_REP",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "EI_EXPOSE_REP2",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "EI_EXPOSE_STATIC_REP2",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "EL_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "EQ_ABSTRACT_SELF",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "EQ_ALWAYS_FALSE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EQ_ALWAYS_TRUE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "EQ_COMPARETO_USE_OBJECT_EQUALS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "EQ_COMPARING_CLASS_NAMES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EQ_DOESNT_OVERRIDE_EQUALS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "EQ_DONT_DEFINE_EQUALS_FOR_ENUM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EQ_GETCLASS_AND_CLASS_CONSTANT",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "EQ_OTHER_NO_OBJECT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EQ_OTHER_USE_OBJECT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EQ_SELF_NO_OBJECT",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "EQ_SELF_USE_OBJECT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EQ_UNUSUAL",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "ESAPI_ENCRYPTOR",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "ES_COMPARING_PARAMETER_STRING_WITH_EQ",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "ES_COMPARING_STRINGS_WITH_EQ",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "ESync_EMPTY_SYNC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "EXS_EXCEPTION_SOFTENING_HAS_CHECKED",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "EXS_EXCEPTION_SOFTENING_NO_CHECKED",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "EXS_EXCEPTION_SOFTENING_NO_CONSTRAINTS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "EXS_EXCEPTION_SOFTENING_RETURN_FALSE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "EXTERNAL_CONFIG_CONTROL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "FB_MISSING_EXPECTED_WARNING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FB_UNEXPECTED_WARNING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FCBL_FIELD_COULD_BE_LOCAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FCCD_FIND_CLASS_CIRCULAR_DEPENDENCY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FE_FLOATING_POINT_EQUALITY",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FII_AVOID_CONTAINS_ON_COLLECTED_STREAM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FII_AVOID_SIZE_ON_COLLECTED_STREAM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FII_COMBINE_FILTERS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FII_USE_ANY_MATCH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FII_USE_FIND_FIRST",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FII_USE_FUNCTION_IDENTITY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FII_USE_METHOD_REFERENCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FILE_UPLOAD_FILENAME",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "FI_EMPTY",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "FI_EXPLICIT_INVOCATION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "FI_FINALIZER_NULLS_FIELDS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "FI_FINALIZER_ONLY_NULLS_FIELDS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "FI_MISSING_SUPER_CALL",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "FI_NULLIFY_SUPER",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "FI_PUBLIC_SHOULD_BE_PROTECTED",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "FI_USELESS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "FL_MATH_USING_FLOAT_PRECISION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FORMAT_STRING_MANIPULATION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "FPL_FLOATING_POINT_LOOPS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "FP_FINAL_PARAMETERS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "GC_UNCHECKED_TYPE_IN_GENERIC_CALL",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "GC_UNRELATED_TYPES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "HARD_CODE_KEY",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "HARD_CODE_PASSWORD",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "HAZELCAST_SYMMETRIC_ENCRYPTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "HCP_HTTP_REQUEST_RESOURCES_NOT_FREED_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "HCP_HTTP_REQUEST_RESOURCES_NOT_FREED_LOCAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "HES_EXECUTOR_NEVER_SHUTDOWN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "HES_EXECUTOR_OVERWRITTEN_WITHOUT_SHUTDOWN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "HES_LOCAL_EXECUTOR_SERVICE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "HE_EQUALS_NO_HASHCODE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "HE_EQUALS_USE_HASHCODE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "HE_HASHCODE_NO_EQUALS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "HE_HASHCODE_USE_OBJECT_EQUALS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "HE_INHERITS_EQUALS_USE_HASHCODE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "HE_USE_OF_UNHASHABLE_CLASS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "HRS_REQUEST_PARAMETER_TO_COOKIE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "HRS_REQUEST_PARAMETER_TO_HTTP_HEADER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "HSC_HUGE_SHARED_STRING_CONSTANT",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "HTTPONLY_COOKIE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "HTTP_PARAMETER_POLLUTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "HTTP_RESPONSE_SPLITTING",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "ICAST_BAD_SHIFT_AMOUNT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ICAST_IDIV_CAST_TO_DOUBLE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "ICAST_INTEGER_MULTIPLY_CAST_TO_LONG",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "ICAST_INT_2_LONG_AS_INSTANT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ICAST_INT_CAST_TO_DOUBLE_PASSED_TO_CEIL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ICAST_INT_CAST_TO_FLOAT_PASSED_TO_ROUND",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ICAST_QUESTIONABLE_UNSIGNED_RIGHT_SHIFT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "ICA_INVALID_CONSTANT_ARGUMENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IC_INIT_CIRCULARITY",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IC_SUPERCLASS_USES_SUBCLASS_DURING_INITIALIZATION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "IICU_INCORRECT_INTERNAL_CLASS_USE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IIL_ELEMENTS_GET_LENGTH_IN_LOOP",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IIL_PATTERN_COMPILE_IN_LOOP",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IIL_PATTERN_COMPILE_IN_LOOP_INDIRECT",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IIL_PREPARE_STATEMENT_IN_LOOP",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IIO_INEFFICIENT_INDEX_OF",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IIO_INEFFICIENT_LAST_INDEX_OF",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IJU_ASSERT_METHOD_INVOKED_FROM_RUN_METHOD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IJU_BAD_SUITE_METHOD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IJU_NO_TESTS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IJU_SETUP_NO_SUPER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IJU_SUITE_NOT_STATIC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IJU_TEARDOWN_NO_SUPER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IKNC_INCONSISTENT_HTTP_ATTRIBUTE_CASING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IKNC_INCONSISTENT_HTTP_PARAM_CASING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IL_CONTAINER_ADDED_TO_ITSELF",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IL_INFINITE_LOOP",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IL_INFINITE_RECURSIVE_LOOP",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IMA_INEFFICIENT_MEMBER_ACCESS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_BAD_SERIALVERSIONUID",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_IDE_GENERATED_PARAMETER_NAMES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_LOWER_CLASS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_NO_EQUALS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_NO_HASHCODE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_NO_PACKAGE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_NO_TOSTRING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_PRINTSTACKTRACE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_UPPER_PACKAGE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_VAR_NAME",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IMC_IMMATURE_CLASS_WRONG_FIELD_ORDER",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IMSE_DONT_CATCH_IMSE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "IM_AVERAGE_COMPUTATION_COULD_OVERFLOW",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IM_BAD_CHECK_FOR_ODD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IM_MULTIPLYING_RESULT_OF_IREM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "INSECURE_COOKIE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "INSECURE_SMTP_SSL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "INT_BAD_COMPARISON_WITH_INT_VALUE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "INT_BAD_COMPARISON_WITH_SIGNED_BYTE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "INT_BAD_REM_BY_1",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "INT_VACUOUS_BIT_OPERATION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "INT_VACUOUS_COMPARISON",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "IOI_COPY_WITH_READER",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IOI_DOUBLE_BUFFER_COPY",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IOI_UNENDED_ZLIB_OBJECT",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IOI_USE_OF_FILE_STREAM_CONSTRUCTORS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IO_APPENDING_TO_OBJECT_OUTPUT_STREAM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IPU_IMPROPER_PROPERTIES_USE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IPU_IMPROPER_PROPERTIES_USE_SETPROPERTY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IRA_INEFFICIENT_REPLACEALL",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "IS2_INCONSISTENT_SYNC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ISB_EMPTY_STRING_APPENDING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "ISB_INEFFICIENT_STRING_BUFFERING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "ISB_TOSTRING_APPENDING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ISC_INSTANTIATE_STATIC_CLASS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "IS_FIELD_NOT_GUARDED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IS_INCONSISTENT_SYNC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ITA_INEFFICIENT_TO_ARRAY",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "ITC_INHERITANCE_TYPE_CHECKING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "ITU_INAPPROPRIATE_TOSTRING_USE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "IT_NO_SUCH_ELEMENT",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "JACKSON_UNSAFE_DESERIALIZATION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "JAXRS_ENDPOINT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "JAXWS_ENDPOINT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "JLM_JSR166_LOCK_MONITORENTER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JLM_JSR166_UTILCONCURRENT_MONITORENTER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JML_JSR166_CALLING_WAIT_RATHER_THAN_AWAIT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JPAI_HC_EQUALS_ON_MANAGED_ENTITY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JPAI_IGNORED_MERGE_RESULT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JPAI_INEFFICIENT_EAGER_FETCH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JPAI_NON_PROXIED_TRANSACTION_CALL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JPAI_NON_SPECIFIED_TRANSACTION_EXCEPTION_HANDLING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JPAI_TRANSACTION_ON_NON_PUBLIC_METHOD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JPAI_UNNECESSARY_TRANSACTION_EXCEPTION_HANDLING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JSP_INCLUDE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "JSP_JSTL_OUT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "JSP_SPRING_EVAL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "JSP_XSLT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "JVR_JDBC_VENDOR_RELIANCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JXI_GET_ENDPOINT_CONSUMES_CONTENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JXI_INVALID_CONTEXT_PARAMETER_TYPE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JXI_PARM_PARAM_NOT_FOUND_IN_PATH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "JXI_UNDEFINED_PARAMETER_SOURCE_IN_ENDPOINT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LDAP_ANONYMOUS",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "LDAP_ENTRY_POISONING",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "LDAP_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "LEST_LOST_EXCEPTION_STACK_TRACE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LGO_LINGERING_GRAPHICS_OBJECT",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "LG_LOST_LOGGER_DUE_TO_WEAK_REFERENCE",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LII_LIST_INDEXED_ITERATING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "LI_LAZY_INIT_INSTANCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LI_LAZY_INIT_STATIC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LI_LAZY_INIT_UPDATE_STATIC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_APPENDED_STRING_IN_FORMAT_STRING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "LO_EMBEDDED_SIMPLE_STRING_FORMAT_IN_FORMAT_STRING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_EXCEPTION_WITH_LOGGER_PARMS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_INCORRECT_NUMBER_OF_ANCHOR_PARAMETERS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_INVALID_FORMATTING_ANCHOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_INVALID_STRING_FORMAT_NOTATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_LOGGER_LOST_EXCEPTION_STACK_TRACE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_NON_PRIVATE_STATIC_LOGGER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_STUTTERED_MESSAGE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "LO_SUSPECT_LOG_CLASS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_SUSPECT_LOG_PARAMETER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LO_TOSTRING_PARAMETER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LSC_LITERAL_STRING_COMPARISON",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "LSYC_LOCAL_SYNCHRONIZED_COLLECTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LUI_USE_COLLECTION_ADD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LUI_USE_GET0",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "LUI_USE_SINGLETON_LIST",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MAC_MANUAL_ARRAY_COPY",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "MALICIOUS_XSLT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MDM_BIGDECIMAL_EQUALS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_INETADDRESS_GETLOCALHOST",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_LOCK_ISLOCKED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_PROMISCUOUS_SERVERSOCKET",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_RANDOM_SEED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_RUNFINALIZATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_RUNTIME_EXIT_OR_HALT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_SECURERANDOM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_SETDEFAULTLOCALE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_SIGNAL_NOT_SIGNALALL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_STRING_BYTES_ENCODING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_THREAD_FAIRNESS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_THREAD_PRIORITIES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_THREAD_YIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MDM_WAIT_WITHOUT_TIMEOUT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ME_ENUM_FIELD_SETTER",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "ME_MUTABLE_ENUM_FIELD",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "MF_CLASS_MASKS_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MF_METHOD_MASKS_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ML_SYNC_ON_UPDATED_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MOM_MISLEADING_OVERLOAD_MODEL",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "MRC_METHOD_RETURNS_CONSTANT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "MSF_MUTABLE_SERVLET_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MS_CANNOT_BE_FINAL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_EXPOSE_REP",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_FINAL_PKGPROTECT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_MUTABLE_ARRAY",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_MUTABLE_COLLECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_MUTABLE_COLLECTION_PKGPROTECT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_MUTABLE_HASHTABLE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_OOI_PKGPROTECT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_PKGPROTECT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_SHOULD_BE_FINAL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MS_SHOULD_BE_REFACTORED_TO_BE_FINAL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "MTIA_SUSPECT_SERVLET_INSTANCE_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "MTIA_SUSPECT_STRUTS_INSTANCE_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "MUC_MODIFYING_UNMODIFIABLE_COLLECTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MUI_CALLING_SIZE_ON_SUBCONTAINER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MUI_CONTAINSKEY_BEFORE_GET",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MUI_GET_BEFORE_REMOVE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MUI_NULL_CHECK_ON_MAP_SUBSET_ACCESSOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MUI_USE_CONTAINSKEY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MWN_MISMATCHED_NOTIFY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "MWN_MISMATCHED_WAIT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NAB_NEEDLESS_AUTOBOXING_CTOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NAB_NEEDLESS_AUTOBOXING_VALUEOF",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NAB_NEEDLESS_BOOLEAN_CONSTANT_CONVERSION",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NAB_NEEDLESS_BOXING_PARSE",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NAB_NEEDLESS_BOXING_STRING_CTOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NAB_NEEDLESS_BOXING_VALUEOF",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NAB_NEEDLESS_BOX_TO_CAST",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NAB_NEEDLESS_BOX_TO_UNBOX",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NCMU_NON_COLLECTION_METHOD_USE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NCS_NEEDLESS_CUSTOM_SERIALIZATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NFF_NON_FUNCTIONAL_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NIR_NEEDLESS_INSTANCE_RETRIEVAL",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NMCS_NEEDLESS_MEMBER_COLLECTION_SYNCHRONIZATION",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "NM_BAD_EQUAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NM_CLASS_NAMING_CONVENTION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_CLASS_NOT_EXCEPTION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_CONFUSING",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_FIELD_NAMING_CONVENTION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_FUTURE_KEYWORD_USED_AS_MEMBER_IDENTIFIER",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_LCASE_HASHCODE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NM_LCASE_TOSTRING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NM_METHOD_CONSTRUCTOR_CONFUSION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NM_METHOD_NAMING_CONVENTION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_SAME_SIMPLE_NAME_AS_INTERFACE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_SAME_SIMPLE_NAME_AS_SUPERCLASS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_VERY_CONFUSING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NM_VERY_CONFUSING_INTENTIONAL",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NM_WRONG_PACKAGE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NM_WRONG_PACKAGE_INTENTIONAL",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NN_NAKED_NOTIFY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NOISE_FIELD_REFERENCE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NOISE_METHOD_CALL",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NOISE_NULL_DEREFERENCE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NOISE_OPERATION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NOS_NON_OWNED_SYNCHRONIZATION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NO_NOTIFY_NOT_NOTIFYALL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NPMC_NON_PRODUCTIVE_METHOD_CALL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_ALWAYS_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_ALWAYS_NULL_EXCEPTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_ARGUMENT_MIGHT_BE_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_BOOLEAN_RETURN_NULL",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NP_CLONE_COULD_RETURN_NULL",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NP_CLOSING_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_DEREFERENCE_OF_READLINE_VALUE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NP_GUARANTEED_DEREF",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_IMMEDIATE_DEREFERENCE_OF_READLINE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_LOAD_OF_KNOWN_NULL_VALUE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_METHOD_PARAMETER_RELAXING_ANNOTATION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_METHOD_PARAMETER_TIGHTENS_ANNOTATION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_METHOD_RETURN_RELAXING_ANNOTATION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_NONNULL_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_NONNULL_PARAM_VIOLATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_NONNULL_RETURN_VIOLATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_NULL_INSTANCEOF",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_NULL_ON_SOME_PATH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_NULL_ON_SOME_PATH_EXCEPTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_NULL_ON_SOME_PATH_MIGHT_BE_INFEASIBLE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_NULL_PARAM_DEREF",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_NULL_PARAM_DEREF_ALL_TARGETS_DANGEROUS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_NULL_PARAM_DEREF_NONVIRTUAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_OPTIONAL_RETURN_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NP_STORE_INTO_NONNULL_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_SYNC_AND_NULL_CHECK_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_TOSTRING_COULD_RETURN_NULL",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "NP_UNWRITTEN_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NRTL_NON_RECYCLEABLE_TAG_LIB",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NSE_NON_SYMMETRIC_EQUALS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "NS_DANGEROUS_NON_SHORT_CIRCUIT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NS_NON_SHORT_CIRCUIT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "NULL_CIPHER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "OBJECT_DESERIALIZATION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "OBL_UNSATISFIED_OBLIGATION",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "OCP_OVERLY_CONCRETE_PARAMETER",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "OC_OVERZEALOUS_CASTING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ODN_ORPHANED_DOM_NODE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "ODR_OPEN_DATABASE_RESOURCE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "OGNL_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "OI_OPTIONAL_ISSUES_CHECKING_REFERENCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "OI_OPTIONAL_ISSUES_PRIMITIVE_VARIANT_PREFERRED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "OI_OPTIONAL_ISSUES_USES_DELAYED_EXECUTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "OI_OPTIONAL_ISSUES_USES_IMMEDIATE_EXECUTION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "OI_OPTIONAL_ISSUES_USES_ORELSEGET_WITH_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "OPM_OVERLY_PERMISSIVE_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "OS_OPEN_STREAM",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "OS_OPEN_STREAM_EXCEPTION_PATH",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "PADDING_ORACLE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PATH_TRAVERSAL_IN",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PATH_TRAVERSAL_OUT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PCAIL_POSSIBLE_CONSTANT_ALLOCATION_IN_LOOP",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "PCOA_PARTIALLY_CONSTRUCTED_OBJECT_ACCESS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "PDP_POORLY_DEFINED_PARAMETER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "PERMISSIVE_CORS",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PIS_POSSIBLE_INCOMPLETE_SERIALIZATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "PLAY_UNVALIDATED_REDIRECT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PL_PARALLEL_LISTS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "PMB_INSTANCE_BASED_THREAD_LOCAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "PMB_LOCAL_BASED_JAXB_CONTEXT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "PMB_POSSIBLE_MEMORY_BLOAT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "PME_POOR_MANS_ENUM",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "PREDICTABLE_RANDOM",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PREDICTABLE_RANDOM_SCALA",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PRMC_POSSIBLY_REDUNDANT_METHOD_CALLS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "PSC_PRESIZE_COLLECTIONS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "PSC_SUBOPTIMAL_COLLECTION_SIZING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "PS_PUBLIC_SEMAPHORES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "PT_ABSOLUTE_PATH_TRAVERSAL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PT_RELATIVE_PATH_TRAVERSAL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "PUS_POSSIBLE_UNSUSPECTED_SERIALIZATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "PZLA_PREFER_ZERO_LENGTH_ARRAYS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "PZ_DONT_REUSE_ENTRY_OBJECTS_IN_ITERATORS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "QF_QUESTIONABLE_FOR_LOOP",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RANGE_ARRAY_INDEX",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RANGE_ARRAY_LENGTH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RANGE_ARRAY_OFFSET",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RANGE_STRING_INDEX",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RCN_REDUNDANT_COMPARISON_OF_NULL_AND_NONNULL_VALUE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RCN_REDUNDANT_COMPARISON_TWO_NULL_VALUES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RC_REF_COMPARISON",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RC_REF_COMPARISON_BAD_PRACTICE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "REC_CATCH_EXCEPTION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "REDOS",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "REQUESTDISPATCHER_FILE_DISCLOSURE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "RE_BAD_SYNTAX_FOR_REGULAR_EXPRESSION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RE_CANT_USE_FILE_SEPARATOR_AS_REGULAR_EXPRESSION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RE_POSSIBLE_UNINTENDED_PATTERN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RFI_SET_ACCESSIBLE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RI_REDUNDANT_INTERFACES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "ROOM_REFLECTION_ON_OBJECT_METHODS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RPC_ENABLED_EXTENSIONS",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "RR_NOT_CHECKED",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "RSA_KEY_SIZE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "RSA_NO_PADDING",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "RS_READOBJECT_SYNC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RU_INVOKE_RUN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RV_01_TO_INT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RV_ABSOLUTE_VALUE_OF_HASHCODE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RV_ABSOLUTE_VALUE_OF_RANDOM_INT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RV_CHECK_COMPARETO_FOR_SPECIFIC_RETURN_VALUE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RV_CHECK_FOR_POSITIVE_INDEXOF",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RV_DONT_JUST_NULL_CHECK_READLINE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RV_EXCEPTION_NOT_THROWN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RV_NEGATING_RESULT_OF_COMPARETO",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "RV_REM_OF_HASHCODE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RV_REM_OF_RANDOM_INT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RV_RETURN_VALUE_IGNORED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RV_RETURN_VALUE_IGNORED_BAD_PRACTICE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "RV_RETURN_VALUE_IGNORED_INFERRED",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "RpC_REPEATED_CONDITIONAL_TEST",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "S508C_APPENDED_STRING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "S508C_NON_ACCESSIBLE_JCOMPONENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "S508C_NON_TRANSLATABLE_STRING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "S508C_NO_SETLABELFOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "S508C_NO_SETSIZE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "S508C_NULL_LAYOUT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "S508C_SET_COMP_COLOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SACM_STATIC_ARRAY_CREATED_IN_METHOD",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SAT_SUSPICIOUS_ARGUMENT_TYPES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SA_FIELD_DOUBLE_ASSIGNMENT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SA_FIELD_SELF_ASSIGNMENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SA_FIELD_SELF_COMPARISON",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SA_FIELD_SELF_COMPUTATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SA_LOCAL_DOUBLE_ASSIGNMENT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SA_LOCAL_SELF_ASSIGNMENT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SA_LOCAL_SELF_COMPARISON",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SA_LOCAL_SELF_COMPUTATION",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SBSC_USE_STRINGBUFFER_CONCATENATION",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SCALA_COMMAND_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCALA_PATH_TRAVERSAL_IN",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCALA_PLAY_SSRF",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCALA_SENSITIVE_DATA_EXPOSURE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCALA_SQL_INJECTION_ANORM",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCALA_SQL_INJECTION_SLICK",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCALA_XSS_MVC_API",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCALA_XSS_TWIRL",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCA_SUSPICIOUS_CLONE_ALGORITHM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SCII_SPOILED_CHILD_INTERFACE_IMPLEMENTOR",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SCI_SYNCHRONIZED_COLLECTION_ITERATORS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SCRIPT_ENGINE_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SCRV_SUSPICIOUS_COMPARATOR_RETURN_VALUES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SCR_SLOPPY_CLASS_REFLECTION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SCSS_SUSPICIOUS_CLUSTERED_SESSION_SUPPORT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SC_START_IN_CTOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SEAM_LOG_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SEC_SIDE_EFFECT_CONSTRUCTOR",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SEO_SUBOPTIMAL_EXPRESSION_ORDER",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SERVLET_CONTENT_TYPE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SERVLET_HEADER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SERVLET_HEADER_REFERER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SERVLET_HEADER_USER_AGENT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SERVLET_PARAMETER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SERVLET_QUERY_STRING",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SERVLET_SERVER_NAME",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SERVLET_SESSION_ID",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SE_BAD_FIELD",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_BAD_FIELD_INNER_CLASS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_BAD_FIELD_STORE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_COMPARATOR_SHOULD_BE_SERIALIZABLE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_INNER_CLASS",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_METHOD_MUST_BE_PRIVATE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SE_NONFINAL_SERIALVERSIONID",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_NONLONG_SERIALVERSIONID",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_NONSTATIC_SERIALVERSIONID",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_NO_SERIALVERSIONID",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_NO_SUITABLE_CONSTRUCTOR",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_NO_SUITABLE_CONSTRUCTOR_FOR_EXTERNALIZATION",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_PRIVATE_READ_RESOLVE_NOT_INHERITED",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SE_READ_RESOLVE_IS_STATIC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SE_READ_RESOLVE_MUST_RETURN_OBJECT",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_TRANSIENT_FIELD_NOT_RESTORED",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SE_TRANSIENT_FIELD_OF_NONSERIALIZABLE_CLASS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH_TO_THROW",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SF_SWITCH_FALLTHROUGH",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SF_SWITCH_NO_DEFAULT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SGSU_SUSPICIOUS_GETTER_SETTER_USE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SG_SLUGGISH_GUI",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SIC_INNER_SHOULD_BE_STATIC",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SIC_INNER_SHOULD_BE_STATIC_ANON",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SIC_INNER_SHOULD_BE_STATIC_NEEDS_THIS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SIC_THREADLOCAL_DEADLY_EMBRACE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SIL_SQL_IN_LOOP",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SIO_SUPERFLUOUS_INSTANCEOF",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SI_INSTANCE_BEFORE_FINALS_ASSIGNED",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SJVU_SUSPICIOUS_JDK_VERSION_USE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SKIPPED_CLASS_TOO_BIG",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SLS_SUSPICIOUS_LOOP_SEARCH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SMII_STATIC_METHOD_INSTANCE_INVOCATION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SMTP_HEADER_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SNG_SUSPICIOUS_NULL_FIELD_GUARD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SNG_SUSPICIOUS_NULL_LOCAL_GUARD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPEL_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SPP_CONVERSION_OF_STRING_LITERAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_DOUBLE_APPENDED_LITERALS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SPP_EMPTY_CASING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SPP_EQUALS_ON_ENUM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_EQUALS_ON_STRING_BUILDER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_INTERN_ON_CONSTANT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_INVALID_BOOLEAN_NULL_CHECK",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_INVALID_CALENDAR_COMPARE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_NEGATIVE_BITSET_ITEM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_NON_ARRAY_PARM",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_NON_USEFUL_TOSTRING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SPP_NO_CHAR_SB_CTOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_NULL_BEFORE_INSTANCEOF",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_SERIALVER_SHOULD_BE_PRIVATE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SPP_STATIC_FORMAT_STRING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_STRINGBUFFER_WITH_EMPTY_STRING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SPP_STRINGBUILDER_IS_MUTABLE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_STUTTERED_ASSIGNMENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_SUSPECT_STRING_TEST",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_TEMPORARY_TRIM",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SPP_TOSTRING_ON_STRING",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_USELESS_CASING",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SPP_USELESS_TERNARY",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SPP_USE_BIGDECIMAL_STRING_CTOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_USE_CHARAT",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SPP_USE_GET0",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SPP_USE_GETPROPERTY",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SPP_USE_ISEMPTY",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SPP_USE_ISNAN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_USE_MATH_CONSTANT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_USE_STRINGBUILDER_LENGTH",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "SPP_USE_ZERO_WITH_COMPARATOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPP_WRONG_COMMONS_TO_STRING_OBJECT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SPRING_CSRF_PROTECTION_DISABLED",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SPRING_CSRF_UNRESTRICTED_REQUEST_MAPPING",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SPRING_ENDPOINT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SPRING_ENTITY_LEAK",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SPRING_FILE_DISCLOSURE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SPRING_UNVALIDATED_REDIRECT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SP_SPIN_ON_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SQL_BAD_PREPARED_STATEMENT_ACCESS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SQL_BAD_RESULTSET_ACCESS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SQL_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_INJECTION_ANDROID",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_INJECTION_HIBERNATE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_INJECTION_JDBC",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_INJECTION_JDO",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_INJECTION_JPA",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_INJECTION_SPRING_JDBC",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_INJECTION_TURBINE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SR_NOT_CHECKED",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "SSCU_SUSPICIOUS_SHADED_CLASS_USE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SSL_CONTEXT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "SS_SHOULD_BE_STATIC",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "STATIC_IV",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "STB_STACKED_TRY_BLOCKS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "STCAL_STATIC_CALENDAR_INSTANCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "STI_INTERRUPTED_ON_CURRENTTHREAD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "STI_INTERRUPTED_ON_UNKNOWNTHREAD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "STRUTS1_ENDPOINT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "STRUTS2_ENDPOINT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "STRUTS_FILE_DISCLOSURE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "STRUTS_FORM_VALIDATION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "STS_SPURIOUS_THREAD_STATES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "STT_STRING_PARSING_A_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "STT_TOSTRING_MAP_KEYING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "STT_TOSTRING_STORED_IN_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "SUA_SUSPICIOUS_UNINITIALIZED_ARRAY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SUI_CONTAINS_BEFORE_ADD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SUI_CONTAINS_BEFORE_REMOVE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SWCO_SUSPICIOUS_WAIT_ON_CONCURRENT_OBJECT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SWL_SLEEP_WITH_LOCK_HELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "SW_SWING_METHODS_INVOKED_IN_SWING_THREAD",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "TAPESTRY_ENDPOINT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "TBP_TRISTATE_BOOLEAN_PATTERN",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "TDES_USAGE",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "TEMPLATE_INJECTION_FREEMARKER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "TEMPLATE_INJECTION_VELOCITY",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "TESTING",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TESTING1",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TESTING2",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TESTING3",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TLW_TWO_LOCK_NOTIFY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TLW_TWO_LOCK_WAIT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TQ_ALWAYS_VALUE_USED_WHERE_NEVER_REQUIRED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TQ_COMPARING_VALUES_WITH_INCOMPATIBLE_TYPE_QUALIFIERS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_ALWAYS_SINK",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_NEVER_SINK",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "TQ_MAYBE_SOURCE_VALUE_REACHES_ALWAYS_SINK",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TQ_MAYBE_SOURCE_VALUE_REACHES_NEVER_SINK",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TQ_NEVER_VALUE_USED_WHERE_ALWAYS_REQUIRED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TQ_UNKNOWN_VALUE_USED_WHERE_ALWAYS_STRICTLY_REQUIRED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "TRUST_BOUNDARY_VIOLATION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "TR_TAIL_RECURSION",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "UAA_USE_ADD_ALL",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UAC_UNNECESSARY_API_CONVERSION_DATE_TO_INSTANT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UAC_UNNECESSARY_API_CONVERSION_FILE_TO_PATH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UCC_UNRELATED_COLLECTION_CONTENTS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UCF_USELESS_CONTROL_FLOW",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UCF_USELESS_CONTROL_FLOW_NEXT_LINE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UCPM_USE_CHARACTER_PARAMETERIZED_METHOD",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "UC_USELESS_CONDITION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UC_USELESS_CONDITION_TYPE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UC_USELESS_OBJECT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UC_USELESS_OBJECT_STACK",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UC_USELESS_VOID_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UEC_USE_ENUM_COLLECTIONS",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "UG_SYNC_SET_UNSYNC_GET",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UI_INHERITANCE_UNSAFE_GETRESOURCE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "UJM_UNJITABLE_METHOD",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "UL_UNRELEASED_LOCK",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UL_UNRELEASED_LOCK_EXCEPTION_PATH",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UMTP_UNBOUND_METHOD_TEMPLATE_PARAMETER",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UM_UNNECESSARY_MATH",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "UNENCRYPTED_SERVER_SOCKET",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "UNENCRYPTED_SOCKET",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "UNKNOWN",
+    "level" : "Info",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UNNC_UNNECESSARY_NEW_NULL_CHECK",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UNSAFE_HASH_EQUALS",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "UNVALIDATED_REDIRECT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "UPM_UNCALLED_PRIVATE_METHOD",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "UP_UNUSED_PARAMETER",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "URF_UNREAD_FIELD",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "URLCONNECTION_SSRF_FD",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "URL_REWRITING",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "URV_CHANGE_RETURN_TYPE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "URV_INHERITED_METHOD_WITH_RELATED_TYPES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "URV_UNRELATED_RETURN_VALUES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UR_UNINIT_READ",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "USBR_UNNECESSARY_STORE_BEFORE_RETURN",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "USFW_UNSYNCHRONIZED_SINGLETON_FIELD_WRITES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "USM_USELESS_ABSTRACT_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "USM_USELESS_SUBCLASS_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "USS_USE_STRING_SPLIT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_ACTUAL_CONSTANT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_ASSERT_USED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_BOOLEAN_ASSERT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_IMPOSSIBLE_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_INEXACT_DOUBLE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_NO_ASSERT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_USE_ASSERT_EQUALS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_USE_ASSERT_NOT_EQUALS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_USE_ASSERT_NOT_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_USE_ASSERT_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_USING_DEPRECATED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_ACTUAL_CONSTANT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_ASSERT_USED",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_BOOLEAN_ASSERT",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_IMPOSSIBLE_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_INEXACT_DOUBLE",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_NO_ASSERT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_USE_ASSERT_EQUALS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_USE_ASSERT_NOT_EQUALS",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_USE_ASSERT_NOT_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTAO_TESTNG_ASSERTION_ODDITIES_USE_ASSERT_NULL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UTA_USE_TO_ARRAY",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UTWR_USE_TRY_WITH_RESOURCES",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UUF_UNUSED_FIELD",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UVA_USE_VAR_ARGS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UWF_NULL_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UWF_UNWRITTEN_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "UW_UNCOND_WAIT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "VA_FORMAT_STRING_USES_NEWLINE",
+    "level" : "Warning",
+    "category" : "BestPractice"
+  }, {
+    "patternId" : "VA_PRIMITIVE_ARRAY_PASSED_TO_OBJECT_VARARG",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "VO_VOLATILE_INCREMENT",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "VO_VOLATILE_REFERENCE_TO_ARRAY",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "VR_UNRESOLVABLE_REFERENCE",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "WA_AWAIT_NOT_IN_LOOP",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "WA_NOT_IN_LOOP",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "WEAK_FILENAMEUTILS",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "WEAK_HOSTNAME_VERIFIER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "WEAK_MESSAGE_DIGEST_MD5",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "WEAK_MESSAGE_DIGEST_SHA1",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "WEAK_TRUST_MANAGER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "WEM_OBSCURING_EXCEPTION",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "WEM_WEAK_EXCEPTION_MESSAGING",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "WICKET_ENDPOINT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "WICKET_XSS1",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "WI_DUPLICATE_WIRED_TYPES",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "WI_MANUALLY_ALLOCATING_AN_AUTOWIRED_BEAN",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "WL_USING_GETCLASS_RATHER_THAN_CLASS_LITERAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "WMI_WRONG_MAP_ITERATOR",
+    "level" : "Warning",
+    "category" : "Performance"
+  }, {
+    "patternId" : "WOC_WRITE_ONLY_COLLECTION_FIELD",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "WOC_WRITE_ONLY_COLLECTION_LOCAL",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "WS_WRITEOBJECT_SYNC",
+    "level" : "Warning",
+    "category" : "ErrorProne"
+  }, {
+    "patternId" : "XFB_XML_FACTORY_BYPASS",
+    "level" : "Info",
+    "category" : "CodeStyle"
+  }, {
+    "patternId" : "XML_DECODER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XPATH_INJECTION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XSS_JSP_PRINT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XSS_REQUEST_PARAMETER_TO_JSP_WRITER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XSS_REQUEST_PARAMETER_TO_SEND_ERROR",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XSS_REQUEST_PARAMETER_TO_SERVLET_WRITER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XSS_REQUEST_WRAPPER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XSS_SERVLET",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XXE_DOCUMENT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XXE_DTD_TRANSFORM_FACTORY",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XXE_SAXPARSER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XXE_XMLREADER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XXE_XMLSTREAMREADER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XXE_XPATH",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "XXE_XSLT_TRANSFORM_FACTORY",
+    "level" : "Error",
+    "category" : "Security"
+  } ]
 }

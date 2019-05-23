@@ -1,1 +1,9 @@
-This method compares a reference value to a constant using the == or != operator, where the correct way to compare instances of this type is generally with the equals() method. It is possible to create distinct instances that are equal but do not compare as == since they are different objects. Examples of classes which should generally not be compared by reference are java.lang.Integer, java.lang.Float, etc.
+# [Suspicious reference comparison to constant](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RC_REF_COMPARISON_BAD_PRACTICE)
+
+ This method compares a reference value to a constant using the == or != operator,
+where the correct way to compare instances of this type is generally
+with the equals() method.
+It is possible to create distinct instances that are equal but do not compare as == since
+they are different objects.
+Examples of classes which should generally
+not be compared by reference are java.lang.Integer, java.lang.Float, etc.

@@ -1,1 +1,8 @@
-This method compares two Boolean values using the == or != operator. Normally, there are only two Boolean values (Boolean.TRUE and Boolean.FALSE), but it is possible to create other Boolean objects using the new Boolean(b) constructor. It is best to avoid such objects, but if they do exist, then checking Boolean objects for equality using == or != will give results than are different than you would get using .equals(...)
+# [Suspicious reference comparison of Boolean values](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN)
+
+ This method compares two Boolean values using the == or != operator.
+Normally, there are only two Boolean values (Boolean.TRUE and Boolean.FALSE),
+but it is possible to create other Boolean objects using the `new Boolean(b)`
+constructor. It is best to avoid such objects, but if they do exist,
+then checking Boolean objects for equality using == or != will give results
+than are different than you would get using `.equals(...)`.

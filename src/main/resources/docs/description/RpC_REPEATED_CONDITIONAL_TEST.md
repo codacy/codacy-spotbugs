@@ -1,1 +1,5 @@
-The code contains a conditional test is performed twice, one right after the other (e.g., x == 0 || x == 0). Perhaps the second occurrence is intended to be something else (e.g., x == 0 || y == 0).
+# [Repeated conditional tests](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RpC_REPEATED_CONDITIONAL_TEST)
+
+The code contains a conditional test is performed twice, one right after the other
+(e.g., `x == 0 || x == 0`). Perhaps the second occurrence is intended to be something else
+(e.g., `x == 0 || y == 0`).

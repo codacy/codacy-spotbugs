@@ -6,29 +6,16 @@ version := "1.0.0-SNAPSHOT"
 
 scalaVersion := "2.12.8"
 
-lazy val toolVersionKey = settingKey[String]("The version of the underlying tool retrieved from patterns.json")
-
-toolVersionKey := {
-  import better.files.File
-  import play.api.libs.json.{JsString, JsValue, Json}
-
-  val jsonFile = resourceDirectory.in(Compile).value / "docs" / "patterns.json"
-  val patternsJsonValues = Json.parse(File(jsonFile.toPath).contentAsString).as[Map[String, JsValue]]
-
-  patternsJsonValues
-    .collectFirst { case ("version", JsString(ver)) => ver }
-    .getOrElse(throw new Exception("Failed to retrieve version from docs/patterns.json"))
-}
-
 resolvers += Resolver.sonatypeRepo("public")
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
   "com.codacy" %% "codacy-engine-scala-seed" % "3.0.296",
-  "com.github.spotbugs" % "spotbugs" % toolVersionKey.value,
-  "com.h3xstream.findsecbugs" % "findsecbugs-plugin" % "1.9.0",
-  "com.mebigfatguy.sb-contrib" % "sb-contrib" % "7.4.5",
-  "org.scala-lang.modules" % "scala-java8-compat_2.12" % "0.9.0"
+  "com.github.spotbugs" % "spotbugs" % better.files.File(".spotbugs-version").lines().head.trim,
+  "com.h3xstream.findsecbugs" % "findsecbugs-plugin" % better.files.File(".findsecbugs-version").lines().head.trim,
+  "com.mebigfatguy.sb-contrib" % "sb-contrib" % better.files.File(".sb-contrib-version").lines().head.trim,
+  "org.scala-lang.modules" % "scala-java8-compat_2.12" % "0.9.0",
+  "com.github.tkqubo" % "html-to-markdown" % "0.7.2"
 ).map(_.withSources())
 
 enablePlugins(JavaAppPackaging)
@@ -59,6 +46,8 @@ daemonGroup in Docker := dockerUser
 daemonGroupGid in Docker := Option(dockerUserId)
 
 dockerBaseImage := "frolvlad/alpine-java:jre8-slim"
+
+mainClass := Some("com.codacy.tool.spotbugs.Engine")
 
 // DEPRECATED: Start using the Dockerfile
 dockerCommands := dockerCommands.value.flatMap {

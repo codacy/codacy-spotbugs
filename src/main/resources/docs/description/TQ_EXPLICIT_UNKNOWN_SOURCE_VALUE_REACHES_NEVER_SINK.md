@@ -1,1 +1,5 @@
-A value is used in a way that requires it to be never be a value denoted by a type qualifier, but there is an explicit annotation stating that it is not known where the value is prohibited from having that type qualifier. Either the usage or the annotation is incorrect.
+# [Value required to not have type qualifier, but marked as unknown](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_NEVER_SINK)
+
+      A value is used in a way that requires it to be never be a value denoted by a type qualifier, but
+    there is an explicit annotation stating that it is not known where the value is prohibited from having that type qualifier.
+    Either the usage or the annotation is incorrect.

@@ -1,0 +1,3 @@
+# [Method calls Locale.setDefault()](http://fb-contrib.sourceforge.net/bugdescriptions.html#MDM_SETDEFAULTLOCALE)
+
+Do not use the `Locale.setDefault()` method to change the default locale. It changes the JVM's default locale for all threads and makes your applications unsafe to threads. It does not affect the host locale. Since changing the JVM's default locale may affect many different areas of functionality, this method should only be used if the caller is prepared to reinitialize locale-sensitive code running within the same Java Virtual Machine, such as the user interface.

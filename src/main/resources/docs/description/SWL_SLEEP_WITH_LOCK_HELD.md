@@ -1,1 +1,7 @@
-This method calls Thread.sleep() with a lock held. This may result in very poor performance and scalability, or a deadlock, since other threads may be waiting to acquire the lock. It is a much better idea to call wait() on the lock, which releases the lock and allows other threads to run.
+# [Method calls Thread.sleep() with a lock held](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#SWL_SLEEP_WITH_LOCK_HELD)
+
+      This method calls Thread.sleep() with a lock held.  This may result
+      in very poor performance and scalability, or a deadlock, since other threads may
+      be waiting to acquire the lock.  It is a much better idea to call
+      wait() on the lock, which releases the lock and allows other threads
+      to run.

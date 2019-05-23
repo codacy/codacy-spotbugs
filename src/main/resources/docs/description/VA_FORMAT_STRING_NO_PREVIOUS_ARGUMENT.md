@@ -1,1 +1,0 @@
-The format string specifies a relative index to request that the argument for the previous format specifier be reused. However, there is no previous argument. For example, formatter.format("%<s %s", "a", "b") would throw a MissingFormatArgumentException when executed.

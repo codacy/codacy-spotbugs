@@ -25,5 +25,5 @@ COPY --chown=docker:docker ./src/main/resources/docs /docs
 
 USER docker
 
-ENTRYPOINT ["/opt/docker/bin/codacy-spotbugs"]
+ENTRYPOINT ["/opt/docker/bin/engine"]
 CMD []
