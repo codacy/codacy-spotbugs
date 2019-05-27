@@ -1,7 +1,7 @@
 package com.codacy.tool.spotbugs
 
-import better.files.File
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
+import com.codacy.tool.spotbugs.helper.SpotBugsHelper
 import com.github.tkqubo.html2md.Html2Markdown
 import edu.umd.cs.findbugs._
 import play.api.libs.json.Json
@@ -11,46 +11,14 @@ import scala.collection.immutable.ListSet
 
 object DocumentationGenerator {
 
-  val toolName: String = "spotbugs"
-
   def main(args: Array[String]): Unit = {
-    val spotBugsVersion: String = File(".spotbugs-version").lines().headOption.map(_.trim).getOrElse {
-      throw new Exception("Failed to retrieve version .spotbugs-version")
-    }
-    val findsecbugsVersion: String = getVersion("findsecbugs")
-    val sbContribVersion: String = getVersion("sb-contrib")
-
-    Plugin.loadCustomPlugin(
-      File.home
-        ./(s".ivy2/cache/com.h3xstream.findsecbugs/findsecbugs-plugin/jars/findsecbugs-plugin-$findsecbugsVersion.jar")
-        .toJava,
-      null
-    )
-    Plugin
-      .loadCustomPlugin(
-        File.home./(s".ivy2/cache/com.mebigfatguy.sb-contrib/sb-contrib/jars/sb-contrib-$sbContribVersion.jar").toJava,
-        null
-      )
-
-    val spotbugsPlugin = DetectorFactoryCollection.instance.getCorePlugin
-    val findsecbugsPlugin = DetectorFactoryCollection.instance.getPluginById("com.h3xstream.findsecbugs")
-    val fbContribPlugin = DetectorFactoryCollection.instance.getPluginById("com.mebigfatguy.fbcontrib")
-
     val allPatterns: List[BugPattern] =
-      (spotbugsPlugin.getBugPatterns.asScala ++ findsecbugsPlugin.getBugPatterns.asScala ++ fbContribPlugin.getBugPatterns.asScala)
-        .to[List]
-
-    writePatterns(spotBugsVersion, allPatterns)
+      SpotBugsHelper.loadPlugins(SpotBugsHelper.defaultPlugins).flatMap(_.getBugPatterns.asScala)(collection.breakOut)
+    writePatterns(allPatterns)
 
   }
 
-  private def getVersion(name: String): String = {
-    File(s".$name-version").lines().headOption.map(_.trim).getOrElse {
-      throw new Exception(s"Failed to retrieve version .$name-version")
-    }
-  }
-
-  private def writePatterns(version: String, allPatterns: List[BugPattern]): Unit = {
+  private def writePatterns(allPatterns: List[BugPattern]): Unit = {
     val specifications = ListSet(
       allPatterns
         .map { pattern =>
@@ -77,7 +45,7 @@ object DocumentationGenerator {
       }
       .sortBy(_.patternId.value)
 
-    val spec = Tool.Specification(Tool.Name(toolName), Some(Tool.Version(version)), specifications)
+    val spec = Tool.Specification(Tool.Name(Keys.toolName), Some(Tool.Version(Keys.spotBugsVersion)), specifications)
 
     val jsonSpecifications = Json.prettyPrint(Json.toJson(spec))
     val jsonDescriptions = Json.prettyPrint(Json.toJson(descriptions))
