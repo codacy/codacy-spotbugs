@@ -1,5 +1,3 @@
-import com.typesafe.sbt.packager.docker.Cmd
-
 name := "codacy-spotbugs"
 
 version := "1.0.0-SNAPSHOT"
@@ -23,8 +21,6 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.7" % "test"
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
 enablePlugins(AshScriptPlugin)
-
-version in Docker := "1.0.0-SNAPSHOT"
 
 sourceGenerators.in(Compile) += Def.task {
 
@@ -59,36 +55,4 @@ sourceGenerators.in(Compile) += Def.task {
   Seq(file)
 }.taskValue
 
-mappings.in(Universal) ++= resourceDirectory
-  .in(Compile)
-  .map { resourceDir: File =>
-    val src = resourceDir / "docs"
-    val dest = "/docs"
-
-    (for {
-      path <- better.files.File(src.toPath).listRecursively()
-      if !path.isDirectory
-    } yield path.toJava -> path.toString.replaceFirst(src.toString, dest)).toSeq
-  }
-  .value
-
-val dockerUser = "docker"
-val dockerUserId = "2004"
-
-daemonUser in Docker := dockerUser
-daemonUserUid in Docker := Option(dockerUserId)
-daemonGroup in Docker := dockerUser
-daemonGroupGid in Docker := Option(dockerUserId)
-
-dockerBaseImage := "frolvlad/alpine-java:jre8-slim"
-
 mainClass := Some("com.codacy.tool.spotbugs.Engine")
-
-// DEPRECATED: Start using the Dockerfile
-dockerCommands := dockerCommands.value.flatMap {
-  case cmd @ Cmd("WORKDIR", "/opt/docker") =>
-    List(cmd, Cmd("RUN", s"adduser", "-u", dockerUserId, "-D", dockerUser))
-  case cmd @ Cmd("USER", "docker") =>
-    List(Cmd("RUN", s"mv", "/opt/docker/docs", "/docs"), cmd)
-  case other => List(other)
-}
