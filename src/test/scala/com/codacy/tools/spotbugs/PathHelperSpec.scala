@@ -85,6 +85,23 @@ class PathHelperSpec extends Matchers with WordSpecLike {
           )
         )
       }
+
+      "identify root with sources, tests and classes" in {
+        val tmp = File.newTemporaryDirectory()
+        val classesDir = (tmp / "target" / "classes").createDirectories()
+        val testClassesDir = (tmp / "target" / "test-classes").createDirectories()
+        val sourcesDir = (tmp / "src" / "main").createDirectories()
+        val testSourcesDir = (tmp / "src" / "test").createDirectories()
+
+        PathHelper.discoverProjectModules(tmp.path) should equal(
+          Set(
+            ModuleConfiguration(
+              Set(classesDir.pathAsString, testClassesDir.pathAsString),
+              Set(sourcesDir.pathAsString, testSourcesDir.pathAsString)
+            )
+          )
+        )
+      }
     }
 
     "findModuleRootFromClasses" should {

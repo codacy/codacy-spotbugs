@@ -22,8 +22,10 @@ object PathHelper {
    * ## Sources
    *
    *  - src/main (Maven)
+   *  - src/test (Maven)
    *  - src/main/scala (SBT, Gradle)
    *  - src/main/java (SBT, Gradle)
+   *  - src/test/java (SBT, Gradle)
    *  - js/src/main/scala (SBT) [not relevant since it is treated as a module of its own called js]
    *  - jvm/src/main/scala (SBT) [not relevant since it is treated as a module of its own called jvm]
    *  - shared/src/main/scala (SBT) [not relevant since it is treated as a module of its own called shared]
@@ -31,11 +33,14 @@ object PathHelper {
    *  ## Compiled Classes
    *
    *  - target/classes (Maven)
+   *  - target/test-classes (Maven)
    *  - target/scala-2.10/classes (SBT)
    *  - target/scala-2.11/classes (SBT)
    *  - target/scala-2.12/classes (SBT)
    *  - target/scala-2.13/classes (SBT)
+   *  - target/scala-2.11/test-classes (SBT)
    *  - build/classes/java/main (Gradle)
+   *  - build/classes/java/test (Gradle)
    *
    *
    *  ## Caveats
@@ -47,12 +52,9 @@ object PathHelper {
    *    - `src/main/scala` is also detected as `src/main`
    */
   def discoverProjectModules(root: Path): Set[ModuleConfiguration] = {
-    // val gradleClassesMatcher = FileSystems.getDefault.getPathMatcher("glob:**build/classes/*/main")
-    // val sbtClassesMatcher = FileSystems.getDefault.getPathMatcher("glob:**target/*/classes")
-    // val mavenClassesMatcher = FileSystems.getDefault.getPathMatcher("glob:**target/classes")
     val classesMatcher =
-      FileSystems.getDefault.getPathMatcher("glob:**{target,build}/{classes,*/classes,classes/*/main}")
-    val sourcesMatcher = FileSystems.getDefault.getPathMatcher("glob:**src/{main,main/*}")
+      FileSystems.getDefault.getPathMatcher("glob:**{target,build}/{*classes,*/*classes,classes/*/main,classes/*/test}")
+    val sourcesMatcher = FileSystems.getDefault.getPathMatcher("glob:**src/{main,main/*,test,test/*}")
 
     val modules = Files
       .find(
