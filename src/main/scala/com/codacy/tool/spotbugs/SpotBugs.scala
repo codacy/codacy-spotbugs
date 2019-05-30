@@ -1,6 +1,6 @@
 package com.codacy.tool.spotbugs
 
-import java.io._
+import java.io.IOException
 import java.nio.file._
 
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
@@ -24,7 +24,7 @@ object SpotBugs extends Tool {
       configuration: Option[List[Pattern.Definition]],
       files: Option[Set[Source.File]],
       options: Map[Options.Key, Options.Value]
-  )(implicit specification: Tool.Specification): Try[List[Result]] = Try {
+  )(implicit specification: Tool.Specification): Try[List[Result]] = {
     val sourcePath = Paths.get(source.path)
     val filesPath = files.map(_.map(s => Paths.get(s.path)))
 
@@ -48,18 +48,27 @@ object SpotBugs extends Tool {
 
     SpotBugsHelper.loadPlugins(SpotBugsHelper.defaultPlugins)
 
-    val results: List[Try[List[Result]]] = modulesConfiguration.map { moduleConfiguration =>
+    val modulesResults: List[Option[List[Result]]] = modulesConfiguration.map { moduleConfiguration =>
       runTool(sourcePath, filesPath, moduleConfiguration, includesFile, excludesFile)
     }(collection.breakOut)
 
-    /* Skip modules if classes where not found but fail if other error occurs
-     * e.g.: Some modules can contain only resources and not have any actual compiled code to analyse
-     */
-    results.flatMap {
-      case Success(res) => res
-      case Failure(e: IOException) if e.getMessage == "No files to analyze could be opened" => List.empty[Result]
-      case Failure(e) =>
-        throw e
+    if (modulesResults.exists(_.isDefined)) {
+      val flatResults: List[Result] = modulesResults.flatMap {
+        case Some(res) => res
+        case _ => List.empty[Result]
+      }(collection.breakOut)
+      Success(flatResults)
+    } else {
+      val prettyPrintModules =
+        modulesConfiguration
+          .map(mc => s"""|- classesDirectories: ${mc.classesDirectories.mkString(", ")}
+                         |  sourceDirectories: ${mc.sourceDirectories.mkString(", ")}""".stripMargin)
+          .mkString("\n\n")
+
+      Failure(new Exception(s"""|Could not find compiled code inside modules:
+                                |
+                                |$prettyPrintModules
+                                |""".stripMargin))
     }
   }
 
@@ -69,48 +78,60 @@ object SpotBugs extends Tool {
       moduleConfiguration: ModuleConfiguration,
       includesFile: Option[Path],
       excludesFile: Option[Path]
-  ): Try[List[Result]] = Try {
-    val detector = DetectorFactoryCollection.instance()
-    val projectStats = new ProjectStatsWithoutCustomProfiler()
-    val project = new Project()
-    val userPreferences = project.getConfiguration
+  ): Option[List[Result]] = {
+    Try {
+      val detector = DetectorFactoryCollection.instance()
+      val projectStats = new ProjectStatsWithoutCustomProfiler()
+      val project = new Project()
+      val userPreferences = project.getConfiguration
 
-    project.addWorkingDir(root.toString)
-    moduleConfiguration.classesDirectories
-      .flatMap(
-        dir =>
-          PathHelper
-            .resolve(root, Paths.get(dir))
-      )
-      .foreach(cd => project.addFile(cd.toString))
+      project.addWorkingDir(root.toString)
+      moduleConfiguration.classesDirectories
+        .flatMap(
+          dir =>
+            PathHelper
+              .resolve(root, Paths.get(dir))
+        )
+        .foreach(cd => project.addFile(cd.toString))
 
-    // TODO: check if we can we get the jars to pass here
-    // project.addAuxClasspathEntry(???)
+      // TODO: check if we can we get the jars to pass here
+      // project.addAuxClasspathEntry(???)
 
-    includesFile.map(path => project.getConfiguration.getIncludeFilterFiles.put(path.toString, true))
-    excludesFile.map(path => project.getConfiguration.getExcludeFilterFiles.put(path.toString, true))
+      includesFile.map(path => project.getConfiguration.getIncludeFilterFiles.put(path.toString, true))
+      excludesFile.map(path => project.getConfiguration.getExcludeFilterFiles.put(path.toString, true))
 
-    val bugReporter = {
-      // TODO: check this workaround for Scala code
-      // val inMemoryBugReporter = new InMemoryBugReporter(project, projectStats)
-      // new CategoryFilteringBugReporter(inMemoryBugReporter, Set("SECURITY").asJava)
-      new InMemoryBugReporter(project, projectStats)
+      val bugReporter = {
+        // TODO: check this workaround for Scala code
+        // val inMemoryBugReporter = new InMemoryBugReporter(project, projectStats)
+        // new CategoryFilteringBugReporter(inMemoryBugReporter, Set("SECURITY").asJava)
+        new InMemoryBugReporter(project, projectStats)
+      }
+      bugReporter.setPriorityThreshold(Priorities.NORMAL_PRIORITY)
+
+      val findBugs = new FindBugs2()
+      findBugs.setProject(project)
+      findBugs.setBugReporter(bugReporter)
+      findBugs.setDetectorFactoryCollection(detector)
+      findBugs.setUserPreferences(userPreferences)
+
+      SpotBugsHelper.defaultPlugins.foreach(plugin => project.setPluginStatusTrinary(plugin.pluginId, true))
+
+      findBugs.execute()
+      findBugs.close()
+
+      val bugReports = bugReporter.getBugCollection.getCollection.asScala.to[Set]
+      convertBugsToResults(root, bugReports, files, moduleConfiguration)
+    } match {
+      case Success(res) => Option(res)
+
+      /* Skip modules if classes where not found but fail if other error occurs
+       * e.g.: Some modules can contain only resources and not have any actual compiled code to analyse
+       */
+      case Failure(ex: IOException) if ex.getMessage == "No files to analyze could be opened" =>
+        Option.empty[List[Result]]
+
+      case Failure(ex: Exception) => throw ex
     }
-    bugReporter.setPriorityThreshold(Priorities.NORMAL_PRIORITY)
-
-    val findBugs = new FindBugs2()
-    findBugs.setProject(project)
-    findBugs.setBugReporter(bugReporter)
-    findBugs.setDetectorFactoryCollection(detector)
-    findBugs.setUserPreferences(userPreferences)
-
-    SpotBugsHelper.defaultPlugins.foreach(plugin => project.setPluginStatusTrinary(plugin.pluginId, true))
-
-    findBugs.execute()
-    findBugs.close()
-
-    val bugReports = bugReporter.getBugCollection.getCollection.asScala.to[Set]
-    convertBugsToResults(root, bugReports, files, moduleConfiguration)
   }
 
   private def isFileEnabled(path: String, filesOpt: Option[Set[Path]]): Boolean = {
