@@ -8,7 +8,7 @@ resolvers += Resolver.sonatypeRepo("public")
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
-  "com.codacy" %% "codacy-engine-scala-seed" % "3.0.296",
+  "com.codacy" %% "codacy-engine-scala-seed" % "3.1.0",
   "com.github.spotbugs" % "spotbugs" % better.files.File(".spotbugs-version").lines().head.trim,
   "com.h3xstream.findsecbugs" % "findsecbugs-plugin" % better.files.File(".findsecbugs-version").lines().head.trim,
   "com.mebigfatguy.sb-contrib" % "sb-contrib" % better.files.File(".sb-contrib-version").lines().head.trim,
