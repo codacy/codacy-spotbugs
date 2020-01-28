@@ -1,9 +1,9 @@
-package com.codacy.tool.spotbugs.helper
+package com.codacy.tools.spotbugs.helper
 
 import java.nio.file.attribute.BasicFileAttributes
 import java.nio.file.{Files, _}
 
-import com.codacy.tool.spotbugs.ModuleConfiguration
+import com.codacy.tools.spotbugs.ModuleConfiguration
 
 import scala.annotation.tailrec
 import scala.collection.JavaConverters._

@@ -1,4 +1,4 @@
-package com.codacy.tool.spotbugs
+package com.codacy.tools.spotbugs
 
 import edu.umd.cs.findbugs.ProjectStats
 import edu.umd.cs.findbugs.log.Profiler

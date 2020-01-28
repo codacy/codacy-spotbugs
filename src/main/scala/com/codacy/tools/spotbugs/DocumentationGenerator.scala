@@ -1,7 +1,7 @@
-package com.codacy.tool.spotbugs
+package com.codacy.tools.spotbugs
 
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
-import com.codacy.tool.spotbugs.helper.SpotBugsHelper
+import com.codacy.tools.spotbugs.helper.SpotBugsHelper
 import com.github.tkqubo.html2md.Html2Markdown
 import edu.umd.cs.findbugs._
 import play.api.libs.json.Json

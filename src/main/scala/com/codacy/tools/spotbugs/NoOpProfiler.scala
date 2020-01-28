@@ -1,4 +1,4 @@
-package com.codacy.tool.spotbugs
+package com.codacy.tools.spotbugs
 
 import java.io.PrintStream
 import java.util.Comparator

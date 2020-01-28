@@ -1,10 +1,9 @@
-package com.codacy.tools.spotbugs
+package com.codacy.tools.spotbugs.helper
 
 import java.nio.file.{Path, Paths}
 
 import better.files.File
-import com.codacy.tool.spotbugs.ModuleConfiguration
-import com.codacy.tool.spotbugs.helper.PathHelper
+import com.codacy.tools.spotbugs.ModuleConfiguration
 import org.scalatest.{Matchers, WordSpecLike}
 
 class PathHelperSpec extends Matchers with WordSpecLike {

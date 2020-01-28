@@ -1,4 +1,4 @@
-package com.codacy.tool.spotbugs
+package com.codacy.tools.spotbugs
 
 import com.codacy.tools.scala.seed.DockerEngine
 

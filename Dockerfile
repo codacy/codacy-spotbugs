@@ -9,7 +9,7 @@ RUN \
     sbt docker:stage
 
 # Run image
-FROM java:8-jre-alpine
+FROM openjdk:8-jre-alpine
 
 LABEL maintainer="rodrigo@codacy.com"
 
@@ -24,6 +24,8 @@ COPY --from=builder --chown=docker:docker /workdir/target/docker/stage/opt/docke
 COPY --chown=docker:docker ./src/main/resources/docs /docs
 
 USER docker
+
+ENV JAVA_OPTS="-XX:MinRAMPercentage=50.0 -XX:MaxRAMPercentage=95.0"
 
 ENTRYPOINT ["/opt/docker/bin/engine"]
 CMD []

@@ -1,8 +1,10 @@
-package com.codacy.tool.spotbugs.helper
+package com.codacy.tools.spotbugs.helper
 
 import better.files.File
-import com.codacy.tool.spotbugs.Keys
-import edu.umd.cs.findbugs.{DetectorFactoryCollection, Plugin}
+import com.codacy.tools.spotbugs.{InMemoryBugReporter, Keys, ProjectStatsWithoutCustomProfiler}
+import edu.umd.cs.findbugs.{CategoryFilteringBugReporter, DetectorFactoryCollection, Plugin, Priorities, Project}
+
+import scala.collection.JavaConverters._
 
 case class PluginDefinition(pluginId: String, pluginOrg: String, pluginName: String, pluginVersion: String) {
 
@@ -38,6 +40,21 @@ object SpotBugsHelper {
           pluginInstance
         }
     } + DetectorFactoryCollection.instance.getCorePlugin
+  }
+
+  def createBugReporter(project: Project, projectStats: ProjectStatsWithoutCustomProfiler, isScala: Boolean) = {
+
+    // If the language is Scala, we only want to use patterns from FindSecBugs since SpotBugs and other plugins
+    // do not support the language. The best way to perform this since we cannot disable the main SpotBugs plugin
+    // is to filter security patterns to avoid false positives
+    val bugReporter = if (isScala) {
+      val inMemoryBugReporter = new InMemoryBugReporter(project, projectStats)
+      new CategoryFilteringBugReporter(inMemoryBugReporter, Set("SECURITY").asJava)
+    } else {
+      new InMemoryBugReporter(project, projectStats)
+    }
+    bugReporter.setPriorityThreshold(Priorities.NORMAL_PRIORITY)
+    bugReporter
   }
 
 }

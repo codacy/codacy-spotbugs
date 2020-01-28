@@ -30,10 +30,10 @@ sourceGenerators.in(Compile) += Def.task {
     }
   }
 
-  val file = sourceManaged.in(Compile).value / "com" / "codacy" / "tool" / "spotbugs" / "Keys.scala"
+  val file = sourceManaged.in(Compile).value / "com" / "codacy" / "tools" / "spotbugs" / "Keys.scala"
   IO.write(
     file,
-    s"""|package com.codacy.tool.spotbugs
+    s"""|package com.codacy.tools.spotbugs
        |
        |object Keys {
        |

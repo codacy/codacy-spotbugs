@@ -1,4 +1,4 @@
-package com.codacy.tool.spotbugs
+package com.codacy.tools.spotbugs
 
 import play.api.libs.json.{Format, Json}
 

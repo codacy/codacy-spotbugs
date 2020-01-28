@@ -1,11 +1,11 @@
-package com.codacy.tool.spotbugs
+package com.codacy.tools.spotbugs
 
 import java.io.IOException
 import java.nio.file._
 
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.plugins.api.{Options, Source, _}
-import com.codacy.tool.spotbugs.helper.{PathHelper, SpotBugsHelper}
+import com.codacy.tools.spotbugs.helper.{PathHelper, SpotBugsHelper}
 import com.codacy.tools.scala.seed.utils.FileHelper
 import com.codacy.tools.scala.seed.utils.ToolHelper._
 import edu.umd.cs.findbugs
@@ -100,13 +100,7 @@ object SpotBugs extends Tool {
       includesFile.map(path => project.getConfiguration.getIncludeFilterFiles.put(path.toString, true))
       excludesFile.map(path => project.getConfiguration.getExcludeFilterFiles.put(path.toString, true))
 
-      val bugReporter = {
-        // TODO: check this workaround for Scala code
-        // val inMemoryBugReporter = new InMemoryBugReporter(project, projectStats)
-        // new CategoryFilteringBugReporter(inMemoryBugReporter, Set("SECURITY").asJava)
-        new InMemoryBugReporter(project, projectStats)
-      }
-      bugReporter.setPriorityThreshold(Priorities.NORMAL_PRIORITY)
+      val bugReporter = SpotBugsHelper.createBugReporter(project, projectStats, isScala(files))
 
       val findBugs = new FindBugs2()
       findBugs.setProject(project)
@@ -132,6 +126,11 @@ object SpotBugs extends Tool {
 
       case Failure(ex: Exception) => throw ex
     }
+  }
+
+  private[spotbugs] def isScala(filesOpt: Option[Set[Path]]): Boolean = {
+    val scalaExtensionMatcher = FileSystems.getDefault().getPathMatcher("glob:**.scala")
+    filesOpt.map(_.forall(scalaExtensionMatcher.matches)).getOrElse(false)
   }
 
   private def isFileEnabled(path: String, filesOpt: Option[Set[Path]]): Boolean = {

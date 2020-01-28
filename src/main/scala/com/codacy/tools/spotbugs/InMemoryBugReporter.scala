@@ -1,4 +1,4 @@
-package com.codacy.tool.spotbugs
+package com.codacy.tools.spotbugs
 
 import edu.umd.cs.findbugs._
 import edu.umd.cs.findbugs.classfile.ClassDescriptor
