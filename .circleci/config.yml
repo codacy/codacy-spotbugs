@@ -10,27 +10,26 @@ workflows:
     jobs:
       - codacy/checkout_and_version
       - codacy/sbt:
-          name: check_format
+          name: check_format_and_test
           cmd: |
             sbt "set scalafmtUseIvy in ThisBuild := false;
                  scalafmt::test;
-                 test:scalafmt::test;"
+                 test:scalafmt::test;
+                 sbt:scalafmt::test;
+                 test"
           requires:
             - codacy/checkout_and_version
       - codacy/sbt:
           name: publish_docker_local
           cmd: |
-            sbt "scalafmt::test;
-                 test:scalafmt::test;
-                 sbt:scalafmt::test;
-                 test"
             docker build --no-cache -t $CIRCLE_PROJECT_REPONAME:latest .
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
           persist_to_workspace: true
           requires:
-            - check_format
+            - check_format_and_test
       - codacy_plugins_test/run:
           name: plugins_test
+          run_multiple_tests: true
           requires:
             - publish_docker_local
       - codacy/shell:
