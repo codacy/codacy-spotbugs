@@ -4,9 +4,9 @@
         <error source="PREDICTABLE_RANDOM_SCALA" line="6" message="The use of scala.util.Random.nextInt() is predictable" severity="error" />
     </file>
     <file name="PredictableRandom.scala">
-        <error source="TBP_TRISTATE_BOOLEAN_PATTERN" line="8" message="Method PredictableRandom$.generateSecretToken() returns null for Boolean type" severity="error" />
+        <error source="TBP_TRISTATE_BOOLEAN_PATTERN" line="8" message="Method PredictableRandom$.generateSecretToken() returns null for Boolean type" severity="info" />
     </file>
     <file name="PredictableRandom.scala">
-        <error source="NP_BOOLEAN_RETURN_NULL" line="8" message="PredictableRandom$.generateSecretToken() has Boolean return type and returns explicit null" severity="error" />
+        <error source="NP_BOOLEAN_RETURN_NULL" line="8" message="PredictableRandom$.generateSecretToken() has Boolean return type and returns explicit null" severity="warning" />
     </file>
 </checkstyle>
