@@ -22,7 +22,9 @@ workflows:
       - codacy/sbt:
           name: publish_docker_local
           cmd: |
-            docker build --no-cache -t $CIRCLE_PROJECT_REPONAME:latest .
+            sbt "set name := \"$CIRCLE_PROJECT_REPONAME\";
+                 set version in Docker := \"latest\";
+                 docker:publishLocal"
             docker save --output docker-image.tar $CIRCLE_PROJECT_REPONAME:latest
           persist_to_workspace: true
           requires:

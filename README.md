@@ -16,22 +16,18 @@ Check the **Docs** section for more information.
 
 ## Usage
 
-To change the versions of the tools you should change the files in the root named:
-
-- `.spotbugs-version`
-- `.findsecbugs-version`
-- `.sb-contrib-version`
+To change the versions of the tools you should change the versions in `build.sbt`
 
 ### Build docker
 
 ```sh
-docker build --no-cache -t codacy/codacy-spotbugs:latest .
+sbt "set version := \"latest\"; docker:publishLocal"
 ```
 
 ### Run tool
 
 ```sh
-docker run -it -v $PWD:/src codacy/codacy-spotbugs:latest
+docker run -it -v $PWD:/src codacy-spotbugs:latest
 ```
 
 ### Run tests
@@ -42,13 +38,14 @@ You can follow the instructions there to make sure your tool is working as expec
 #### Validate documentation
 
 ```sh
-sbt -Dcodacy.tests.ignore.descriptions=true "runMain codacy.plugins.DockerTest json codacy/codacy-spotbugs:latest"
+sbt "run json codacy-spotbugs:latest"
 ```
 
 #### Run integration tests
 
 ```sh
-sbt -Dcodacy.tests.noremove=true -Dcodacy.tests.threads=8 "runMain codacy.plugins.DockerTest pattern codacy/codacy-spotbugs:latest"
+sbt "run pattern codacy-spotbugs:latest"
+sbt "run multiple codacy-spotbugs:latest"
 ```
 
 ### Generate documentation
@@ -56,7 +53,7 @@ sbt -Dcodacy.tests.noremove=true -Dcodacy.tests.threads=8 "runMain codacy.plugin
 **NOTE:** To generate documentation you need to have this projects dependencies under your home. (e.g.: `~/.ivy2`)
 
 ```sh
-sbt ';runMain com.codacy.tool.spotbugs.DocumentationGenerator'
+sbt "runMain com.codacy.tool.spotbugs.DocumentationGenerator"
 ```
 
 ## Specification
