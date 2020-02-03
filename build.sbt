@@ -1,47 +1,42 @@
+import com.typesafe.sbt.packager.docker.Cmd
+
 name := "codacy-spotbugs"
 
-version := "1.0.0-SNAPSHOT"
+scalaVersion := "2.12.10"
 
-scalaVersion := "2.12.8"
-
-resolvers += Resolver.sonatypeRepo("public")
+val findsecbugsVersion = "1.9.0"
+val sbContribVersion = "7.4.5"
+val spotBugsVersion = "3.1.12"
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
-  "com.codacy" %% "codacy-engine-scala-seed" % "3.1.0",
-  "com.github.spotbugs" % "spotbugs" % better.files.File(".spotbugs-version").lines().head.trim,
-  "com.h3xstream.findsecbugs" % "findsecbugs-plugin" % better.files.File(".findsecbugs-version").lines().head.trim,
-  "com.mebigfatguy.sb-contrib" % "sb-contrib" % better.files.File(".sb-contrib-version").lines().head.trim,
+  "com.codacy" %% "codacy-engine-scala-seed" % "4.0.0",
+  "com.github.spotbugs" % "spotbugs" % spotBugsVersion,
+  "com.h3xstream.findsecbugs" % "findsecbugs-plugin" % findsecbugsVersion,
+  "com.mebigfatguy.sb-contrib" % "sb-contrib" % sbContribVersion,
   "org.scala-lang.modules" %% "scala-java8-compat" % "0.9.0",
   "com.github.tkqubo" % "html-to-markdown" % "0.7.2"
 ).map(_.withSources())
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.7" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.7" % Test
 
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
 enablePlugins(AshScriptPlugin)
 
 sourceGenerators.in(Compile) += Def.task {
-
-  def getVersion(name: String): String = {
-    IO.readLines(new java.io.File(s".$name-version")).headOption.map(_.trim).getOrElse {
-      throw new Exception(s"Failed to retrieve version .$name-version")
-    }
-  }
-
-  val file = sourceManaged.in(Compile).value / "com" / "codacy" / "tool" / "spotbugs" / "Keys.scala"
+  val file = sourceManaged.in(Compile).value / "com" / "codacy" / "tools" / "spotbugs" / "Keys.scala"
   IO.write(
     file,
-    s"""|package com.codacy.tool.spotbugs
+    s"""|package com.codacy.tools.spotbugs
        |
        |object Keys {
        |
        |  val toolName: String = "spotbugs"
        |
-       |  val spotBugsVersion: String = "${getVersion("spotbugs")}"
-       |  val findsecbugsVersion: String = "${getVersion("findsecbugs")}"
-       |  val sbContribVersion: String = "${getVersion("sb-contrib")}"
+       |  val spotBugsVersion: String = "$spotBugsVersion"
+       |  val findsecbugsVersion: String = "$findsecbugsVersion"
+       |  val sbContribVersion: String = "$sbContribVersion"
        |
        |  val defaultLinuxInstallLocation: String = "${defaultLinuxInstallLocation.in(Docker).value}"
        |  val dependenciesLocation: Option[String] = ${ivyPaths
@@ -55,4 +50,31 @@ sourceGenerators.in(Compile) += Def.task {
   Seq(file)
 }.taskValue
 
-mainClass := Some("com.codacy.tool.spotbugs.Engine")
+mappings in Universal ++= {
+  (resourceDirectory in Compile).map { resourceDir: File =>
+    val src = resourceDir / "docs"
+    val dest = "/docs"
+
+    for {
+      path <- src.allPaths.get if !path.isDirectory
+    } yield path -> path.toString.replaceFirst(src.toString, dest)
+  }
+}.value
+
+Universal / javaOptions ++= Seq("-XX:MinRAMPercentage=60.0", "-XX:MaxRAMPercentage=95.0")
+
+val dockerUser = "docker"
+
+Docker / daemonUser := dockerUser
+Docker / daemonGroup := dockerUser
+
+dockerBaseImage := "openjdk:8-jre-alpine"
+
+dockerEntrypoint := Seq("/opt/docker/bin/engine")
+
+dockerCommands := dockerCommands.value.flatMap {
+  case cmd @ Cmd("WORKDIR", _) => Seq(Cmd("WORKDIR", "/src"))
+  case cmd @ Cmd("ADD", _) =>
+    Seq(Cmd("RUN", s"adduser -u 2004 -D $dockerUser"), cmd, Cmd("RUN", "mv /opt/docker/docs /docs"))
+  case other => List(other)
+}
