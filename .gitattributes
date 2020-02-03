@@ -1,7 +1,7 @@
 src/main/resources/docs/description/* linguist-generated=true
 src/main/resources/docs/patterns.json linguist-generated=true
 src/main/resources/docs/tool-description.md linguist-generated=true
-src/main/resources/docs/multiple-tests/mixed-scala-java/src/target linguist-generated=true
-src/main/resources/docs/multiple-tests/mixed-scala-java/src/project/target linguist-generated=true
-src/main/resources/docs/multiple-tests/only-scala/src/target linguist-generated=true
-src/main/resources/docs/multiple-tests/only-scala/src/project/target linguist-generated=true
+src/main/resources/docs/multiple-tests/mixed-scala-java/src/target/** linguist-generated=true
+src/main/resources/docs/multiple-tests/mixed-scala-java/src/project/** linguist-generated=true
+src/main/resources/docs/multiple-tests/only-scala/src/target/** linguist-generated=true
+src/main/resources/docs/multiple-tests/only-scala/src/project/target/** linguist-generated=true

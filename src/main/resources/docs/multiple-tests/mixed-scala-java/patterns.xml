@@ -3,6 +3,5 @@
 <module name="root">
     <module name="BeforeExecutionExclusionFileFilter">
         <property name="fileNamePattern" value=".*target.*" />
-        <property name="fileNamePattern" value=".*project.*" />
     </module>
 </module>
