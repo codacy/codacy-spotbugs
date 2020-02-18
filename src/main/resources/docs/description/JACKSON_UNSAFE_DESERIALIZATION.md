@@ -1,4 +1,4 @@
-# [Unsafe Jackson deserialization configuration](http://find-sec-bugs.github.io/bugs.htm#JACKSON_UNSAFE_DESERIALIZATION)
+# [Unsafe Jackson deserialization configuration](https://find-sec-bugs.github.io/bugs.htm#JACKSON_UNSAFE_DESERIALIZATION)
 
 When the Jackson databind library is used incorrectly the deserialization of untrusted data can lead to remote code execution, if there is a class in classpath that allows the trigger of malicious operation.
 

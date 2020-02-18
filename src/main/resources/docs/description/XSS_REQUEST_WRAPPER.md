@@ -1,8 +1,8 @@
-# [XSSRequestWrapper is a weak XSS protection](http://find-sec-bugs.github.io/bugs.htm#XSS_REQUEST_WRAPPER)
+# [XSSRequestWrapper is a weak XSS protection](https://find-sec-bugs.github.io/bugs.htm#XSS_REQUEST_WRAPPER)
 
 An implementation of `HttpServletRequestWrapper` called `XSSRequestWrapper` was published through
-various blog sites. <sup>[[1]](http://java.dzone.com/articles/stronger-anti-cross-site)</sup>
-<sup>[[2]](http://www.javacodegeeks.com/2012/07/anti-cross-site-scripting-xss-filter.html)</sup>
+various blog sites. <sup>[[1]](https://java.dzone.com/articles/stronger-anti-cross-site)</sup>
+<sup>[[2]](https://www.javacodegeeks.com/2012/07/anti-cross-site-scripting-xss-filter.html)</sup>
 
 The filtering is weak for a few reasons:
 
@@ -31,4 +31,4 @@ the XSS protection rules defined in the OWASP XSS Prevention Cheat Sheet.
 
 [OWASP: Top 10 2013-A3: Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29)  
 
-[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](http://cwe.mitre.org/data/definitions/79.html)
+[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)

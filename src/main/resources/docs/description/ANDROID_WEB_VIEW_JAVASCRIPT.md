@@ -1,4 +1,4 @@
-# [WebView with JavaScript enabled (Android)](http://find-sec-bugs.github.io/bugs.htm#ANDROID_WEB_VIEW_JAVASCRIPT)
+# [WebView with JavaScript enabled (Android)](https://find-sec-bugs.github.io/bugs.htm#ANDROID_WEB_VIEW_JAVASCRIPT)
 
     Enabling JavaScript for the WebView means that it is now susceptible to XSS. The page render should be inspected
     for potential reflected XSS, stored XSS and DOM XSS.  
@@ -24,7 +24,7 @@ function updateDescription(newDescription) {
 
     [Issue: Using `setJavaScriptEnabled` can introduce XSS vulnerabilities](http://www.technotalkative.com/issue-using-setjavascriptenabled-can-introduce-xss-vulnerabilities-application-review-carefully/)  
 
-    [Android Official Doc: WebView](http://developer.android.com/guide/webapps/webview.html#UsingJavaScript)  
+    [Android Official Doc: WebView](https://developer.android.com/guide/webapps/webview.html#UsingJavaScript)  
 
     [WASC-8: Cross Site Scripting](http://projects.webappsec.org/w/page/13246920/Cross%20Site%20Scripting)  
 
@@ -32,4 +32,4 @@ function updateDescription(newDescription) {
 
     [OWASP: Top 10 2013-A3: Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29)  
 
-    [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](http://cwe.mitre.org/data/definitions/79.html)
+    [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)

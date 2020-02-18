@@ -1,4 +1,4 @@
-# [Potential code injection when using OGNL expression](http://find-sec-bugs.github.io/bugs.htm#OGNL_INJECTION)
+# [Potential code injection when using OGNL expression](https://find-sec-bugs.github.io/bugs.htm#OGNL_INJECTION)
 
     A expression is built with a dynamic value. The source of the value(s) should be verified to avoid
     that unfiltered values fall into this risky code evaluation.
@@ -23,6 +23,6 @@ In general, method evaluating OGNL expression should not receive user input. It 
 
     [Gotham Digital Science: An Analysis Of CVE-2017-5638](https://blog.gdssecurity.com/labs/2017/3/27/an-analysis-of-cve-2017-5638.html)  
 
-    [Apache Struts2: Vulnerability S2-016](http://struts.apache.org/docs/s2-016.html)  
+    [Apache Struts2: Vulnerability S2-016](https://struts.apache.org/docs/s2-016.html)  
 
     [Apache Struts 2 Documentation: OGNL](https://struts.apache.org/docs/ognl.html)

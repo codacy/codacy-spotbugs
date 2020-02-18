@@ -1,6 +1,6 @@
 {
   "name" : "spotbugs",
-  "version" : "3.1.12",
+  "version" : "4.0.0",
   "patterns" : [ {
     "patternId" : "ABC_ARRAY_BASED_COLLECTIONS",
     "level" : "Warning",
@@ -762,6 +762,14 @@
     "level" : "Error",
     "category" : "Security"
   }, {
+    "patternId" : "ENTITY_LEAK",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "ENTITY_MASS_ASSIGNMENT",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
     "patternId" : "EQ_ABSTRACT_SELF",
     "level" : "Warning",
     "category" : "BestPractice"
@@ -1301,10 +1309,6 @@
     "patternId" : "IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN",
     "level" : "Warning",
     "category" : "ErrorProne"
-  }, {
-    "patternId" : "IRA_INEFFICIENT_REPLACEALL",
-    "level" : "Warning",
-    "category" : "Performance"
   }, {
     "patternId" : "IS2_INCONSISTENT_SYNC",
     "level" : "Warning",
@@ -2114,6 +2118,10 @@
     "level" : "Warning",
     "category" : "BestPractice"
   }, {
+    "patternId" : "OVERLY_PERMISSIVE_FILE_PERMISSION",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
     "patternId" : "PADDING_ORACLE",
     "level" : "Error",
     "category" : "Security"
@@ -2425,6 +2433,10 @@
     "patternId" : "SACM_STATIC_ARRAY_CREATED_IN_METHOD",
     "level" : "Warning",
     "category" : "Performance"
+  }, {
+    "patternId" : "SAML_IGNORE_COMMENTS",
+    "level" : "Error",
+    "category" : "Security"
   }, {
     "patternId" : "SAT_SUSPICIOUS_ARGUMENT_TYPES",
     "level" : "Warning",
@@ -2874,10 +2886,6 @@
     "level" : "Error",
     "category" : "Security"
   }, {
-    "patternId" : "SPRING_ENTITY_LEAK",
-    "level" : "Error",
-    "category" : "Security"
-  }, {
     "patternId" : "SPRING_FILE_DISCLOSURE",
     "level" : "Error",
     "category" : "Security"
@@ -3059,6 +3067,10 @@
     "category" : "Security"
   }, {
     "patternId" : "TEMPLATE_INJECTION_FREEMARKER",
+    "level" : "Error",
+    "category" : "Security"
+  }, {
+    "patternId" : "TEMPLATE_INJECTION_PEBBLE",
     "level" : "Error",
     "category" : "Security"
   }, {

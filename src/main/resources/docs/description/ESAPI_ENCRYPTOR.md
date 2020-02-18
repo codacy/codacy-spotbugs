@@ -1,4 +1,4 @@
-# [Use of ESAPI Encryptor](http://find-sec-bugs.github.io/bugs.htm#ESAPI_ENCRYPTOR)
+# [Use of ESAPI Encryptor](https://find-sec-bugs.github.io/bugs.htm#ESAPI_ENCRYPTOR)
 
     The ESAPI has a small history of vulnerabilities within the cryptography component. Here is a quick validation list to
     make sure the Authenticated Encryption is working as expected.
@@ -7,7 +7,7 @@
 
     This issue is corrected in ESAPI version 2.1.0\. Versions <= 2.0.1 are vulnerable to a MAC bypass (CVE-2013-5679).  
 
-    For Maven users, the plugin [versions](http://mojo.codehaus.org/versions-maven-plugin/) can be called using the
+    For Maven users, the plugin [versions](https://www.mojohaus.org/versions-maven-plugin/) can be called using the
     following command. The effective version of ESAPI will be available in the output.  
 
 <pre>$ mvn versions:display-dependency-updates</pre>
@@ -39,7 +39,7 @@ Output:
   </groupid>
  </dependency></pre>
 
-    For Ant users, the jar used should be [esapi-2.1.0.jar](http://repo1.maven.org/maven2/org/owasp/esapi/esapi/2.1.0/esapi-2.1.0.jar).
+    For Ant users, the jar used should be [esapi-2.1.0.jar](https://repo1.maven.org/maven2/org/owasp/esapi/esapi/2.1.0/esapi-2.1.0.jar).
 
 **2\. Configuration:**
 
@@ -72,12 +72,12 @@ Encryptor.cipher_modes.additional_allowed=</pre>
 
     **References**  
 
-    [ESAPI Security bulletin 1 (CVE-2013-5679)](http://owasp-esapi-java.googlecode.com/svn/trunk/documentation/ESAPI-security-bulletin1.pdf)  
+    [ESAPI Security bulletin 1 (CVE-2013-5679)](https://github.com/peval/owasp-esapi-java/blob/master/documentation/ESAPI-security-bulletin1.pdf)  
 
-    [Vulnerability Summary for CVE-2013-5679](http://nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-5679)  
+    [Vulnerability Summary for CVE-2013-5679](https://nvd.nist.gov/vuln/detail/CVE-2013-5679)  
 
-    [Synactiv: Bypassing HMAC validation in OWASP ESAPI symmetric encryption](http://www.synacktiv.com/ressources/synacktiv_owasp_esapi_hmac_bypass.pdf)  
+    [Synactiv: Bypassing HMAC validation in OWASP ESAPI symmetric encryption](https://www.synacktiv.com/ressources/synacktiv_owasp_esapi_hmac_bypass.pdf)  
 
-    [CWE-310: Cryptographic Issues](http://cwe.mitre.org/data/definitions/310.html)  
+    [CWE-310: Cryptographic Issues](https://cwe.mitre.org/data/definitions/310.html)  
 
-    [ESAPI-dev mailing list: Status of CVE-2013-5960](http://lists.owasp.org/pipermail/esapi-dev/2015-March/002533.html)
+    [ESAPI-dev mailing list: Status of CVE-2013-5960](https://lists.owasp.org/pipermail/esapi-dev/2015-March/002533)

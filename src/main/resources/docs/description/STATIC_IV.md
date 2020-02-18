@@ -1,4 +1,4 @@
-# [Static IV](http://find-sec-bugs.github.io/bugs.htm#STATIC_IV)
+# [Static IV](https://find-sec-bugs.github.io/bugs.htm#STATIC_IV)
 
     Initialization vector must be regenerated for each message to be encrypted.
 
@@ -27,8 +27,8 @@ public void encrypt(String message) throws Exception {
 
 **References**  
 
-[Wikipedia: Initialization vector](http://en.wikipedia.org/wiki/Initialization_vector)  
+[Wikipedia: Initialization vector](https://en.wikipedia.org/wiki/Initialization_vector)  
 
-[CWE-329: Not Using a Random IV with CBC Mode](http://cwe.mitre.org/data/definitions/329.html)  
+[CWE-329: Not Using a Random IV with CBC Mode](https://cwe.mitre.org/data/definitions/329.html)  
 
 [Encryption - CBC Mode IV: Secret or Not?](https://defuse.ca/cbcmodeiv.htm)

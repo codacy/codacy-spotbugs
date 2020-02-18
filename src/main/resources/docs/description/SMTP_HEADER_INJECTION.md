@@ -1,4 +1,4 @@
-# [SMTP Header Injection](http://find-sec-bugs.github.io/bugs.htm#SMTP_HEADER_INJECTION)
+# [SMTP Header Injection](https://find-sec-bugs.github.io/bugs.htm#SMTP_HEADER_INJECTION)
 
 Simple Mail Transfer Protocol (SMTP) is a the text based protocol used for email delivery.
 Like with HTTP, headers are separate by new line separator.

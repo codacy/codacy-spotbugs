@@ -1,4 +1,4 @@
-# [Found JAX-RS REST endpoint](http://find-sec-bugs.github.io/bugs.htm#JAXRS_ENDPOINT)
+# [Found JAX-RS REST endpoint](https://find-sec-bugs.github.io/bugs.htm#JAXRS_ENDPOINT)
 
 This method is part of a REST Web Service (JSR311).
 
@@ -22,4 +22,4 @@ This method is part of a REST Web Service (JSR311).
 
 [OWASP: CSRF Prevention Cheat Sheet](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29_Prevention_Cheat_Sheet)  
 
-[CWE-20: Improper Input Validation](http://cwe.mitre.org/data/definitions/20.html)
+[CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)

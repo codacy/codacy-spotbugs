@@ -1,4 +1,4 @@
-# [Potential HTTP Response Splitting](http://find-sec-bugs.github.io/bugs.htm#HTTP_RESPONSE_SPLITTING)
+# [Potential HTTP Response Splitting](https://find-sec-bugs.github.io/bugs.htm#HTTP_RESPONSE_SPLITTING)
 
     When an HTTP request contains unexpected `CR` and `LF` characters, the server may respond with an output stream
     that is interpreted as two different HTTP responses (instead of one).
@@ -19,5 +19,5 @@ response.addCookie(cookie);</pre>
 
     [OWASP: HTTP Response Splitting](https://www.owasp.org/index.php/HTTP_Response_Splitting)  
 
-    [CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')](http://cwe.mitre.org/data/definitions/113.html)
-    [CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')](http://cwe.mitre.org/data/definitions/93.html)
+    [CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')](https://cwe.mitre.org/data/definitions/113.html)
+    [CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')](https://cwe.mitre.org/data/definitions/93.html)

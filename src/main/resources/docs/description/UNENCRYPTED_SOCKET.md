@@ -1,4 +1,4 @@
-# [Unencrypted Socket](http://find-sec-bugs.github.io/bugs.htm#UNENCRYPTED_SOCKET)
+# [Unencrypted Socket](https://find-sec-bugs.github.io/bugs.htm#UNENCRYPTED_SOCKET)
 
 The communication channel used is not encrypted. The traffic could be read by an attacker intercepting the network traffic.
 
@@ -28,4 +28,4 @@ to do this correctly.
 
 [WASC-04: Insufficient Transport Layer Protection](http://projects.webappsec.org/w/page/13246945/Insufficient%20Transport%20Layer%20Protection)  
 
-[CWE-319: Cleartext Transmission of Sensitive Information](http://cwe.mitre.org/data/definitions/319.html)
+[CWE-319: Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)

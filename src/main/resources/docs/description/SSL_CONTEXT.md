@@ -1,4 +1,4 @@
-# [Weak SSLContext](http://find-sec-bugs.github.io/bugs.htm#SSL_CONTEXT)
+# [Weak SSLContext](https://find-sec-bugs.github.io/bugs.htm#SSL_CONTEXT)
 
     **Vulnerable Code:**  
 

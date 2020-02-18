@@ -1,4 +1,4 @@
-# [Condition.await() not in loop ](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#WA_AWAIT_NOT_IN_LOOP)
+# [Condition.await() not in loop](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#WA_AWAIT_NOT_IN_LOOP)
 
  This method contains a call to `java.util.concurrent.await()`
    (or variants)

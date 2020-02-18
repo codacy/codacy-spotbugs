@@ -1,4 +1,4 @@
-# [Escaping of special XML characters is disabled](http://find-sec-bugs.github.io/bugs.htm#JSP_JSTL_OUT)
+# [Escaping of special XML characters is disabled](https://find-sec-bugs.github.io/bugs.htm#JSP_JSTL_OUT)
 
 A potential XSS was found. It could be used to execute unwanted JavaScript in a client's browser. (See references)
 
@@ -22,6 +22,6 @@ A potential XSS was found. It could be used to execute unwanted JavaScript in a 
 
 [OWASP: Top 10 2013-A3: Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29)  
 
-[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](http://cwe.mitre.org/data/definitions/79.html)  
+[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)  
 
-[JSTL Javadoc: Out tag](http://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/c/out.html)
+[JSTL Javadoc: Out tag](https://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/c/out.html)

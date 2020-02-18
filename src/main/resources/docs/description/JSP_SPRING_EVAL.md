@@ -1,4 +1,4 @@
-# [Dynamic variable in Spring expression](http://find-sec-bugs.github.io/bugs.htm#JSP_SPRING_EVAL)
+# [Dynamic variable in Spring expression](https://find-sec-bugs.github.io/bugs.htm#JSP_SPRING_EVAL)
 
 A Spring expression is built with a dynamic value. The source of the value(s) should be verified to avoid that unfiltered values fall into this risky code evaluation.
 
@@ -22,6 +22,6 @@ A Spring expression is built with a dynamic value. The source of the value(s) sh
 
 **References**  
 
-    [CWE-94: Improper Control of Generation of Code ('Code Injection')](http://cwe.mitre.org/data/definitions/94.html)  
+    [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)  
 
-    [CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](http://cwe.mitre.org/data/definitions/95.html)
+    [CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](https://cwe.mitre.org/data/definitions/95.html)

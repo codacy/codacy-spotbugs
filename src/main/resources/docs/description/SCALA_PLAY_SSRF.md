@@ -1,4 +1,4 @@
-# [Scala Play Server-Side Request Forgery (SSRF)](http://find-sec-bugs.github.io/bugs.htm#SCALA_PLAY_SSRF)
+# [Scala Play Server-Side Request Forgery (SSRF)](https://find-sec-bugs.github.io/bugs.htm#SCALA_PLAY_SSRF)
 
     Server-Side Request Forgery occur when a web server executes a request to a user supplied destination
     parameter that is not validated. Such vulnerabilities could allow an attacker to access internal services

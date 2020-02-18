@@ -1,4 +1,4 @@
-# [Format String Manipulation](http://find-sec-bugs.github.io/bugs.htm#FORMAT_STRING_MANIPULATION)
+# [Format String Manipulation](https://find-sec-bugs.github.io/bugs.htm#FORMAT_STRING_MANIPULATION)
 
 Allowing user input to control format parameters could enable an attacker to cause exceptions to be thrown or leak information.  
 
@@ -18,4 +18,4 @@ Avoid using user controlled values in the format string argument.
 
 **References**  
 
-[CWE-134: Use of Externally-Controlled Format String](http://cwe.mitre.org/data/definitions/134.html)
+[CWE-134: Use of Externally-Controlled Format String](https://cwe.mitre.org/data/definitions/134.html)

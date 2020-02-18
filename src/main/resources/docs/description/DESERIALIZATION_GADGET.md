@@ -1,4 +1,4 @@
-# [This class could be used as deserialization gadget](http://find-sec-bugs.github.io/bugs.htm#DESERIALIZATION_GADGET)
+# [This class could be used as deserialization gadget](https://find-sec-bugs.github.io/bugs.htm#DESERIALIZATION_GADGET)
 
 Deserialization gadget are class that could be used by an attacker to take advantage of a remote API using Native Serialization.
 This class is either adding custom behavior to deserialization with the `readObject` method (Serializable) or can be called
@@ -13,7 +13,7 @@ Removing gadget is a hardening practice to reduce the risk of being exploited.
 
 [Deserialization of untrusted data](https://www.owasp.org/index.php/Deserialization_of_untrusted_data)  
 
-[Serialization and Deserialization ](http://www.oracle.com/technetwork/java/seccodeguide-139067.html#8)  
+[Serialization and Deserialization ](https://www.oracle.com/technetwork/java/seccodeguide-139067.html#8)  
 
 [A tool for generating payloads that exploit unsafe Java object deserialization](https://github.com/frohoff/ysoserial)  
 

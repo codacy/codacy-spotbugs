@@ -1,4 +1,4 @@
-# [Cookie without the secure flag](http://find-sec-bugs.github.io/bugs.htm#INSECURE_COOKIE)
+# [Cookie without the secure flag](https://find-sec-bugs.github.io/bugs.htm#INSECURE_COOKIE)
 
 A new cookie is created without the `Secure` flag set.
 The `Secure` flag is a directive to the browser to make sure that the cookie is not sent for insecure

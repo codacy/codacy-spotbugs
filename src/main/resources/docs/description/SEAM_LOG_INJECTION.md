@@ -1,4 +1,4 @@
-# [Potential code injection in Seam logging call](http://find-sec-bugs.github.io/bugs.htm#SEAM_LOG_INJECTION)
+# [Potential code injection in Seam logging call](https://find-sec-bugs.github.io/bugs.htm#SEAM_LOG_INJECTION)
 
     Seam Logging API support an expression language to introduce bean property to log messages. The expression language can
     also be the source to unwanted code execution.
@@ -28,6 +28,6 @@
 
     [The Java EE 6 Tutorial: Expression Language](https://docs.oracle.com/javaee/6/tutorial/doc/gjddd.html)  
 
-    [CWE-94: Improper Control of Generation of Code ('Code Injection')](http://cwe.mitre.org/data/definitions/94.html)  
+    [CWE-94: Improper Control of Generation of Code ('Code Injection')](https://cwe.mitre.org/data/definitions/94.html)  
 
-    [CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](http://cwe.mitre.org/data/definitions/95.html)
+    [CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')](https://cwe.mitre.org/data/definitions/95.html)

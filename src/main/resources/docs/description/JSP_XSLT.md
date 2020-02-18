@@ -1,4 +1,4 @@
-# [A malicious XSLT could be provided](http://find-sec-bugs.github.io/bugs.htm#JSP_XSLT)
+# [A malicious XSLT could be provided to the JSP tag](https://find-sec-bugs.github.io/bugs.htm#JSP_XSLT)
 
     "XSLT (Extensible Stylesheet Language Transformations) is a language for transforming XML documents into other XML documents".<sup>[1]</sup>  
 
@@ -23,11 +23,11 @@ Path traversal <sup>[3][4]</sup> are not possible.
 
 [Offensive XSLT](https://prezi.com/y_fuybfudgnd/offensive-xslt/) by Nicolas Grégoire  
 
-[2] [From XSLT code execution to Meterpreter shells](http://www.agarri.fr/kom/archives/2012/07/02/from_xslt_code_execution_to_meterpreter_shells/index.html) by Nicolas Grégoire  
+[2] [From XSLT code execution to Meterpreter shells](https://www.agarri.fr/blog/archives/2012/07/02/from_xslt_code_execution_to_meterpreter_shells/index.html) by Nicolas Grégoire  
 
-[XSLT Hacking Encyclopedia](http://xhe.myxwiki.org/xwiki/bin/view/Main/) by Nicolas Grégoire  
+[XSLT Hacking Encyclopedia](https://xhe.myxwiki.org/xwiki/bin/view/Main/) by Nicolas Grégoire  
 
-[Acunetix.com : The hidden dangers of XSLTProcessor - Remote XSL injection](http://www.acunetix.com/blog/articles/the-hidden-dangers-of-xsltprocessor-remote-xsl-injection/)  
+[Acunetix.com : The hidden dangers of XSLTProcessor - Remote XSL injection](https://www.acunetix.com/blog/articles/the-hidden-dangers-of-xsltprocessor-remote-xsl-injection/)  
 
 [w3.org XSL Transformations (XSLT) Version 1.0](https://www.w3.org/TR/xslt) : w3c specification  
 

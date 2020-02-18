@@ -1,4 +1,4 @@
-# [Potential information leakage in Scala Play](http://find-sec-bugs.github.io/bugs.htm#SCALA_SENSITIVE_DATA_EXPOSURE)
+# [Potential information leakage in Scala Play](https://find-sec-bugs.github.io/bugs.htm#SCALA_SENSITIVE_DATA_EXPOSURE)
 
     Applications can unintentionally leak information about their configuration, internal workings, or violate privacy through a
     variety of application problems. <sup>[1]</sup> Pages that provide different responses based on the validity of the data can

@@ -1,4 +1,4 @@
-# [SHA-1 is a weak hash function](http://find-sec-bugs.github.io/bugs.htm#WEAK_MESSAGE_DIGEST_SHA1)
+# [SHA-1 is a weak hash function](https://find-sec-bugs.github.io/bugs.htm#WEAK_MESSAGE_DIGEST_SHA1)
 
 The algorithms SHA-1 is not a recommended algorithm for hash password, for signature verification and other
 uses. **PBKDF2** should be used to hash password for example.
@@ -18,14 +18,14 @@ uses. **PBKDF2** should be used to hash password for example.
 > 
 >     The use of these hash functions is acceptable for all hash function applications."  
 > 
->     - [NIST: Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths p.15](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar1.pdf)
+>     - [NIST: Transitioning the Use of Cryptographic Algorithms and Key Lengths p.15](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar2.pdf)
 
 > "The main idea of a PBKDF is to slow dictionary or brute force attacks on the passwords by increasing the time
 >     needed to test each password. An attacker with a list of likely passwords can evaluate the PBKDF using the known
 >     iteration counter and the salt. Since an attacker has to spend a significant amount of computing time for each try,
 >     it becomes harder to apply the dictionary or brute force attacks."  
 > 
-> - [NIST: Recommendation for Password-Based Key Derivation  p.12](http://csrc.nist.gov/publications/nistpubs/800-132/nist-sp800-132.pdf)
+> - [NIST: Recommendation for Password-Based Key Derivation  p.12](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf)
 
     **Vulnerable Code:**  
 
@@ -57,10 +57,10 @@ uses. **PBKDF2** should be used to hash password for example.
 
 [Google Online Security Blog: Gradually sunsetting SHA-1](https://googleonlinesecurity.blogspot.ca/2014/09/gradually-sunsetting-sha-1.html)  
 
-[NIST: Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar1.pdf)  
+[NIST: Transitioning the Use of Cryptographic Algorithms and Key Lengths](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar2.pdf)  
 
-[NIST: Recommendation for Password-Based Key Derivation](http://csrc.nist.gov/publications/nistpubs/800-132/nist-sp800-132.pdf)  
+[NIST: Recommendation for Password-Based Key Derivation](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf)  
 
 [Stackoverflow: Reliable implementation of PBKDF2-HMAC-SHA256 for Java](https://stackoverflow.com/q/22580853/89769)  
 
-[CWE-327: Use of a Broken or Risky Cryptographic Algorithm](http://cwe.mitre.org/data/definitions/327.html)
+[CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)

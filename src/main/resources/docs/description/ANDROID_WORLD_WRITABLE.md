@@ -1,4 +1,4 @@
-# [World writable file (Android)](http://find-sec-bugs.github.io/bugs.htm#ANDROID_WORLD_WRITABLE)
+# [World writable file (Android)](https://find-sec-bugs.github.io/bugs.htm#ANDROID_WORLD_WRITABLE)
 
     The file written in this context is using the creation mode `MODE_WORLD_READABLE`. It might not be the
     expected behavior to expose the content being written.
@@ -25,11 +25,13 @@ create on external storage. See references below for implementation guidelines.
 
     [CERT: DRD11-J. Ensure that sensitive data is kept secure](https://www.securecoding.cert.org/confluence/display/java/DRD11-J.+Ensure+that+sensitive+data+is+kept+secure)  
 
-    [Android Official Doc: Security Tips](http://developer.android.com/training/articles/security-tips.html#InternalStorage)  
+    [Android Official Doc: Security Tips](https://developer.android.com/training/articles/security-tips.html#InternalStorage)  
 
-    [Android Official Doc: Context.MODE_PRIVATE](http://developer.android.com/reference/android/content/Context.html#MODE_PRIVATE)  
+    [Android Official Doc: Context.MODE_PRIVATE](https://developer.android.com/reference/android/content/Context.html#MODE_PRIVATE)  
 
-    [vogella.com: Android SQLite database and content provider - Tutorial](http://www.vogella.com/tutorials/AndroidSQLite/article.html#databasetutorial_database)  
+    [vogella.com: Android SQLite database and content provider - Tutorial](https://www.vogella.com/tutorials/AndroidSQLite/article.html#databasetutorial_database)  
+
+    [vogella.com: Android SQLite database and content provider - Tutorial](https://www.vogella.com/tutorials/AndroidSQLite/article.html#databasetutorial_database)  
 
     [OWASP Mobile Top 10 2014-M2: Insecure Data Storage](https://www.owasp.org/index.php/Mobile_Top_10_2014-M2)  
 

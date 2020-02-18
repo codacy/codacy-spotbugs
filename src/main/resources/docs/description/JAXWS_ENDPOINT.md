@@ -1,4 +1,4 @@
-# [Found JAX-WS SOAP endpoint](http://find-sec-bugs.github.io/bugs.htm#JAXWS_ENDPOINT)
+# [Found JAX-WS SOAP endpoint](https://find-sec-bugs.github.io/bugs.htm#JAXWS_ENDPOINT)
 
 This method is part of a SOAP Web Service (JSR224).
 
@@ -13,4 +13,4 @@ This method is part of a SOAP Web Service (JSR224).
 
 [OWASP: Web Service Security Cheat Sheet](https://www.owasp.org/index.php/Web_Service_Security_Cheat_Sheet)  
 
-[CWE-20: Improper Input Validation](http://cwe.mitre.org/data/definitions/20.html)
+[CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)

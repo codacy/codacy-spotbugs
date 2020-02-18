@@ -1,8 +1,8 @@
-# [Message digest is custom](http://find-sec-bugs.github.io/bugs.htm#CUSTOM_MESSAGE_DIGEST)
+# [Message digest is custom](https://find-sec-bugs.github.io/bugs.htm#CUSTOM_MESSAGE_DIGEST)
 
 Implementing a custom MessageDigest is error-prone.
 
-[NIST](http://csrc.nist.gov/groups/ST/toolkit/secure_hashing.html) recommends the use of SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, or SHA-512/256.
+[NIST](https://csrc.nist.gov/projects/hash-functions) recommends the use of SHA-224, SHA-256, SHA-384, SHA-512, SHA-512/224, or SHA-512/256.
 
 > "**SHA-1 for digital signature generation:**  
 > 
@@ -19,7 +19,7 @@ Implementing a custom MessageDigest is error-prone.
 > 
 >     The use of these hash functions is acceptable for all hash function applications."  
 > 
->     - [NIST: Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths p.15](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar1.pdf)
+>     - [NIST: Transitioning the Use of Cryptographic Algorithms and Key Lengths p.15](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar2.pdf)
 
     **Vulnerable Code:**  
 
@@ -41,6 +41,6 @@ sha256Digest.update(password.getBytes());</pre>
 
 **References**  
 
-[NIST Approved Hashing Algorithms](http://csrc.nist.gov/groups/ST/toolkit/secure_hashing.html)  
+[NIST Approved Hash Functions](https://csrc.nist.gov/projects/hash-functions)  
 
-[CWE-327: Use of a Broken or Risky Cryptographic Algorithm](http://cwe.mitre.org/data/definitions/327.html)
+[CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)

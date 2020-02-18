@@ -1,4 +1,4 @@
-# [Potential Android SQL Injection](http://find-sec-bugs.github.io/bugs.htm#SQL_INJECTION_ANDROID)
+# [Potential Android SQL Injection](https://find-sec-bugs.github.io/bugs.htm#SQL_INJECTION_ANDROID)
 
 The input values included in SQL queries need to be passed in safely.
 Bind variables in prepared statements can be used to easily mitigate the risk of SQL injection.
@@ -27,9 +27,9 @@ Cursor cursor = this.getReadableDatabase().rawQuery(query,new String[] {userInpu
 
 [WASC-19: SQL Injection](http://projects.webappsec.org/w/page/13246963/SQL%20Injection)  
 
-[CAPEC-66: SQL Injection](http://capec.mitre.org/data/definitions/66.html)  
+[CAPEC-66: SQL Injection](https://capec.mitre.org/data/definitions/66.html)  
 
-[CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](http://cwe.mitre.org/data/definitions/89.html)  
+[CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)  
 
 [OWASP: Top 10 2013-A1-Injection](https://www.owasp.org/index.php/Top_10_2013-A1-Injection)  
 

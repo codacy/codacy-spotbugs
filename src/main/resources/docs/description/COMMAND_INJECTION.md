@@ -1,4 +1,4 @@
-# [Potential Command Injection](http://find-sec-bugs.github.io/bugs.htm#COMMAND_INJECTION)
+# [Potential Command Injection](https://find-sec-bugs.github.io/bugs.htm#COMMAND_INJECTION)
 
 The highlighted API is used to execute a system command. If unfiltered input is passed to this API, it can lead to arbitrary command execution.
 
@@ -15,4 +15,4 @@ r.exec("/bin/sh -c some_tool" + input);</pre>
 
 [OWASP: Top 10 2013-A1-Injection](https://www.owasp.org/index.php/Top_10_2013-A1-Injection)  
 
-[CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](http://cwe.mitre.org/data/definitions/78.html)
+[CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')](https://cwe.mitre.org/data/definitions/78.html)

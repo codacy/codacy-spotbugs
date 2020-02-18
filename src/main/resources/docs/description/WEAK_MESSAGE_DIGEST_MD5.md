@@ -1,4 +1,4 @@
-# [MD2, MD4 and MD5 are weak hash functions](http://find-sec-bugs.github.io/bugs.htm#WEAK_MESSAGE_DIGEST_MD5)
+# [MD2, MD4 and MD5 are weak hash functions](https://find-sec-bugs.github.io/bugs.htm#WEAK_MESSAGE_DIGEST_MD5)
 
 The algorithms MD2, MD4 and MD5 are not a recommended MessageDigest. **PBKDF2** should be used to hash password for example.
 
@@ -13,14 +13,14 @@ The algorithms MD2, MD4 and MD5 are not a recommended MessageDigest. **PBKDF2** 
 > 
 >     The use of these hash functions is acceptable for all hash function applications."  
 > 
->     - [NIST: Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths p.15](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar1.pdf)
+>     - [NIST: Transitioning the Use of Cryptographic Algorithms and Key Lengths p.15](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar2.pdf)
 
 > "The main idea of a PBKDF is to slow dictionary or brute force attacks on the passwords by increasing the time
 >     needed to test each password. An attacker with a list of likely passwords can evaluate the PBKDF using the known
 >     iteration counter and the salt. Since an attacker has to spend a significant amount of computing time for each try,
 >     it becomes harder to apply the dictionary or brute force attacks."  
 > 
-> - [NIST: Recommendation for Password-Based Key Derivation  p.12](http://csrc.nist.gov/publications/nistpubs/800-132/nist-sp800-132.pdf)
+> - [NIST: Recommendation for Password-Based Key Derivation  p.12](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf)
 
     **Vulnerable Code:**  
 
@@ -48,16 +48,16 @@ The algorithms MD2, MD4 and MD5 are not a recommended MessageDigest. **PBKDF2** 
 
 **References**  
 
-[1] [On Collisions for MD5](http://www.win.tue.nl/hashclash/On%20Collisions%20for%20MD5%20-%20M.M.J.%20Stevens.pdf): Master Thesis by M.M.J. Stevens  
+[1] [On Collisions for MD5](https://www.win.tue.nl/hashclash/On%20Collisions%20for%20MD5%20-%20M.M.J.%20Stevens.pdf): Master Thesis by M.M.J. Stevens  
 
-[2] [Chosen-prefix collisions for MD5 and applications](http://homepages.cwi.nl/~stevens/papers/stJOC%20-%20Chosen-Prefix%20Collisions%20for%20MD5%20and%20Applications.pdf): Paper written by Marc Stevens  
+[2] [Chosen-prefix collisions for MD5 and applications](https://homepages.cwi.nl/~stevens/papers/stJOC%20-%20Chosen-Prefix%20Collisions%20for%20MD5%20and%20Applications.pdf): Paper written by Marc Stevens  
 
 [Wikipedia: MD5](https://en.wikipedia.org/wiki/MD5)  
 
-[NIST: Transitions: Recommendation for Transitioning the Use of Cryptographic Algorithms and Key Lengths](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar1.pdf)  
+[NIST: Transitioning the Use of Cryptographic Algorithms and Key Lengths](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-131Ar2.pdf)  
 
-[NIST: Recommendation for Password-Based Key Derivation](http://csrc.nist.gov/publications/nistpubs/800-132/nist-sp800-132.pdf)  
+[NIST: Recommendation for Password-Based Key Derivation](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-132.pdf)  
 
 [Stackoverflow: Reliable implementation of PBKDF2-HMAC-SHA256 for Java](https://stackoverflow.com/q/22580853/89769)  
 
-[CWE-327: Use of a Broken or Risky Cryptographic Algorithm](http://cwe.mitre.org/data/definitions/327.html)
+[CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)

@@ -1,4 +1,4 @@
-# [URL rewriting method](http://find-sec-bugs.github.io/bugs.htm#URL_REWRITING)
+# [URL rewriting method](https://find-sec-bugs.github.io/bugs.htm#URL_REWRITING)
 
 The implementation of this method includes the logic to determine whether the session ID needs to be encoded in the URL.  
 
@@ -11,8 +11,8 @@ URL rewriting has significant security risks. Since session ID appears in the UR
 
     **Vulnerable Code:**  
 
-<pre>out.println("Click <a href=" + 
-                res.encodeURL(HttpUtils.getRequestURL(req).toString()) + 
+<pre>out.println("Click <a href=" +
+                res.encodeURL(HttpUtils.getRequestURL(req).toString()) +
                 ">here</a>");</pre>
 
     **Solution:**  

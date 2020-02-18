@@ -1,4 +1,4 @@
-# [Anonymous LDAP bind](http://find-sec-bugs.github.io/bugs.htm#LDAP_ANONYMOUS)
+# [Anonymous LDAP bind](https://find-sec-bugs.github.io/bugs.htm#LDAP_ANONYMOUS)
 
 Without proper access control, executing an LDAP statement that contains a user-controlled value can allow an attacker to abuse poorly configured LDAP context.
 All LDAP queries executed against the context will be performed without authentication and access control.

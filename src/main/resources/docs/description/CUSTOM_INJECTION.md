@@ -1,4 +1,4 @@
-# [Potential injection (custom)](http://find-sec-bugs.github.io/bugs.htm#CUSTOM_INJECTION)
+# [Potential injection (custom)](https://find-sec-bugs.github.io/bugs.htm#CUSTOM_INJECTION)
 
 The method identified is susceptible to injection. The input should be validated and properly escaped.
 
@@ -18,6 +18,6 @@ The method identified is susceptible to injection. The input should be validated
 
 [OWASP: Query Parameterization Cheat Sheet](https://www.owasp.org/index.php/Query_Parameterization_Cheat_Sheet)  
 
-[CAPEC-66: SQL Injection](http://capec.mitre.org/data/definitions/66.html)  
+[CAPEC-66: SQL Injection](https://capec.mitre.org/data/definitions/66.html)  
 
-[CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](http://cwe.mitre.org/data/definitions/89.html)
+[CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html)

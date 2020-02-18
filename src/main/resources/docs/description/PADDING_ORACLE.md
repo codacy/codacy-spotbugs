@@ -1,4 +1,4 @@
-# [Cipher is susceptible to Padding Oracle](http://find-sec-bugs.github.io/bugs.htm#PADDING_ORACLE)
+# [Cipher is susceptible to Padding Oracle](https://find-sec-bugs.github.io/bugs.htm#PADDING_ORACLE)
 
     This specific mode of CBC with PKCS5Padding is susceptible to padding oracle attacks. An adversary could potentially decrypt the
     message if the system exposed the difference between plaintext with invalid padding or valid padding. The distinction between
@@ -20,10 +20,10 @@ byte[] cipherText = c.doFinal(plainText);</pre>
 
     [Padding Oracles for the masses (by Matias Soler)](http://www.infobytesec.com/down/paddingoracle_openjam.pdf)  
 
-    [Wikipedia: Authenticated encryption](http://en.wikipedia.org/wiki/Authenticated_encryption)  
+    [Wikipedia: Authenticated encryption](https://en.wikipedia.org/wiki/Authenticated_encryption)  
 
-    [NIST: Authenticated Encryption Modes](http://csrc.nist.gov/groups/ST/toolkit/BCM/modes_development.html#01)  
+    [NIST: Authenticated Encryption Modes](https://csrc.nist.gov/projects/block-cipher-techniques/bcm/modes-develoment#01)  
 
-    [CAPEC: Padding Oracle Crypto Attack](http://capec.mitre.org/data/definitions/463.html)  
+    [CAPEC: Padding Oracle Crypto Attack](https://capec.mitre.org/data/definitions/463.html)  
 
-    [CWE-696: Incorrect Behavior Order](http://cwe.mitre.org/data/definitions/696.html)
+    [CWE-696: Incorrect Behavior Order](https://cwe.mitre.org/data/definitions/696.html)

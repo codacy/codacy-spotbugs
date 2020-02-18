@@ -1,4 +1,4 @@
-# [Potential CRLF Injection for logs](http://find-sec-bugs.github.io/bugs.htm#CRLF_INJECTION_LOGS)
+# [Potential CRLF Injection for logs](https://find-sec-bugs.github.io/bugs.htm#CRLF_INJECTION_LOGS)
 
     When data from an untrusted source is put into a logger and not neutralized correctly,
     an attacker could forge log entries or include malicious content.
@@ -46,9 +46,9 @@ The project [OWASP Security Logging](https://github.com/javabeanz/owasp-security
 
     **References**  
 
-    [CWE-117: Improper Output Neutralization for Logs](http://cwe.mitre.org/data/definitions/117.html)  
+    [CWE-117: Improper Output Neutralization for Logs](https://cwe.mitre.org/data/definitions/117.html)  
 
-    [CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')](http://cwe.mitre.org/data/definitions/93.html)  
+    [CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')](https://cwe.mitre.org/data/definitions/93.html)  
 
     [CWE-93: Improper Neutralization of CRLF Sequences ('CRLF Injection')](https://logback.qos.ch/manual/layouts.html#replace)  
 

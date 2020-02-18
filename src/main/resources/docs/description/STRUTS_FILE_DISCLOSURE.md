@@ -1,4 +1,4 @@
-# [Struts File Disclosure](http://find-sec-bugs.github.io/bugs.htm#STRUTS_FILE_DISCLOSURE)
+# [Struts File Disclosure](https://find-sec-bugs.github.io/bugs.htm#STRUTS_FILE_DISCLOSURE)
 
 Constructing a server-side redirect path with user input could allow an attacker to download application binaries (including application classes or jar files) or view arbitrary files within protected directories.  
 
@@ -6,9 +6,9 @@ An attacker may be able to forge a request parameter to match sensitive file loc
 
     **Vulnerable Code:**  
 
-<pre>... 
-String returnURL = request.getParameter("returnURL"); 
-Return new ActionForward(returnURL); 
+<pre>...
+String returnURL = request.getParameter("returnURL");
+Return new ActionForward(returnURL);
 ...</pre>
 
     **Solution:**  

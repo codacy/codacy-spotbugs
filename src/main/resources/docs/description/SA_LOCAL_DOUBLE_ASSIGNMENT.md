@@ -1,4 +1,4 @@
-# [Double assignment of local variable ](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#SA_LOCAL_DOUBLE_ASSIGNMENT)
+# [Double assignment of local variable](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#SA_LOCAL_DOUBLE_ASSIGNMENT)
 
  This method contains a double assignment of a local variable; e.g.
 

@@ -1,8 +1,8 @@
-# [External file access (Android)](http://find-sec-bugs.github.io/bugs.htm#ANDROID_EXTERNAL_FILE_ACCESS)
+# [External file access (Android)](https://find-sec-bugs.github.io/bugs.htm#ANDROID_EXTERNAL_FILE_ACCESS)
 
     The application write data to external storage (potentially SD card). There are multiple security implication to this
     action. First, file store on SD card will be accessible to the application having the
-    [`READ_EXTERNAL_STORAGE`](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) permission.
+    [`READ_EXTERNAL_STORAGE`](https://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE) permission.
     Also, if the data persisted contains confidential information about the user, encryption would be needed.
 
     **Code at risk:**  
@@ -27,7 +27,7 @@ fos.write(string.getBytes());
 
     [CERT: DRD00-J: Do not store sensitive information on external storage [...]](https://www.securecoding.cert.org/confluence/display/java/DRD00-J.+Do+not+store+sensitive+information+on+external+storage+%28SD+card%29+unless+encrypted+first)  
 
-    [Android Official Doc: Using the External Storage](http://developer.android.com/guide/topics/data/data-storage.html#filesExternal)  
+    [Android Official Doc: Using the External Storage](https://developer.android.com/guide/topics/data/data-storage.html#filesExternal)  
 
     [OWASP Mobile Top 10 2014-M2: Insecure Data Storage](https://www.owasp.org/index.php/Mobile_Top_10_2014-M2)  
 

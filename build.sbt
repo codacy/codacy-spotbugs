@@ -4,9 +4,9 @@ name := "codacy-spotbugs"
 
 scalaVersion := "2.12.10"
 
-val findsecbugsVersion = "1.9.0"
-val sbContribVersion = "7.4.5"
-val spotBugsVersion = "3.1.12"
+val findsecbugsVersion = "1.10.1"
+val sbContribVersion = "7.4.7"
+val spotBugsVersion = "4.0.0"
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
@@ -26,9 +26,7 @@ enablePlugins(AshScriptPlugin)
 
 sourceGenerators.in(Compile) += Def.task {
   val file = sourceManaged.in(Compile).value / "com" / "codacy" / "tools" / "spotbugs" / "Keys.scala"
-  IO.write(
-    file,
-    s"""|package com.codacy.tools.spotbugs
+  IO.write(file, s"""|package com.codacy.tools.spotbugs
        |
        |object Keys {
        |
@@ -39,14 +37,9 @@ sourceGenerators.in(Compile) += Def.task {
        |  val sbContribVersion: String = "$sbContribVersion"
        |
        |  val defaultLinuxInstallLocation: String = "${defaultLinuxInstallLocation.in(Docker).value}"
-       |  val dependenciesLocation: Option[String] = ${ivyPaths
-         .in(Compile)
-         .value
-         .ivyHome
-         .fold("Option.empty[String]")(home => s"""Option("$home")""")}
+       |  val dependenciesLocation: String = "${csrCacheDirectory.in(Compile).value}"
        |
-       |}""".stripMargin
-  )
+       |}""".stripMargin)
   Seq(file)
 }.taskValue
 

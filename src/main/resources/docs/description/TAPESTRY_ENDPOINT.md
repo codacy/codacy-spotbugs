@@ -1,6 +1,6 @@
-# [Found Tapestry page](http://find-sec-bugs.github.io/bugs.htm#TAPESTRY_ENDPOINT)
+# [Found Tapestry page](https://find-sec-bugs.github.io/bugs.htm#TAPESTRY_ENDPOINT)
 
-A Tapestry endpoint was discovered at application startup. Tapestry apps are structured with a backing Java class and a corresponding 
+A Tapestry endpoint was discovered at application startup. Tapestry apps are structured with a backing Java class and a corresponding
 Tapestry Markup Language page (a `.tml` file) for each page. When a request is received, the GET/POST parameters are mapped to specific
 inputs in the backing Java class. The mapping is either done with field name:
 
@@ -20,11 +20,11 @@ or the definition of an explicit annotation:
 
 The page is mapped to the view `/resources/package/PageName.tml`.
 
-Each Tapestry page in this application should be researched to make sure all inputs that are automatically 
+Each Tapestry page in this application should be researched to make sure all inputs that are automatically
 mapped in this way are properly validated before they are used.
 
 **References**  
 
-[Apache Tapestry Home Page](http://tapestry.apache.org/)  
+[Apache Tapestry Home Page](https://tapestry.apache.org/)  
 
-[CWE-20: Improper Input Validation](http://cwe.mitre.org/data/definitions/20.html)
+[CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)
