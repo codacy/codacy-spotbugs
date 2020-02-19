@@ -26,7 +26,7 @@ enablePlugins(AshScriptPlugin)
 
 sourceGenerators.in(Compile) += Def.task {
   val file = sourceManaged.in(Compile).value / "com" / "codacy" / "tools" / "spotbugs" / "Keys.scala"
-  IO.write(file, s"""|package com.codacy.tools.spotbugs
+  IO.write(file, s"""package com.codacy.tools.spotbugs
        |
        |object Keys {
        |
