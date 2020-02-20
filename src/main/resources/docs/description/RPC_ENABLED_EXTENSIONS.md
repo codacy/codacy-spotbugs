@@ -1,4 +1,4 @@
-# [Enabling extensions in Apache XML RPC server or client.](http://find-sec-bugs.github.io/bugs.htm#RPC_ENABLED_EXTENSIONS)
+# [Enabling extensions in Apache XML RPC server or client.](https://find-sec-bugs.github.io/bugs.htm#RPC_ENABLED_EXTENSIONS)
 
 Enabling extensions in Apache XML RPC server or client can lead to deserialization vulnerability which would allow an
 attacker to execute arbitrary code.

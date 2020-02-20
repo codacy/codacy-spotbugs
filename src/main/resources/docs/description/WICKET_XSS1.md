@@ -1,4 +1,4 @@
-# [Disabling HTML escaping put the application at risk for XSS](http://find-sec-bugs.github.io/bugs.htm#WICKET_XSS1)
+# [Disabling HTML escaping put the application at risk for XSS](https://find-sec-bugs.github.io/bugs.htm#WICKET_XSS1)
 
 Disabling HTML escaping put the application at risk for Cross-Site Scripting (XSS).
 
@@ -18,4 +18,4 @@ add(new Label("someLabel").setEscapeModelStrings(false));
 
 [OWASP: Top 10 2013-A3: Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29)  
 
-[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](http://cwe.mitre.org/data/definitions/79.html)
+[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)

@@ -1,6 +1,6 @@
-# [Bad hexadecimal concatenation](http://find-sec-bugs.github.io/bugs.htm#BAD_HEXA_CONVERSION)
+# [Bad hexadecimal concatenation](https://find-sec-bugs.github.io/bugs.htm#BAD_HEXA_CONVERSION)
 
-When converting a byte array containing a hash signature to a human readable string, a conversion mistake can be made if 
+When converting a byte array containing a hash signature to a human readable string, a conversion mistake can be made if
 the array is read byte by byte. The following sample illustrates the use of the method `Integer.toHexString()` which will trim any leading zeroes
 from each byte of the computed hash value.
 
@@ -15,7 +15,7 @@ for(byte b :resultBytes) {
 
 return stringBuilder.toString();</pre>
 
-This mistake weakens the hash value computed since it introduces more collisions. 
+This mistake weakens the hash value computed since it introduces more collisions.
 For example, the hash values "0x0679" and "0x6709" would both output as "679" for the above function.
 
 In this situation, the method `Integer.toHexString()` should be replaced with `String.format()` as follows:
@@ -24,4 +24,4 @@ In this situation, the method `Integer.toHexString()` should be replaced with `S
 
 **References**  
 
-[CWE-704: Incorrect Type Conversion or Cast](http://cwe.mitre.org/data/definitions/704.html)
+[CWE-704: Incorrect Type Conversion or Cast](https://cwe.mitre.org/data/definitions/704.html)

@@ -1,4 +1,4 @@
-# [Potential template injection with Freemarker](http://find-sec-bugs.github.io/bugs.htm#TEMPLATE_INJECTION_FREEMARKER)
+# [Potential template injection with Freemarker](https://find-sec-bugs.github.io/bugs.htm#TEMPLATE_INJECTION_FREEMARKER)
 
 Freemarker template engine is powerful. It is possible to add logic including condition statements, loops and external calls.
 It is not design to be sandbox to templating operations. A malicious user in control of a template can run malicious code
@@ -17,6 +17,6 @@ prefer logic-less template engines such as Handlebars or Moustache (See referenc
 
 **References**  
 
-[PortSwigger: Server-Side Template Injection ](http://blog.portswigger.net/2015/08/server-side-template-injection.html)  
+[PortSwigger: Server-Side Template Injection](https://portswigger.net/research/server-side-template-injection)  
 
 [Handlebars.java](https://jknack.github.io/handlebars.java/)

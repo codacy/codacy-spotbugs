@@ -1,4 +1,4 @@
-# [Potential XSS in Scala Twirl template engine](http://find-sec-bugs.github.io/bugs.htm#SCALA_XSS_TWIRL)
+# [Potential XSS in Scala Twirl template engine](https://find-sec-bugs.github.io/bugs.htm#SCALA_XSS_TWIRL)
 
 A potential XSS was found. It could be used to execute unwanted JavaScript in a client's browser. (See references)
 
@@ -26,6 +26,6 @@ which explains these defenses in significant detail.
 
 [OWASP: Top 10 2013-A3: Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29)  
 
-[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](http://cwe.mitre.org/data/definitions/79.html)  
+[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)  
 
 [OWASP Java Encoder](https://code.google.com/p/owasp-java-encoder/)

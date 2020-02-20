@@ -1,4 +1,4 @@
-# [Trust Boundary Violation](http://find-sec-bugs.github.io/bugs.htm#TRUST_BOUNDARY_VIOLATION)
+# [Trust Boundary Violation](https://find-sec-bugs.github.io/bugs.htm#TRUST_BOUNDARY_VIOLATION)
 
     "A trust boundary can be thought of as line drawn through a program. On one side of the line, data is untrusted.
     On the other side of the line, data is assumed to be trustworthy. The purpose of validation logic is to allow data

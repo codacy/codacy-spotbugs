@@ -1,4 +1,4 @@
-# [JavaBeans Property Injection](http://find-sec-bugs.github.io/bugs.htm#BEAN_PROPERTY_INJECTION)
+# [JavaBeans Property Injection](https://find-sec-bugs.github.io/bugs.htm#BEAN_PROPERTY_INJECTION)
 
 An attacker can set arbitrary bean properties that can compromise system integrity.
 Bean population functions allow to set a bean property or a nested property.

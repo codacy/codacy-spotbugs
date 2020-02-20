@@ -1,8 +1,8 @@
 # [Uncallable method defined in anonymous class](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS)
 
- This anonymous class defined a method that is not directly invoked and does not override
+ This anonymous class defines a method that is not directly invoked and does not override
 a method in a superclass. Since methods in other classes cannot directly invoke methods
 declared in an anonymous class, it seems that this method is uncallable. The method
 might simply be dead code, but it is also possible that the method is intended to
-override a method declared in a superclass, and due to an typo or other error the method does not,
+override a method declared in a superclass, and due to a typo or other error the method does not,
 in fact, override the method it is intended to.

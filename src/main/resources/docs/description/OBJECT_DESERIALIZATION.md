@@ -1,4 +1,4 @@
-# [Object deserialization is used in {1}](http://find-sec-bugs.github.io/bugs.htm#OBJECT_DESERIALIZATION)
+# [Object deserialization is used in {1}](https://find-sec-bugs.github.io/bugs.htm#OBJECT_DESERIALIZATION)
 
     Object deserialization of untrusted data can lead to remote code execution, if there is a class in classpath that allows
     the trigger of malicious operation.
@@ -30,7 +30,7 @@ Avoid deserializing object provided by remote users.
 
 [Deserialization of untrusted data](https://www.owasp.org/index.php/Deserialization_of_untrusted_data)  
 
-[Serialization and Deserialization ](http://www.oracle.com/technetwork/java/seccodeguide-139067.html#8)  
+[Serialization and Deserialization ](https://www.oracle.com/technetwork/java/seccodeguide-139067.html#8)  
 
 [A tool for generating payloads that exploit unsafe Java object deserialization](https://github.com/frohoff/ysoserial)  
 

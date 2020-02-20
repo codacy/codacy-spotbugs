@@ -1,4 +1,4 @@
-# [Potential XSS in JSP](http://find-sec-bugs.github.io/bugs.htm#XSS_JSP_PRINT)
+# [Potential XSS in JSP](https://find-sec-bugs.github.io/bugs.htm#XSS_JSP_PRINT)
 
 A potential XSS was found. It could be used to execute unwanted JavaScript in a client's browser. (See references)
 
@@ -20,7 +20,7 @@ String taintedInput = (String) request.getAttribute("input");
 &lt;%= Encode.forHtml(taintedInput) %&gt;
     </pre>
 
-The best defense against XSS is context sensitive output encoding like the example above. There are typically 4 contexts to consider: 
+The best defense against XSS is context sensitive output encoding like the example above. There are typically 4 contexts to consider:
 HTML, JavaScript, CSS (styles), and URLs. Please follow the XSS protection rules defined in the OWASP XSS Prevention Cheat Sheet,
 which explains these defenses in significant detail.
 
@@ -32,6 +32,6 @@ which explains these defenses in significant detail.
 
 [OWASP: Top 10 2013-A3: Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29)  
 
-[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](http://cwe.mitre.org/data/definitions/79.html)  
+[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)  
 
 [OWASP Java Encoder](https://code.google.com/p/owasp-java-encoder/)

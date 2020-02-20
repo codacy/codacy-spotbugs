@@ -1,4 +1,4 @@
-# [XML parsing vulnerable to XXE (XMLReader)](http://find-sec-bugs.github.io/bugs.htm#XXE_XMLREADER)
+# [XML parsing vulnerable to XXE (XMLReader)](https://find-sec-bugs.github.io/bugs.htm#XXE_XMLREADER)
 
 [###ERROR: 
 <!--XXE_GENERIC_START--> ###]
@@ -83,20 +83,20 @@ reader.parse(new InputSource(inputStream));</pre>
 
 [###ERROR: 
 <!--XXE_GENERIC_START--> ###]
-[CWE-611: Improper Restriction of XML External Entity Reference ('XXE')](http://cwe.mitre.org/data/definitions/611.html)  
+[CWE-611: Improper Restriction of XML External Entity Reference ('XXE')](https://cwe.mitre.org/data/definitions/611.html)  
 
 [CERT: IDS10-J. Prevent XML external entity attacks](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=61702260)  
 
 [OWASP.org: XML External Entity (XXE) Processing](https://www.owasp.org/index.php/XML_External_Entity_%28XXE%29_Processing)  
 
-[WS-Attacks.org: XML Entity Expansion](http://www.ws-attacks.org/index.php/XML_Entity_Expansion)  
+[WS-Attacks.org: XML Entity Expansion](https://www.ws-attacks.org/index.php/XML_Entity_Expansion)  
 
-[WS-Attacks.org: XML External Entity DOS](http://www.ws-attacks.org/index.php/XML_External_Entity_DOS)  
+[WS-Attacks.org: XML External Entity DOS](https://www.ws-attacks.org/index.php/XML_External_Entity_DOS)  
 
-[WS-Attacks.org: XML Entity Reference Attack](http://www.ws-attacks.org/index.php/XML_Entity_Reference_Attack)  
+[WS-Attacks.org: XML Entity Reference Attack](https://www.ws-attacks.org/index.php/XML_Entity_Reference_Attack)  
 
-[Identifying XML External Entity vulnerability (XXE)](http://blog.h3xstream.com/2014/06/identifying-xml-external-entity.html)  
+[Identifying XML External Entity vulnerability (XXE)](https://blog.h3xstream.com/2014/06/identifying-xml-external-entity.html)  
 
 [###ERROR: 
 <!--XXE_GENERIC_END--> ###]
-[Xerces complete features list](http://xerces.apache.org/xerces-j/features.html)
+[Xerces complete features list](https://xerces.apache.org/xerces-j/features.html)

@@ -1,4 +1,4 @@
-# [Insecure SMTP SSL connection](http://find-sec-bugs.github.io/bugs.htm#INSECURE_SMTP_SSL)
+# [Insecure SMTP SSL connection](https://find-sec-bugs.github.io/bugs.htm#INSECURE_SMTP_SSL)
 
 Server identity verification is disabled when making SSL connections. Some email libraries that enable SSL connections do not verify the server certificate by default. This is equivalent to trusting all certificates.
 When trying to connect to the server, this application would readily accept a certificate issued to "victim.com".

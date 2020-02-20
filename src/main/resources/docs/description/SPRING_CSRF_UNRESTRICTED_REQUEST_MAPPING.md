@@ -1,4 +1,4 @@
-# [Spring CSRF unrestricted RequestMapping](http://find-sec-bugs.github.io/bugs.htm#SPRING_CSRF_UNRESTRICTED_REQUEST_MAPPING)
+# [Spring CSRF unrestricted RequestMapping](https://find-sec-bugs.github.io/bugs.htm#SPRING_CSRF_UNRESTRICTED_REQUEST_MAPPING)
 
 Methods annotated with `RequestMapping` are by default mapped to all the HTTP request methods.
 However, Spring Security's CSRF protection is not enabled by default

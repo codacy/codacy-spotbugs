@@ -1,4 +1,4 @@
-# [Questionable cast to abstract collection ](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#BC_BAD_CAST_TO_ABSTRACT_COLLECTION)
+# [Questionable cast to abstract collection](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#BC_BAD_CAST_TO_ABSTRACT_COLLECTION)
 
 This code casts a Collection to an abstract collection
 (such as `List`, `Set`, or `Map`).

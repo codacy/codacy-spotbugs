@@ -1,4 +1,4 @@
-# [AWS Query Injection](http://find-sec-bugs.github.io/bugs.htm#AWS_QUERY_INJECTION)
+# [AWS Query Injection](https://find-sec-bugs.github.io/bugs.htm#AWS_QUERY_INJECTION)
 
 Constructing SimpleDB queries containing user input can allow an attacker to view unauthorized records.  
 

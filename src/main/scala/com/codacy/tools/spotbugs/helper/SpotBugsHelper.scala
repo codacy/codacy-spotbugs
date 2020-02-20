@@ -2,17 +2,21 @@ package com.codacy.tools.spotbugs.helper
 
 import better.files.File
 import com.codacy.tools.spotbugs.{InMemoryBugReporter, Keys, ProjectStatsWithoutCustomProfiler}
-import edu.umd.cs.findbugs.{CategoryFilteringBugReporter, DetectorFactoryCollection, Plugin, Priorities, Project}
+import edu.umd.cs.findbugs._
 
 import scala.collection.JavaConverters._
 
 case class PluginDefinition(pluginId: String, pluginOrg: String, pluginName: String, pluginVersion: String) {
+  private val cacheDirectory = File(Keys.dependenciesLocation)
+  // look for the plugins in the machines local cache (coursier) downloaded during Compile
+  private val cacheFiles =
+    if (cacheDirectory.exists && cacheDirectory.isDirectory)
+      File(Keys.dependenciesLocation).collectChildren(_.name == s"$pluginName-$pluginVersion.jar", 20)
+    else Iterator.empty
 
   val locations: List[File] = List(
     File(Keys.defaultLinuxInstallLocation) / s"lib/$pluginOrg.$pluginName-$pluginVersion.jar",
-    Keys.dependenciesLocation
-      .fold(File.home / ".ivy2")(File(_)) / s"cache/$pluginOrg/$pluginName/jars/$pluginName-$pluginVersion.jar"
-  )
+  ) ++ cacheFiles
 }
 
 object SpotBugsHelper {
@@ -42,7 +46,11 @@ object SpotBugsHelper {
     } + DetectorFactoryCollection.instance.getCorePlugin
   }
 
-  def createBugReporter(project: Project, projectStats: ProjectStatsWithoutCustomProfiler, isScala: Boolean) = {
+  def createBugReporter(
+      project: Project,
+      projectStats: ProjectStatsWithoutCustomProfiler,
+      isScala: Boolean
+  ): BugReporter = {
 
     // If the language is Scala, we only want to use patterns from FindSecBugs since SpotBugs and other plugins
     // do not support the language. The best way to perform this since we cannot disable the main SpotBugs plugin

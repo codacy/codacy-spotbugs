@@ -1,6 +1,6 @@
 # [Synchronization performed on util.concurrent instance](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#JLM_JSR166_UTILCONCURRENT_MONITORENTER)
 
- This method performs synchronization an object that is an instance of
+ This method performs synchronization on an object that is an instance of
 a class from the java.util.concurrent package (or its subclasses). Instances
 of these classes have their own concurrency control mechanisms that are orthogonal to
 the synchronization provided by the Java keyword `synchronized`. For example,

@@ -1,4 +1,4 @@
-# [Synchronization on interned String ](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DL_SYNCHRONIZATION_ON_SHARED_CONSTANT)
+# [Synchronization on interned String](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DL_SYNCHRONIZATION_ON_SHARED_CONSTANT)
 
  The code synchronizes on interned String.
 

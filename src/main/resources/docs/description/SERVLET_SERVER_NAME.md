@@ -1,7 +1,7 @@
-# [Untrusted Hostname header](http://find-sec-bugs.github.io/bugs.htm#SERVLET_SERVER_NAME)
+# [Untrusted Hostname header](https://find-sec-bugs.github.io/bugs.htm#SERVLET_SERVER_NAME)
 
-The hostname header can be controlled by the client. As such, its value should not be used in any security critical decisions. 
-Both `ServletRequest.getServerName()` and `HttpServletRequest.getHeader("Host")` have the same 
+The hostname header can be controlled by the client. As such, its value should not be used in any security critical decisions.
+Both `ServletRequest.getServerName()` and `HttpServletRequest.getHeader("Host")` have the same
 behavior which is to extract the `Host` header.
 
 <pre>
@@ -15,4 +15,4 @@ decisions you make with respect to a request.
 
 **Reference**  
 
-[CWE-807: Untrusted Inputs in a Security Decision](http://cwe.mitre.org/data/definitions/807.html)
+[CWE-807: Untrusted Inputs in a Security Decision](https://cwe.mitre.org/data/definitions/807.html)

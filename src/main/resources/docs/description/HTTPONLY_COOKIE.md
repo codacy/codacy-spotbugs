@@ -1,4 +1,4 @@
-# [Cookie without the HttpOnly flag](http://find-sec-bugs.github.io/bugs.htm#HTTPONLY_COOKIE)
+# [Cookie without the HttpOnly flag](https://find-sec-bugs.github.io/bugs.htm#HTTPONLY_COOKIE)
 
 A new cookie is created without the `HttpOnly` flag set.
 The `HttpOnly` flag is a directive to the browser to make sure that the cookie can not be red by
@@ -44,7 +44,7 @@ cookie.setHttpOnly(true); //HttpOnly flag
 
 **Reference**  
 
-[Coding Horror blog: Protecting Your Cookies: HttpOnly](http://blog.codinghorror.com/protecting-your-cookies-httponly/)  
+[Coding Horror blog: Protecting Your Cookies: HttpOnly](https://blog.codinghorror.com/protecting-your-cookies-httponly/)  
 
 [OWASP: HttpOnly](https://www.owasp.org/index.php/HttpOnly)  
 

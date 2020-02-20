@@ -1,4 +1,4 @@
-# [Predictable pseudorandom number generator (Scala)](http://find-sec-bugs.github.io/bugs.htm#PREDICTABLE_RANDOM_SCALA)
+# [Predictable pseudorandom number generator (Scala)](https://find-sec-bugs.github.io/bugs.htm#PREDICTABLE_RANDOM_SCALA)
 
 The use of a predictable random value can lead to vulnerabilities when used in certain security critical contexts. For example, when the value is used as:
 
@@ -43,10 +43,10 @@ def generateSecretToken() {
 
 **References**  
 
-[Cracking Random Number Generators - Part 1 (http://jazzy.id.au)](http://jazzy.id.au/default/2010/09/20/cracking_random_number_generators_part_1.html)  
+[Cracking Random Number Generators - Part 1 (http://jazzy.id.au)](https://jazzy.id.au/2010/09/20/cracking_random_number_generators_part_1.html)  
 
 [CERT: MSC02-J. Generate strong random numbers](https://www.securecoding.cert.org/confluence/display/java/MSC02-J.+Generate+strong+random+numbers)  
 
-[CWE-330: Use of Insufficiently Random Values](http://cwe.mitre.org/data/definitions/330.html)  
+[CWE-330: Use of Insufficiently Random Values](https://cwe.mitre.org/data/definitions/330.html)  
 
-[Predicting Struts CSRF Token (Example of real-life vulnerability and exploitation)](http://blog.h3xstream.com/2014/12/predicting-struts-csrf-token-cve-2014.html)
+[Predicting Struts CSRF Token (Example of real-life vulnerability and exploitation)](https://blog.h3xstream.com/2014/12/predicting-struts-csrf-token-cve-2014.html)

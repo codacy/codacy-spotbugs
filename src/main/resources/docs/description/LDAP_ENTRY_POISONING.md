@@ -1,4 +1,4 @@
-# [LDAP Entry Poisoning](http://find-sec-bugs.github.io/bugs.htm#LDAP_ENTRY_POISONING)
+# [LDAP Entry Poisoning](https://find-sec-bugs.github.io/bugs.htm#LDAP_ENTRY_POISONING)
 
 JNDI API support the binding of serialize object in LDAP directories. If certain attributes are presented, the deserialization
 of object will be made in the application querying the directory (See Black Hat USA 2016 white paper for details).

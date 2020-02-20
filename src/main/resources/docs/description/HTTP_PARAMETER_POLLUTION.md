@@ -1,4 +1,4 @@
-# [HTTP Parameter Pollution](http://find-sec-bugs.github.io/bugs.htm#HTTP_PARAMETER_POLLUTION)
+# [HTTP Parameter Pollution](https://find-sec-bugs.github.io/bugs.htm#HTTP_PARAMETER_POLLUTION)
 
 Concatenating unvalidated user input into a URL can allow an attacker to override the value of a request parameter. Attacker may be able to override existing parameter values, inject a new parameter or exploit variables out of a direct reach. HTTP Parameter Pollution (HPP) attacks consist of injecting encoded query string delimiters into other existing parameters. If a web application does not properly sanitize the user input, a malicious user may compromise the logic of the application to perform either client-side or server-side attacks.  
 

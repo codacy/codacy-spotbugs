@@ -1,10 +1,10 @@
-# [Cipher with no integrity](http://find-sec-bugs.github.io/bugs.htm#CIPHER_INTEGRITY)
+# [Cipher with no integrity](https://find-sec-bugs.github.io/bugs.htm#CIPHER_INTEGRITY)
 
-    The ciphertext produced is susceptible to alteration by an adversary. This mean that the cipher provides no way to detect that the 
+    The ciphertext produced is susceptible to alteration by an adversary. This mean that the cipher provides no way to detect that the
     data has been tampered with. If the ciphertext can be controlled by an attacker, it could be altered without detection.
 
     The solution is to use a cipher that includes a Hash based Message Authentication Code (HMAC) to sign the data. Combining a HMAC function to the
-    existing cipher is prone to error <sup>[[1]](http://www.thoughtcrime.org/blog/the-cryptographic-doom-principle/)</sup>. Specifically,
+    existing cipher is prone to error <sup>[[1]](https://moxie.org/blog/the-cryptographic-doom-principle/)</sup>. Specifically,
     it is always recommended that you be able to verify the HMAC first, and only if the data is unmodified, do you then perform any cryptographic
     functions on the data.
 
@@ -44,10 +44,10 @@ In the example solution above, the GCM mode introduces an HMAC into the resultin
 
     **References**  
 
-    [Wikipedia: Authenticated encryption](http://en.wikipedia.org/wiki/Authenticated_encryption)  
+    [Wikipedia: Authenticated encryption](https://en.wikipedia.org/wiki/Authenticated_encryption)  
 
-    [NIST: Authenticated Encryption Modes](http://csrc.nist.gov/groups/ST/toolkit/BCM/modes_development.html#01)  
+    [NIST: Authenticated Encryption Modes](https://csrc.nist.gov/projects/block-cipher-techniques/bcm/modes-develoment#01)  
 
-    [Moxie Marlinspike's blog: The Cryptographic Doom Principle](http://www.thoughtcrime.org/blog/the-cryptographic-doom-principle/)  
+    [Moxie Marlinspike's blog: The Cryptographic Doom Principle](https://moxie.org/blog/the-cryptographic-doom-principle/)  
 
-    [CWE-353: Missing Support for Integrity Check](http://cwe.mitre.org/data/definitions/353.html)
+    [CWE-353: Missing Support for Integrity Check](https://cwe.mitre.org/data/definitions/353.html)

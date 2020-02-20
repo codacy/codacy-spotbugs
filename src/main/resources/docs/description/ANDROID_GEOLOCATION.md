@@ -1,4 +1,4 @@
-# [WebView with geolocation activated (Android)](http://find-sec-bugs.github.io/bugs.htm#ANDROID_GEOLOCATION)
+# [WebView with geolocation activated (Android)](https://find-sec-bugs.github.io/bugs.htm#ANDROID_GEOLOCATION)
 
     It is suggested to ask the user for a confirmation about obtaining its geolocation.
 
@@ -32,6 +32,6 @@ webView.setWebChromeClient(new WebChromeClient() {
 
     [CERT: DRD15-J. Consider privacy concerns when using Geolocation API](https://www.securecoding.cert.org/confluence/display/java/DRD15-J.+Consider+privacy+concerns+when+using+Geolocation+API)  
 
-    [Wikipedia: W3C Geolocation API](http://en.wikipedia.org/wiki/W3C_Geolocation_API)  
+    [Wikipedia: W3C Geolocation API](https://en.wikipedia.org/wiki/W3C_Geolocation_API)  
 
-    [W3C: Geolocation Specification](http://dev.w3.org/geo/api/spec-source.html)
+    [W3C: Geolocation Specification](https://w3c.github.io/geolocation-api/)

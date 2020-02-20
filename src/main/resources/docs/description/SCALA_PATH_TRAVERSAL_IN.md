@@ -1,4 +1,4 @@
-# [Potential Path Traversal (file read)](http://find-sec-bugs.github.io/bugs.htm#SCALA_PATH_TRAVERSAL_IN)
+# [Potential Path Traversal using Scala API (file read)](https://find-sec-bugs.github.io/bugs.htm#SCALA_PATH_TRAVERSAL_IN)
 
 A file is opened to read its content. The filename comes from an **input** parameter.
 If an unfiltered parameter is passed to this file API, files from an arbitrary filesystem location could be read.
@@ -38,6 +38,6 @@ def getWordList(value:String) = Action {
 
 [OWASP: Path Traversal](https://www.owasp.org/index.php/Path_Traversal)  
 
-[CAPEC-126: Path Traversal](http://capec.mitre.org/data/definitions/126.html)  
+[CAPEC-126: Path Traversal](https://capec.mitre.org/data/definitions/126.html)  
 
-[CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')](http://cwe.mitre.org/data/definitions/22.html)
+[CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')](https://cwe.mitre.org/data/definitions/22.html)

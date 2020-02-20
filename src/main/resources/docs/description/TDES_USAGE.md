@@ -1,4 +1,4 @@
-# [DESede is insecure](http://find-sec-bugs.github.io/bugs.htm#TDES_USAGE)
+# [DESede is insecure](https://find-sec-bugs.github.io/bugs.htm#TDES_USAGE)
 
 Triple DES (also known as 3DES or DESede) is considered strong ciphers for modern applications. Currently, NIST recommends the
 usage of AES block ciphers instead of 3DES.
@@ -17,6 +17,6 @@ byte[] cipherText = c.doFinal(plainText);</pre>
 
 **References**  
 
-[NIST Withdraws Outdated Data Encryption Standard](http://www.nist.gov/itl/fips/060205_des.cfm)  
+[NIST Withdraws Outdated Data Encryption Standard](https://www.nist.gov/news-events/news/2005/06/nist-withdraws-outdated-data-encryption-standard)  
 
-[CWE-326: Inadequate Encryption Strength](http://cwe.mitre.org/data/definitions/326.html)
+[CWE-326: Inadequate Encryption Strength](https://cwe.mitre.org/data/definitions/326.html)

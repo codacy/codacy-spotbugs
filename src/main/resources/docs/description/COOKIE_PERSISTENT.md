@@ -1,4 +1,4 @@
-# [Persistent Cookie Usage](http://find-sec-bugs.github.io/bugs.htm#COOKIE_PERSISTENT)
+# [Persistent Cookie Usage](https://find-sec-bugs.github.io/bugs.htm#COOKIE_PERSISTENT)
 
 Storing sensitive data in a persistent cookie for an extended period can lead to a breach of confidentiality or account compromise.
 

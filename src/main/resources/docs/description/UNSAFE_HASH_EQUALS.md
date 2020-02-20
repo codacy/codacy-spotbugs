@@ -1,4 +1,4 @@
-# [Unsafe hash equals](http://find-sec-bugs.github.io/bugs.htm#UNSAFE_HASH_EQUALS)
+# [Unsafe hash equals](https://find-sec-bugs.github.io/bugs.htm#UNSAFE_HASH_EQUALS)
 
 An attacker might be able to detect the value of the secret hash due to the exposure of comparison timing. When the
 functions `Arrays.equals()` or `String.equals()` are called, they will exit earlier if fewer

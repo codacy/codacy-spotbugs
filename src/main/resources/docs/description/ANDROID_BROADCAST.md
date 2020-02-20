@@ -1,4 +1,4 @@
-# [Broadcast (Android)](http://find-sec-bugs.github.io/bugs.htm#ANDROID_BROADCAST)
+# [Broadcast (Android)](https://find-sec-bugs.github.io/bugs.htm#ANDROID_BROADCAST)
 
     Broadcast intents can be listened by any application with the appropriate permission. It is suggested to avoid transmitting
     sensitive information when possible.
@@ -67,11 +67,11 @@ sendBroadcast(v1);
 
     [CERT: DRD03-J. Do not broadcast sensitive information using an implicit intent](https://www.securecoding.cert.org/confluence/display/java/DRD03-J.+Do+not+broadcast+sensitive+information+using+an+implicit+intent)  
 
-    [Android Official Doc: BroadcastReceiver (Security)](http://developer.android.com/reference/android/content/BroadcastReceiver.html#Security)  
+    [Android Official Doc: BroadcastReceiver (Security)](https://developer.android.com/reference/android/content/BroadcastReceiver.html#Security)  
 
-    [Android Official Doc: Receiver configuration (see `android:permission`)](http://developer.android.com/guide/topics/manifest/receiver-element.html)  
+    [Android Official Doc: Receiver configuration (see `android:permission`)](https://developer.android.com/guide/topics/manifest/receiver-element.html)  
 
-    <sup>[1]</sup> [StackOverflow: How to set permissions in broadcast sender and receiver in android](http://stackoverflow.com/a/21513368/89769)  
+    <sup>[1]</sup> [StackOverflow: How to set permissions in broadcast sender and receiver in android](https://stackoverflow.com/a/21513368/89769)  
 
     [CWE-925: Improper Verification of Intent by Broadcast Receiver](https://cwe.mitre.org/data/definitions/925.html)  
 

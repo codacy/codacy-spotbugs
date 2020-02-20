@@ -1,6 +1,6 @@
-# [NullCipher is insecure](http://find-sec-bugs.github.io/bugs.htm#NULL_CIPHER)
+# [NullCipher is insecure](https://find-sec-bugs.github.io/bugs.htm#NULL_CIPHER)
 
-The NullCipher is rarely used intentionally in production applications. It implements the Cipher interface by returning ciphertext 
+The NullCipher is rarely used intentionally in production applications. It implements the Cipher interface by returning ciphertext
 identical to the supplied plaintext. In a few contexts, such as testing, a NullCipher may be appropriate.
 
     **Vulnerable Code:**  
@@ -16,4 +16,4 @@ byte[] cipherText = c.doFinal(plainText);</pre>
 
 **Reference**  
 
-[CWE-327: Use of a Broken or Risky Cryptographic Algorithm](http://cwe.mitre.org/data/definitions/327.html)
+[CWE-327: Use of a Broken or Risky Cryptographic Algorithm](https://cwe.mitre.org/data/definitions/327.html)

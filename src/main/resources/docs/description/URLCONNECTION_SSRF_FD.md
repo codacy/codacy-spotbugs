@@ -1,4 +1,4 @@
-# [URLConnection Server-Side Request Forgery (SSRF) and File Disclosure](http://find-sec-bugs.github.io/bugs.htm#URLCONNECTION_SSRF_FD)
+# [URLConnection Server-Side Request Forgery (SSRF) and File Disclosure](https://find-sec-bugs.github.io/bugs.htm#URLCONNECTION_SSRF_FD)
 
     Server-Side Request Forgery occur when a web server executes a request to a user supplied destination
     parameter that is not validated. Such vulnerabilities could allow an attacker to access internal services
@@ -10,14 +10,20 @@
 
 <pre>
 new URL(String url).openConnection()
+</pre>
+
+<pre>
 new URL(String url).openStream()
+</pre>
+
+<pre>
 new URL(String url).getContent()
 </pre>
 
     **Solution/Countermeasures:**  
 
 *   Don't accept URL destinations from users
-*   Accept a destination key, and use it to look up the target (legal) destination
+*   Accept a destination key, and use it to look up the target destination associate with the key
 *   White list URLs (if possible)
 *   Validate that the beginning of the URL is part of a white list
 

@@ -1,4 +1,4 @@
-# [XMLDecoder usage](http://find-sec-bugs.github.io/bugs.htm#XML_DECODER)
+# [XMLDecoder usage](https://find-sec-bugs.github.io/bugs.htm#XML_DECODER)
 
     XMLDecoder should not be used to parse untrusted data. Deserializing user input can lead to arbitrary code execution.
     This is possible because XMLDecoder supports arbitrary method invocation. This capability is intended to call setter methods,
@@ -46,4 +46,4 @@ The solution is to avoid using XMLDecoder to parse content from an untrusted sou
 
 [RedHat blog : Java deserialization flaws: Part 2, XML deserialization](https://securityblog.redhat.com/2014/01/23/java-deserialization-flaws-part-2-xml-deserialization/)  
 
-[CWE-20: Improper Input Validation](http://cwe.mitre.org/data/definitions/20.html)
+[CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)

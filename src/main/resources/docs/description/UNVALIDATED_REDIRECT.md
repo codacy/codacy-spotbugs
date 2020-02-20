@@ -1,4 +1,4 @@
-# [Unvalidated Redirect](http://find-sec-bugs.github.io/bugs.htm#UNVALIDATED_REDIRECT)
+# [Unvalidated Redirect](https://find-sec-bugs.github.io/bugs.htm#UNVALIDATED_REDIRECT)
 
     Unvalidated redirects occur when an application redirects a user to a destination URL specified by a user supplied
     parameter that is not validated. Such vulnerabilities can be used to facilitate phishing attacks.
@@ -40,4 +40,4 @@
 
 [OWASP: Unvalidated Redirects and Forwards Cheat Sheet](https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet)  
 
-[CWE-601: URL Redirection to Untrusted Site ('Open Redirect')](http://cwe.mitre.org/data/definitions/601.html)
+[CWE-601: URL Redirection to Untrusted Site ('Open Redirect')](https://cwe.mitre.org/data/definitions/601.html)

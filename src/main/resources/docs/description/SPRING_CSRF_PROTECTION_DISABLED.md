@@ -1,4 +1,4 @@
-# [Spring CSRF protection disabled](http://find-sec-bugs.github.io/bugs.htm#SPRING_CSRF_PROTECTION_DISABLED)
+# [Spring CSRF protection disabled](https://find-sec-bugs.github.io/bugs.htm#SPRING_CSRF_PROTECTION_DISABLED)
 
 Disabling Spring Security's CSRF protection is unsafe for standard web applications.
 

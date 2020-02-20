@@ -1,4 +1,4 @@
-# [Struts Form without input validation](http://find-sec-bugs.github.io/bugs.htm#STRUTS_FORM_VALIDATION)
+# [Struts Form without input validation](https://find-sec-bugs.github.io/bugs.htm#STRUTS_FORM_VALIDATION)
 
 Form inputs should have minimal input validation. Preventive validation helps provide defense in depth against a variety of risks.
 
@@ -20,6 +20,6 @@ public class RegistrationForm extends ValidatorForm {
 
 **References**  
 
-[CWE-20: Improper Input Validation](http://cwe.mitre.org/data/definitions/20.html)  
+[CWE-20: Improper Input Validation](https://cwe.mitre.org/data/definitions/20.html)  
 
-[CWE-106: Struts: Plug-in Framework not in Use](http://cwe.mitre.org/data/definitions/106.html)
+[CWE-106: Struts: Plug-in Framework not in Use](https://cwe.mitre.org/data/definitions/106.html)

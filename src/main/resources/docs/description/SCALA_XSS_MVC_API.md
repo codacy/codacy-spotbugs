@@ -1,4 +1,4 @@
-# [Potential XSS in Scala MVC API engine](http://find-sec-bugs.github.io/bugs.htm#SCALA_XSS_MVC_API)
+# [Potential XSS in Scala MVC API engine](https://find-sec-bugs.github.io/bugs.htm#SCALA_XSS_MVC_API)
 
 A potential XSS was found. It could be used to execute unwanted JavaScript in a client's browser. (See references)
 
@@ -26,6 +26,6 @@ which explains these defenses in significant detail.
 
 [OWASP: Top 10 2013-A3: Cross-Site Scripting (XSS)](https://www.owasp.org/index.php/Top_10_2013-A3-Cross-Site_Scripting_%28XSS%29)  
 
-[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](http://cwe.mitre.org/data/definitions/79.html)  
+[CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html)  
 
 [OWASP Java Encoder](https://code.google.com/p/owasp-java-encoder/)

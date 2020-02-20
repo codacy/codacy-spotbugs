@@ -1,4 +1,4 @@
-# [Spring File Disclosure](http://find-sec-bugs.github.io/bugs.htm#SPRING_FILE_DISCLOSURE)
+# [Spring File Disclosure](https://find-sec-bugs.github.io/bugs.htm#SPRING_FILE_DISCLOSURE)
 
 Constructing a server-side redirect path with user input could allow an attacker to download application binaries (including application classes or jar files) or view arbitrary files within protected directories.  
 
@@ -6,9 +6,9 @@ An attacker may be able to forge a request parameter to match sensitive file loc
 
     **Vulnerable Code:**  
 
-<pre>... 
+<pre>...
 String returnURL = request.getParameter("returnURL");
-return new ModelAndView(returnURL); 
+return new ModelAndView(returnURL);
 ...</pre>
 
     **Solution:**  
