@@ -1,7 +1,5 @@
 package com.codacy.tools.spotbugs.helper
 
-import java.nio.file.{FileSystems, Files}
-
 import better.files.File
 import com.codacy.tools.spotbugs.{InMemoryBugReporter, Keys, ProjectStatsWithoutCustomProfiler}
 import edu.umd.cs.findbugs._
@@ -9,21 +7,16 @@ import edu.umd.cs.findbugs._
 import scala.collection.JavaConverters._
 
 case class PluginDefinition(pluginId: String, pluginOrg: String, pluginName: String, pluginVersion: String) {
+  private val cacheDirectory = File(Keys.dependenciesLocation)
   // look for the plugins in the machines local cache (coursier) downloaded during Compile
   private val cacheFiles =
-    if (File(Keys.dependenciesLocation).exists) {
-      Files
-        .walk(FileSystems.getDefault.getPath(Keys.dependenciesLocation))
-        .iterator
-        .asScala
-        .collectFirst {
-          case p if p.endsWith(s"$pluginName-$pluginVersion.jar") => File(p)
-        }
-    } else None
+    if (cacheDirectory.exists && cacheDirectory.isDirectory)
+      File(Keys.dependenciesLocation).collectChildren(_.name == s"$pluginName-$pluginVersion.jar", 20)
+    else Iterator.empty
 
   val locations: List[File] = List(
     File(Keys.defaultLinuxInstallLocation) / s"lib/$pluginOrg.$pluginName-$pluginVersion.jar",
-  ) ++ cacheFiles.fold(List[File]())(List(_))
+  ) ++ cacheFiles
 }
 
 object SpotBugsHelper {
