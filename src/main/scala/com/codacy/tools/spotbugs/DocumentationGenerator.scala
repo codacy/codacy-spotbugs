@@ -133,6 +133,11 @@ object DocumentationGenerator {
         case "PT" => Some(Pattern.Subcategory.FileAccess)
         case "HRS" => Some(Pattern.Subcategory.HTTP)
         case "XSS" => Some(Pattern.Subcategory.XSS)
+        case "DP" => Some(Pattern.Subcategory.MaliciousCode)
+        case "MS" => Some(Pattern.Subcategory.MaliciousCode)
+        case "EI" => Some(Pattern.Subcategory.MaliciousCode)
+        case "EI2" => Some(Pattern.Subcategory.MaliciousCode)
+        case "FI" => Some(Pattern.Subcategory.MaliciousCode)
         case "SECJSPJSTL" => Some(Pattern.Subcategory.XSS) // JSP_JSTL_OUT
         case "SECJSPINC" => Some(Pattern.Subcategory.XSS) // JSP_INCLUDE !!!!!
         case "SECWTM" => Some(Pattern.Subcategory.SSL) // WEAK_TRUST_MANAGER !!!!!
