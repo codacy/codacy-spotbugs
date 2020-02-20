@@ -706,11 +706,13 @@
   }, {
     "patternId" : "DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "DP_DO_INSIDE_DO_PRIVILEGED",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "DRE_DECLARED_RUNTIME_EXCEPTION",
     "level" : "Info",
@@ -771,15 +773,18 @@
   }, {
     "patternId" : "EI_EXPOSE_REP",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "EI_EXPOSE_REP2",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "EI_EXPOSE_STATIC_REP2",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "EL_INJECTION",
     "level" : "Error",
@@ -977,7 +982,8 @@
   }, {
     "patternId" : "FI_PUBLIC_SHOULD_BE_PROTECTED",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "FI_USELESS",
     "level" : "Warning",
@@ -1716,47 +1722,58 @@
   }, {
     "patternId" : "MS_CANNOT_BE_FINAL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_EXPOSE_REP",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_FINAL_PKGPROTECT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_MUTABLE_ARRAY",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_MUTABLE_COLLECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_MUTABLE_COLLECTION_PKGPROTECT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_MUTABLE_HASHTABLE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_OOI_PKGPROTECT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_PKGPROTECT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_SHOULD_BE_FINAL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MS_SHOULD_BE_REFACTORED_TO_BE_FINAL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "MaliciousCode"
   }, {
     "patternId" : "MTIA_SUSPECT_SERVLET_INSTANCE_FIELD",
     "level" : "Info",
