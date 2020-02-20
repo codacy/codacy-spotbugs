@@ -27,19 +27,19 @@ enablePlugins(AshScriptPlugin)
 sourceGenerators.in(Compile) += Def.task {
   val file = sourceManaged.in(Compile).value / "com" / "codacy" / "tools" / "spotbugs" / "Keys.scala"
   IO.write(file, s"""package com.codacy.tools.spotbugs
-       |
-       |object Keys {
-       |
-       |  val toolName: String = "spotbugs"
-       |
-       |  val spotBugsVersion: String = "$spotBugsVersion"
-       |  val findsecbugsVersion: String = "$findsecbugsVersion"
-       |  val sbContribVersion: String = "$sbContribVersion"
-       |
-       |  val defaultLinuxInstallLocation: String = "${defaultLinuxInstallLocation.in(Docker).value}"
-       |  val dependenciesLocation: String = "${csrCacheDirectory.in(Compile).value}"
-       |
-       |}""".stripMargin)
+                    |
+                    |object Keys {
+                    |
+                    |  val toolName: String = "spotbugs"
+                    |
+                    |  val spotBugsVersion: String = "$spotBugsVersion"
+                    |  val findsecbugsVersion: String = "$findsecbugsVersion"
+                    |  val sbContribVersion: String = "$sbContribVersion"
+                    |
+                    |  val defaultLinuxInstallLocation: String = "${defaultLinuxInstallLocation.in(Docker).value}"
+                    |  val dependenciesLocation: String = "${csrCacheDirectory.in(Compile).value}"
+                    |
+                    |}""".stripMargin)
   Seq(file)
 }.taskValue
 

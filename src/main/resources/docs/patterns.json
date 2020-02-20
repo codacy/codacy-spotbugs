@@ -36,27 +36,33 @@
   }, {
     "patternId" : "ANDROID_BROADCAST",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Android"
   }, {
     "patternId" : "ANDROID_EXTERNAL_FILE_ACCESS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Android"
   }, {
     "patternId" : "ANDROID_GEOLOCATION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Android"
   }, {
     "patternId" : "ANDROID_WEB_VIEW_JAVASCRIPT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Android"
   }, {
     "patternId" : "ANDROID_WEB_VIEW_JAVASCRIPT_INTERFACE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Android"
   }, {
     "patternId" : "ANDROID_WORLD_WRITABLE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Android"
   }, {
     "patternId" : "AOM_ABSTRACT_OVERRIDDEN_METHOD",
     "level" : "Warning",
@@ -72,7 +78,8 @@
   }, {
     "patternId" : "AWS_QUERY_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "BAC_BAD_APPLET_CONSTRUCTOR",
     "level" : "Warning",
@@ -80,7 +87,8 @@
   }, {
     "patternId" : "BAD_HEXA_CONVERSION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "BAS_BLOATED_ASSIGNMENT_SCOPE",
     "level" : "Warning",
@@ -136,7 +144,8 @@
   }, {
     "patternId" : "BEAN_PROPERTY_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "BED_BOGUS_EXCEPTION_DECLARATION",
     "level" : "Warning",
@@ -176,7 +185,8 @@
   }, {
     "patternId" : "BLOWFISH_KEY_SIZE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "BL_BURYING_LOGIC",
     "level" : "Info",
@@ -284,7 +294,8 @@
   }, {
     "patternId" : "CIPHER_INTEGRITY",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "CI_CONFUSED_INHERITANCE",
     "level" : "Info",
@@ -316,7 +327,8 @@
   }, {
     "patternId" : "COMMAND_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "COM_COPIED_OVERRIDDEN_METHOD",
     "level" : "Info",
@@ -328,11 +340,13 @@
   }, {
     "patternId" : "COOKIE_PERSISTENT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cookies"
   }, {
     "patternId" : "COOKIE_USAGE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cookies"
   }, {
     "patternId" : "CO_ABSTRACT_SELF",
     "level" : "Warning",
@@ -356,7 +370,8 @@
   }, {
     "patternId" : "CRLF_INJECTION_LOGS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "CSBTS_COMMONS_STRING_BUILDER_TOSTRING",
     "level" : "Warning",
@@ -380,11 +395,13 @@
   }, {
     "patternId" : "CUSTOM_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "CUSTOM_MESSAGE_DIGEST",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "CU_CLONE_USABILITY_MISMATCHED_RETURN",
     "level" : "Info",
@@ -428,15 +445,18 @@
   }, {
     "patternId" : "DEFAULT_HTTP_CLIENT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "DESERIALIZATION_GADGET",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "DES_USAGE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "DE_MIGHT_DROP",
     "level" : "Warning",
@@ -532,7 +552,8 @@
   }, {
     "patternId" : "DMI_CONSTANT_DB_PASSWORD",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Auth"
   }, {
     "patternId" : "DMI_DOH",
     "level" : "Warning",
@@ -540,7 +561,8 @@
   }, {
     "patternId" : "DMI_EMPTY_DB_PASSWORD",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Auth"
   }, {
     "patternId" : "DMI_ENTRY_SETS_MAY_REUSE_ENTRY_OBJECTS",
     "level" : "Warning",
@@ -712,7 +734,8 @@
   }, {
     "patternId" : "ECB_MODE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "EC_ARRAY_AND_NONARRAY",
     "level" : "Warning",
@@ -760,15 +783,18 @@
   }, {
     "patternId" : "EL_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "ENTITY_LEAK",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Visibility"
   }, {
     "patternId" : "ENTITY_MASS_ASSIGNMENT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Visibility"
   }, {
     "patternId" : "EQ_ABSTRACT_SELF",
     "level" : "Warning",
@@ -832,7 +858,8 @@
   }, {
     "patternId" : "ESAPI_ENCRYPTOR",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "ES_COMPARING_PARAMETER_STRING_WITH_EQ",
     "level" : "Warning",
@@ -864,7 +891,8 @@
   }, {
     "patternId" : "EXTERNAL_CONFIG_CONTROL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "FB_MISSING_EXPECTED_WARNING",
     "level" : "Warning",
@@ -920,7 +948,8 @@
   }, {
     "patternId" : "FILE_UPLOAD_FILENAME",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "FI_EMPTY",
     "level" : "Warning",
@@ -960,7 +989,8 @@
   }, {
     "patternId" : "FORMAT_STRING_MANIPULATION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "FPL_FLOATING_POINT_LOOPS",
     "level" : "Warning",
@@ -980,15 +1010,18 @@
   }, {
     "patternId" : "HARD_CODE_KEY",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "HARD_CODE_PASSWORD",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Auth"
   }, {
     "patternId" : "HAZELCAST_SYMMETRIC_ENCRYPTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "HCP_HTTP_REQUEST_RESOURCES_NOT_FREED_FIELD",
     "level" : "Warning",
@@ -1040,11 +1073,13 @@
   }, {
     "patternId" : "HRS_REQUEST_PARAMETER_TO_COOKIE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "HRS_REQUEST_PARAMETER_TO_HTTP_HEADER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "HSC_HUGE_SHARED_STRING_CONSTANT",
     "level" : "Warning",
@@ -1052,15 +1087,18 @@
   }, {
     "patternId" : "HTTPONLY_COOKIE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cookies"
   }, {
     "patternId" : "HTTP_PARAMETER_POLLUTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "HTTP_RESPONSE_SPLITTING",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD",
     "level" : "Info",
@@ -1244,15 +1282,18 @@
   }, {
     "patternId" : "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Other"
   }, {
     "patternId" : "INSECURE_COOKIE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cookies"
   }, {
     "patternId" : "INSECURE_SMTP_SSL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "SSL"
   }, {
     "patternId" : "INT_BAD_COMPARISON_WITH_INT_VALUE",
     "level" : "Warning",
@@ -1360,15 +1401,18 @@
   }, {
     "patternId" : "JACKSON_UNSAFE_DESERIALIZATION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "JAXRS_ENDPOINT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "JAXWS_ENDPOINT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS",
     "level" : "Warning",
@@ -1416,19 +1460,23 @@
   }, {
     "patternId" : "JSP_INCLUDE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "JSP_JSTL_OUT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "JSP_SPRING_EVAL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "JSP_XSLT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "JVR_JDBC_VENDOR_RELIANCE",
     "level" : "Warning",
@@ -1452,15 +1500,18 @@
   }, {
     "patternId" : "LDAP_ANONYMOUS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Auth"
   }, {
     "patternId" : "LDAP_ENTRY_POISONING",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "LDAP_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "LEST_LOST_EXCEPTION_STACK_TRACE",
     "level" : "Warning",
@@ -1564,7 +1615,8 @@
   }, {
     "patternId" : "MALICIOUS_XSLT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "MDM_BIGDECIMAL_EQUALS",
     "level" : "Warning",
@@ -2048,11 +2100,13 @@
   }, {
     "patternId" : "NULL_CIPHER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "OBJECT_DESERIALIZATION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "OBL_UNSATISFIED_OBLIGATION",
     "level" : "Info",
@@ -2084,7 +2138,8 @@
   }, {
     "patternId" : "OGNL_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "OI_OPTIONAL_ISSUES_CHECKING_REFERENCE",
     "level" : "Warning",
@@ -2120,19 +2175,23 @@
   }, {
     "patternId" : "OVERLY_PERMISSIVE_FILE_PERMISSION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "PADDING_ORACLE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "PATH_TRAVERSAL_IN",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "PATH_TRAVERSAL_OUT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "PCAIL_POSSIBLE_CONSTANT_ALLOCATION_IN_LOOP",
     "level" : "Warning",
@@ -2148,7 +2207,8 @@
   }, {
     "patternId" : "PERMISSIVE_CORS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "PIS_POSSIBLE_INCOMPLETE_SERIALIZATION",
     "level" : "Warning",
@@ -2156,7 +2216,8 @@
   }, {
     "patternId" : "PLAY_UNVALIDATED_REDIRECT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "PL_PARALLEL_LISTS",
     "level" : "Info",
@@ -2180,11 +2241,13 @@
   }, {
     "patternId" : "PREDICTABLE_RANDOM",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "PREDICTABLE_RANDOM_SCALA",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "PRMC_POSSIBLY_REDUNDANT_METHOD_CALLS",
     "level" : "Warning",
@@ -2204,11 +2267,13 @@
   }, {
     "patternId" : "PT_ABSOLUTE_PATH_TRAVERSAL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "PT_RELATIVE_PATH_TRAVERSAL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "PUS_POSSIBLE_UNSUSPECTED_SERIALIZATION",
     "level" : "Warning",
@@ -2284,11 +2349,13 @@
   }, {
     "patternId" : "REDOS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Regex"
   }, {
     "patternId" : "REQUESTDISPATCHER_FILE_DISCLOSURE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "RE_BAD_SYNTAX_FOR_REGULAR_EXPRESSION",
     "level" : "Warning",
@@ -2316,7 +2383,8 @@
   }, {
     "patternId" : "RPC_ENABLED_EXTENSIONS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "RR_NOT_CHECKED",
     "level" : "Warning",
@@ -2324,11 +2392,13 @@
   }, {
     "patternId" : "RSA_KEY_SIZE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "RSA_NO_PADDING",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "RS_READOBJECT_SYNC",
     "level" : "Warning",
@@ -2436,7 +2506,8 @@
   }, {
     "patternId" : "SAML_IGNORE_COMMENTS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Auth"
   }, {
     "patternId" : "SAT_SUSPICIOUS_ARGUMENT_TYPES",
     "level" : "Warning",
@@ -2484,35 +2555,43 @@
   }, {
     "patternId" : "SCALA_COMMAND_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SCALA_PATH_TRAVERSAL_IN",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "SCALA_PLAY_SSRF",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SCALA_SENSITIVE_DATA_EXPOSURE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Other"
   }, {
     "patternId" : "SCALA_SQL_INJECTION_ANORM",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SCALA_SQL_INJECTION_SLICK",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SCALA_XSS_MVC_API",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "SCALA_XSS_TWIRL",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "SCA_SUSPICIOUS_CLONE_ALGORITHM",
     "level" : "Warning",
@@ -2528,7 +2607,8 @@
   }, {
     "patternId" : "SCRIPT_ENGINE_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SCRV_SUSPICIOUS_COMPARATOR_RETURN_VALUES",
     "level" : "Warning",
@@ -2548,7 +2628,8 @@
   }, {
     "patternId" : "SEAM_LOG_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SEC_SIDE_EFFECT_CONSTRUCTOR",
     "level" : "Info",
@@ -2560,35 +2641,43 @@
   }, {
     "patternId" : "SERVLET_CONTENT_TYPE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SERVLET_HEADER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SERVLET_HEADER_REFERER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SERVLET_HEADER_USER_AGENT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SERVLET_PARAMETER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SERVLET_QUERY_STRING",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SERVLET_SERVER_NAME",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SERVLET_SESSION_ID",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SE_BAD_FIELD",
     "level" : "Warning",
@@ -2728,7 +2817,8 @@
   }, {
     "patternId" : "SMTP_HEADER_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "SNG_SUSPICIOUS_NULL_FIELD_GUARD",
     "level" : "Warning",
@@ -2740,7 +2830,8 @@
   }, {
     "patternId" : "SPEL_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SPP_CONVERSION_OF_STRING_LITERAL",
     "level" : "Warning",
@@ -2876,23 +2967,28 @@
   }, {
     "patternId" : "SPRING_CSRF_PROTECTION_DISABLED",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CSRF"
   }, {
     "patternId" : "SPRING_CSRF_UNRESTRICTED_REQUEST_MAPPING",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CSRF"
   }, {
     "patternId" : "SPRING_ENDPOINT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Other"
   }, {
     "patternId" : "SPRING_FILE_DISCLOSURE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "SPRING_UNVALIDATED_REDIRECT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "SP_SPIN_ON_FIELD",
     "level" : "Warning",
@@ -2908,43 +3004,53 @@
   }, {
     "patternId" : "SQL_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SQL_INJECTION_ANDROID",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Android"
   }, {
     "patternId" : "SQL_INJECTION_HIBERNATE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SQL_INJECTION_JDBC",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SQL_INJECTION_JDO",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SQL_INJECTION_JPA",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SQL_INJECTION_SPRING_JDBC",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SQL_INJECTION_TURBINE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SR_NOT_CHECKED",
     "level" : "Warning",
@@ -2956,7 +3062,8 @@
   }, {
     "patternId" : "SSL_CONTEXT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "SSL"
   }, {
     "patternId" : "SS_SHOULD_BE_STATIC",
     "level" : "Warning",
@@ -2964,7 +3071,8 @@
   }, {
     "patternId" : "STATIC_IV",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "STB_STACKED_TRY_BLOCKS",
     "level" : "Info",
@@ -2996,19 +3104,23 @@
   }, {
     "patternId" : "STRUTS1_ENDPOINT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "STRUTS2_ENDPOINT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "STRUTS_FILE_DISCLOSURE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "STRUTS_FORM_VALIDATION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "STS_SPURIOUS_THREAD_STATES",
     "level" : "Warning",
@@ -3056,7 +3168,8 @@
   }, {
     "patternId" : "TAPESTRY_ENDPOINT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "TBP_TRISTATE_BOOLEAN_PATTERN",
     "level" : "Info",
@@ -3064,19 +3177,23 @@
   }, {
     "patternId" : "TDES_USAGE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "TEMPLATE_INJECTION_FREEMARKER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "TEMPLATE_INJECTION_PEBBLE",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "TEMPLATE_INJECTION_VELOCITY",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "CommandInjection"
   }, {
     "patternId" : "TESTING",
     "level" : "Info",
@@ -3136,7 +3253,8 @@
   }, {
     "patternId" : "TRUST_BOUNDARY_VIOLATION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "TR_TAIL_RECURSION",
     "level" : "Warning",
@@ -3228,11 +3346,13 @@
   }, {
     "patternId" : "UNENCRYPTED_SERVER_SOCKET",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "UNENCRYPTED_SOCKET",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "UNKNOWN",
     "level" : "Info",
@@ -3244,11 +3364,13 @@
   }, {
     "patternId" : "UNSAFE_HASH_EQUALS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Other"
   }, {
     "patternId" : "UNVALIDATED_REDIRECT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "UPM_UNCALLED_PRIVATE_METHOD",
     "level" : "Warning",
@@ -3268,11 +3390,13 @@
   }, {
     "patternId" : "URLCONNECTION_SSRF_FD",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "FileAccess"
   }, {
     "patternId" : "URL_REWRITING",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "HTTP"
   }, {
     "patternId" : "URV_CHANGE_RETURN_TYPE",
     "level" : "Info",
@@ -3468,23 +3592,28 @@
   }, {
     "patternId" : "WEAK_FILENAMEUTILS",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "WEAK_HOSTNAME_VERIFIER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "WEAK_MESSAGE_DIGEST_MD5",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "WEAK_MESSAGE_DIGEST_SHA1",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "Cryptography"
   }, {
     "patternId" : "WEAK_TRUST_MANAGER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "WEM_OBSCURING_EXCEPTION",
     "level" : "Info",
@@ -3496,11 +3625,13 @@
   }, {
     "patternId" : "WICKET_ENDPOINT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "WICKET_XSS1",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "WI_DUPLICATE_WIRED_TYPES",
     "level" : "Warning",
@@ -3536,62 +3667,77 @@
   }, {
     "patternId" : "XML_DECODER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "XPATH_INJECTION",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "XSS_JSP_PRINT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "XSS_REQUEST_PARAMETER_TO_JSP_WRITER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "XSS_REQUEST_PARAMETER_TO_SEND_ERROR",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "XSS_REQUEST_PARAMETER_TO_SERVLET_WRITER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "XSS_REQUEST_WRAPPER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "XSS_SERVLET",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "XSS"
   }, {
     "patternId" : "XXE_DOCUMENT",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "XXE_DTD_TRANSFORM_FACTORY",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "XXE_SAXPARSER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "XXE_XMLREADER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "XXE_XMLSTREAMREADER",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "XXE_XPATH",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   }, {
     "patternId" : "XXE_XSLT_TRANSFORM_FACTORY",
     "level" : "Error",
-    "category" : "Security"
+    "category" : "Security",
+    "subcategory" : "InputValidation"
   } ]
 }
