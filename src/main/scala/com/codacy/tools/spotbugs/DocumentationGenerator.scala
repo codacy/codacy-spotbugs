@@ -95,6 +95,7 @@ object DocumentationGenerator {
     }
   }
 
+  // order affects results since some BugPatterns match more than one item
   private val matchingPatterns = List(
     ("XSS", Pattern.Subcategory.XSS),
     ("ANDROID", Pattern.Subcategory.Android),
@@ -102,10 +103,10 @@ object DocumentationGenerator {
     ("HTTP", Pattern.Subcategory.HTTP),
     ("SERVLET", Pattern.Subcategory.InputValidation),
     ("PATH_TRAVERSAL", Pattern.Subcategory.FileAccess),
+    ("SQL_INJECTION", Pattern.Subcategory.SQLInjection),
     ("INJECTION", Pattern.Subcategory.CommandInjection),
     ("JAX", Pattern.Subcategory.HTTP),
     ("XXE", Pattern.Subcategory.InputValidation),
-    ("SQL_INJECTION", Pattern.Subcategory.SQLInjection),
     ("CSRF", Pattern.Subcategory.CSRF),
     ("JSP", Pattern.Subcategory.InputValidation),
     ("UNVALIDATED", Pattern.Subcategory.InputValidation),
@@ -133,6 +134,8 @@ object DocumentationGenerator {
         case "HRS" => Some(Pattern.Subcategory.HTTP)
         case "XSS" => Some(Pattern.Subcategory.XSS)
         case "SECJSPJSTL" => Some(Pattern.Subcategory.XSS) // JSP_JSTL_OUT
+        case "SECJSPINC" => Some(Pattern.Subcategory.XSS) // JSP_INCLUDE !!!!!
+        case "SECWTM" => Some(Pattern.Subcategory.SSL) // WEAK_TRUST_MANAGER !!!!!
         case "SECSC" => Some(Pattern.Subcategory.Other) // SPRING_ENDPOINT
         case "SECXPI" => Some(Pattern.Subcategory.InputValidation) // XPATH_INJECTION
         case "SECCUSTOMI" => Some(Pattern.Subcategory.SQLInjection) // CUSTOM_INJECTION
@@ -165,8 +168,8 @@ object DocumentationGenerator {
         case "PADORA" => Some(Pattern.Subcategory.Cryptography) // PADDING_ORACLE
         case "SECCONFCTRL" => Some(Pattern.Subcategory.InputValidation) // EXTERNAL_CONFIG_CONTROL
         case "SECTBV" => Some(Pattern.Subcategory.InputValidation) // TRUST_BOUNDARY_VIOLATION
-        case "SECSDL" => Some(Pattern.Subcategory.Other) // SCALA_SENSITIVE_DATA_EXPOSURE
-        case "ERRMSG" => Some(Pattern.Subcategory.Other) // INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE
+        case "SECSDL" => Some(Pattern.Subcategory.Visibility) // SCALA_SENSITIVE_DATA_EXPOSURE
+        case "ERRMSG" => Some(Pattern.Subcategory.Visibility) // INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE
         case "RPCEXT" => Some(Pattern.Subcategory.CommandInjection) // RPC_ENABLED_EXTENSIONS
         case _ =>
           matchingPatterns.collectFirst {

@@ -1283,7 +1283,7 @@
     "patternId" : "INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "Other"
+    "subcategory" : "Visibility"
   }, {
     "patternId" : "INSECURE_COOKIE",
     "level" : "Error",
@@ -1461,7 +1461,7 @@
     "patternId" : "JSP_INCLUDE",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "InputValidation"
+    "subcategory" : "XSS"
   }, {
     "patternId" : "JSP_JSTL_OUT",
     "level" : "Error",
@@ -2571,17 +2571,17 @@
     "patternId" : "SCALA_SENSITIVE_DATA_EXPOSURE",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "Other"
+    "subcategory" : "Visibility"
   }, {
     "patternId" : "SCALA_SQL_INJECTION_ANORM",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SCALA_SQL_INJECTION_SLICK",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SCALA_XSS_MVC_API",
     "level" : "Error",
@@ -3005,7 +3005,7 @@
     "patternId" : "SQL_INJECTION",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SQL_INJECTION_ANDROID",
     "level" : "Error",
@@ -3015,32 +3015,32 @@
     "patternId" : "SQL_INJECTION_HIBERNATE",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SQL_INJECTION_JDBC",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SQL_INJECTION_JDO",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SQL_INJECTION_JPA",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SQL_INJECTION_SPRING_JDBC",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SQL_INJECTION_TURBINE",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "CommandInjection"
+    "subcategory" : "SQLInjection"
   }, {
     "patternId" : "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE",
     "level" : "Error",
@@ -3613,7 +3613,7 @@
     "patternId" : "WEAK_TRUST_MANAGER",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "InputValidation"
+    "subcategory" : "SSL"
   }, {
     "patternId" : "WEM_OBSCURING_EXCEPTION",
     "level" : "Info",
