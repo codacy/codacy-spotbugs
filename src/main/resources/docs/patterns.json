@@ -2977,8 +2977,7 @@
   }, {
     "patternId" : "SPRING_ENDPOINT",
     "level" : "Error",
-    "category" : "Security",
-    "subcategory" : "Other"
+    "category" : "Security"
   }, {
     "patternId" : "SPRING_FILE_DISCLOSURE",
     "level" : "Error",
@@ -3364,8 +3363,7 @@
   }, {
     "patternId" : "UNSAFE_HASH_EQUALS",
     "level" : "Error",
-    "category" : "Security",
-    "subcategory" : "Other"
+    "category" : "Security"
   }, {
     "patternId" : "UNVALIDATED_REDIRECT",
     "level" : "Error",
