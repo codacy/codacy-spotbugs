@@ -39,7 +39,8 @@ sourceGenerators.in(Compile) += Def.task {
                     |  val defaultLinuxInstallLocation: String = "${defaultLinuxInstallLocation.in(Docker).value}"
                     |  val dependenciesLocation: String = "${csrCacheDirectory.in(Compile).value}"
                     |
-                    |}""".stripMargin)
+                    |}
+                    |""".stripMargin)
   Seq(file)
 }.taskValue
 
