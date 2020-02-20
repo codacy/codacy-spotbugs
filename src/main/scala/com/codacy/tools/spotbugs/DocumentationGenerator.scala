@@ -136,7 +136,6 @@ object DocumentationGenerator {
         case "SECJSPJSTL" => Some(Pattern.Subcategory.XSS) // JSP_JSTL_OUT
         case "SECJSPINC" => Some(Pattern.Subcategory.XSS) // JSP_INCLUDE !!!!!
         case "SECWTM" => Some(Pattern.Subcategory.SSL) // WEAK_TRUST_MANAGER !!!!!
-        case "SECSC" => Some(Pattern.Subcategory.Other) // SPRING_ENDPOINT
         case "SECXPI" => Some(Pattern.Subcategory.InputValidation) // XPATH_INJECTION
         case "SECCUSTOMI" => Some(Pattern.Subcategory.SQLInjection) // CUSTOM_INJECTION
         case "SECLDAPI" => Some(Pattern.Subcategory.InputValidation) // LDAP_INJECTION
@@ -161,7 +160,6 @@ object DocumentationGenerator {
         case "LDAPA" => Some(Pattern.Subcategory.Auth) // LDAP_ANONYMOUS
         case "SECLDAPEP" => Some(Pattern.Subcategory.CommandInjection) // LDAP_ENTRY_POISONING
         case "SECBHC" => Some(Pattern.Subcategory.Cryptography) // BAD_HEXA_CONVERSION
-        case "SECUHE" => Some(Pattern.Subcategory.Other) // UNSAFE_HASH_EQUALS
         case "SECSFV" => Some(Pattern.Subcategory.InputValidation) // STRUTS_FORM_VALIDATION
         case "SECXSLT" => Some(Pattern.Subcategory.InputValidation) // MALICIOUS_XSLT
         case "XMLDEC" => Some(Pattern.Subcategory.InputValidation) // XML_DECODER
@@ -171,6 +169,8 @@ object DocumentationGenerator {
         case "SECSDL" => Some(Pattern.Subcategory.Visibility) // SCALA_SENSITIVE_DATA_EXPOSURE
         case "ERRMSG" => Some(Pattern.Subcategory.Visibility) // INFORMATION_EXPOSURE_THROUGH_AN_ERROR_MESSAGE
         case "RPCEXT" => Some(Pattern.Subcategory.CommandInjection) // RPC_ENABLED_EXTENSIONS
+        case "SECSC" => None // SPRING_ENDPOINT
+        case "SECUHE" => None // UNSAFE_HASH_EQUALS
         case _ =>
           matchingPatterns.collectFirst {
             case (pattern, subcategory) if bugPattern.getType.contains(pattern) => subcategory
