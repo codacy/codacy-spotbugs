@@ -6,7 +6,7 @@ scalaVersion := "2.12.10"
 
 val findsecbugsVersion = "1.10.1"
 val sbContribVersion = "7.4.7"
-val spotBugsVersion = "4.0.0"
+val spotBugsVersion = "4.0.1"
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
