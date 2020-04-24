@@ -63,8 +63,7 @@ To read more on how to build a wrapper for a tool like this one check the specif
 
 ## Limitations
 
-This tool is only available in the enterprise version and
-requires the usage of [codacy-analysis-cli](https://github.com/codacy/codacy-analysis-cli) to push the results.
+This tool requires the usage of [codacy-analysis-cli](https://github.com/codacy/codacy-analysis-cli) to push the results.
 
 ## What is Codacy
 
