@@ -152,8 +152,8 @@ object DocumentationGenerator {
         case "SECHCK" => Some(Pattern.Subcategory.Cryptography) // HARD_CODE_KEY
         case "SECBKS" => Some(Pattern.Subcategory.Cryptography) // BLOWFISH_KEY_SIZE
         case "SECHPP" => Some(Pattern.Subcategory.InputValidation) // HTTP_PARAMETER_POLLUTION
-        case "SECSSSRF" => Some(Pattern.Subcategory.InputValidation) // SCALA_PLAY_SSRF
-        case "SECSSSRFUC" => Some(Pattern.Subcategory.FileAccess) // URLCONNECTION_SSRF_FD
+        case "SECSSSRF" => Some(Pattern.Subcategory.CSRF) // SCALA_PLAY_SSRF
+        case "SECSSSRFUC" => Some(Pattern.Subcategory.CSRF) // URLCONNECTION_SSRF_FD
         case "SECECB" => Some(Pattern.Subcategory.Cryptography) // ECB_MODE
         case "STAIV" => Some(Pattern.Subcategory.Cryptography) // STATIC_IV
         case "SECFSM" => Some(Pattern.Subcategory.InputValidation) // FORMAT_STRING_MANIPULATION

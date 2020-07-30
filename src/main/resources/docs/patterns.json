@@ -1,6 +1,6 @@
 {
   "name" : "spotbugs",
-  "version" : "4.0.0",
+  "version" : "4.0.1",
   "patterns" : [ {
     "patternId" : "ABC_ARRAY_BASED_COLLECTIONS",
     "level" : "Warning",
@@ -2583,7 +2583,7 @@
     "patternId" : "SCALA_PLAY_SSRF",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "InputValidation"
+    "subcategory" : "CSRF"
   }, {
     "patternId" : "SCALA_SENSITIVE_DATA_EXPOSURE",
     "level" : "Error",
@@ -3406,7 +3406,7 @@
     "patternId" : "URLCONNECTION_SSRF_FD",
     "level" : "Error",
     "category" : "Security",
-    "subcategory" : "FileAccess"
+    "subcategory" : "CSRF"
   }, {
     "patternId" : "URL_REWRITING",
     "level" : "Error",

@@ -53,7 +53,7 @@ sbt "run multiple codacy-spotbugs:latest"
 **NOTE:** To generate documentation you need to have this projects dependencies under your home. (e.g.: `~/.ivy2`)
 
 ```sh
-sbt "runMain com.codacy.tool.spotbugs.DocumentationGenerator"
+sbt "runMain com.codacy.tools.spotbugs.DocumentationGenerator"
 ```
 
 ## Specification
