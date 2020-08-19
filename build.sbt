@@ -2,11 +2,11 @@ import com.typesafe.sbt.packager.docker.Cmd
 
 name := "codacy-spotbugs"
 
-scalaVersion := "2.12.10"
+scalaVersion := "2.12.12"
 
 val findsecbugsVersion = "1.10.1"
 val sbContribVersion = "7.4.7"
-val spotBugsVersion = "4.0.1"
+val spotBugsVersion = "4.1.2"
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
