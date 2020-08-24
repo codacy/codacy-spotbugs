@@ -1427,6 +1427,10 @@
   "title" : "A malicious XSLT could be provided to the JSP tag",
   "description" : "A malicious XSLT could be provided to the JSP tag to trigger remote code execution"
 }, {
+  "patternId" : "JUA_DONT_ASSERT_INSTANCEOF_IN_TESTS",
+  "title" : " Asserting value of instanceof in tests is not recommended. ",
+  "description" : " Assertion of type {0} in {2} at {3} may hide useful information about why a cast may have failed."
+}, {
   "patternId" : "JVR_JDBC_VENDOR_RELIANCE",
   "title" : "Method uses JDBC vendor specific classes and methods",
   "description" : "Method {1} uses JDBC vendor specific classes and methods"
@@ -2118,6 +2122,10 @@
   "patternId" : "OVERLY_PERMISSIVE_FILE_PERMISSION",
   "title" : "Overly permissive file permission",
   "description" : "Overly permissive file permission can lead to privilege escalation or information leakage."
+}, {
+  "patternId" : "OVERRIDING_METHODS_MUST_INVOKE_SUPER",
+  "title" : "Super method is annotated with @OverridingMethodsMustInvokeSuper, but the overriding method isn't calling the super method.",
+  "description" : "Super method is annotated with @OverridingMethodsMustInvokeSuper, but {1} isn't calling the super method."
 }, {
   "patternId" : "PADDING_ORACLE",
   "title" : "Cipher is susceptible to Padding Oracle",
