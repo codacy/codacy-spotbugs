@@ -11,6 +11,65 @@ import scala.collection.immutable.ListSet
 
 object DocumentationGenerator {
 
+  val defaultPatterns = List(
+    "RpC_REPEATED_CONDITIONAL_TEST",
+    "SA_FIELD_DOUBLE_ASSIGNMENT",
+    "SA_FIELD_SELF_ASSIGNMENT",
+    "SA_FIELD_SELF_COMPARISON",
+    "SA_LOCAL_DOUBLE_ASSIGNMENT",
+    "SBSC_USE_STRINGBUFFER_CONCATENATION",
+    "SCALA_COMMAND_INJECTION",
+    "SCRIPT_ENGINE_INJECTION",
+    "SC_START_IN_CTOR",
+    "SEAM_LOG_INJECTION",
+    "SERVLET_CONTENT_TYPE",
+    "SERVLET_HEADER",
+    "SERVLET_HEADER_REFERER",
+    "SERVLET_HEADER_USER_AGENT",
+    "SERVLET_PARAMETER",
+    "SERVLET_QUERY_STRING",
+    "SERVLET_SERVER_NAME",
+    "SERVLET_SESSION_ID",
+    "SE_METHOD_MUST_BE_PRIVATE",
+    "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH",
+    "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH_TO_THROW",
+    "SF_SWITCH_FALLTHROUGH",
+    "SF_SWITCH_NO_DEFAULT",
+    "SIC_INNER_SHOULD_BE_STATIC",
+    "SIC_INNER_SHOULD_BE_STATIC_ANON",
+    "SIC_INNER_SHOULD_BE_STATIC_NEEDS_THIS",
+    "SIC_THREADLOCAL_DEADLY_EMBRACE",
+    "SIO_SUPERFLUOUS_INSTANCEOF",
+    "SPEL_INJECTION",
+    "SPRING_ENDPOINT",
+    "SQL",
+    "SQLCVEs",
+    "SQL_BAD_PREPARED_STATEMENT_ACCESS",
+    "SQL_BAD_RESULTSET_ACCESS",
+    "SQL_INJECTION_HIBERNATE",
+    "SQL_INJECTION_JDBC",
+    "SQL_INJECTION_JDO",
+    "SQL_INJECTION_JPA",
+    "SQL_INJECTION_SPRING_JDBC",
+    "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE",
+    "SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING",
+    "SQLint_allIssues",
+    "SSLVerify",
+    "SS_SHOULD_BE_STATIC",
+    "STATIC_IV",
+    "STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE",
+    "STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE",
+    "STCAL_STATIC_CALENDAR_INSTANCE",
+    "STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE",
+    "STI_INTERRUPTED_ON_CURRENTTHREAD",
+    "STI_INTERRUPTED_ON_UNKNOWNTHREAD",
+    "STRUTS1_ENDPOINT",
+    "STRUTS2_ENDPOINT",
+    "STRUTS_FORM_VALIDATION",
+    "ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD",
+    "SWL_SLEEP_WITH_LOCK_HELD"
+  )
+
   def main(args: Array[String]): Unit = {
     val allPatterns: List[BugPattern] =
       SpotBugsHelper.loadPlugins(SpotBugsHelper.defaultPlugins).flatMap(_.getBugPatterns.asScala)(collection.breakOut)
@@ -26,7 +85,8 @@ object DocumentationGenerator {
             getLevel(pattern.getCategory),
             getCategory(pattern.getCategory),
             getSubCategory(pattern),
-            None
+            Set.empty,
+            enabled = defaultPatterns.contains(pattern.getType)
           )
         }
         .sortBy(_.patternId.value)(Ordering[String].reverse): _*
@@ -39,7 +99,7 @@ object DocumentationGenerator {
           Pattern.Title(pattern.getShortDescription),
           Option(Pattern.DescriptionText(pattern.getLongDescription)),
           None,
-          None
+          Set.empty
         )
       }
       .sortBy(_.patternId.value)
