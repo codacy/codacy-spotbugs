@@ -10,7 +10,7 @@ val spotBugsVersion = "4.1.2"
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
-  "com.codacy" %% "codacy-engine-scala-seed" % "5.0.0",
+  "com.codacy" %% "codacy-engine-scala-seed" % "5.0.1",
   "com.github.spotbugs" % "spotbugs" % spotBugsVersion,
   "com.h3xstream.findsecbugs" % "findsecbugs-plugin" % findsecbugsVersion,
   "com.mebigfatguy.sb-contrib" % "sb-contrib" % sbContribVersion,
