@@ -9,4 +9,10 @@
     <file name="src/main/scala/codacy/test/PredictableRandom.scala">
         <error source="NP_BOOLEAN_RETURN_NULL" line="8" message="PredictableRandom$.generateSecretToken() has Boolean return type and returns explicit null" severity="warning" />
     </file>
+    <file name="src/main/scala/codacy/test/PredictableRandom.scala">
+        <error source="MS_PKGPROTECT" line="0" message="PredictableRandom$.MODULE$ should be package protected" severity="error" />
+    </file>
+    <file name="src/main/scala/codacy/test/PredictableRandom.scala">
+        <error source="SEC_SIDE_EFFECT_CONSTRUCTOR" line="0" message="Method PredictableRandom$.&lt;static initializer for &gt;() uses a Side Effect Constructor" severity="info" />
+    </file>
 </checkstyle>
