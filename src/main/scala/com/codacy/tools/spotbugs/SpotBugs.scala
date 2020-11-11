@@ -155,13 +155,22 @@ object SpotBugs extends Tool {
       (shortPath, bugs) <- bugs.groupBy(_.getPrimarySourceLineAnnotation.getSourcePath)
       filePath <- PathHelper.find(sourceDirectories, shortPath).to[List]
       if isFileEnabled(filePath.toString, files)
-      bug <- bugs if bug.getPrimarySourceLineAnnotation.getStartLine > 0
+      bug <- bugs
     } yield {
+      // Findbugs is returning -1 for some issues, which caused us to ignore with the if we had
+      // In order to not return a negative value we're doing an if else where we return 0 if the value is not
+      // greater than zero
+      val startLine = bug.getPrimarySourceLineAnnotation.getStartLine
+      val line = if (startLine > 0) {
+        startLine
+      } else {
+        0
+      }
       Result.Issue(
         Source.File(filePath.toString),
         Result.Message(bug.getMessageWithoutPrefix),
         Pattern.Id(bug.getType),
-        Source.Line(bug.getPrimarySourceLineAnnotation.getStartLine)
+        Source.Line(line)
       )
     })(collection.breakOut)
   }
