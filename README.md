@@ -4,7 +4,7 @@
 [![CircleCI](https://circleci.com/gh/codacy/codacy-spotbugs.svg?style=svg)](https://circleci.com/gh/codacy/codacy-spotbugs)
 
 This is the docker engine we use at Codacy to have [SpotBugs](https://spotbugs.github.io/) support, including the
-plugins [FBContrib](https://github.com/mebigfatguy/fb-contrib) and [Find Security Bugs](https://find-sec-bugs.github.io/).
+plugins [fb-contrib](https://github.com/mebigfatguy/fb-contrib) and [Find Security Bugs](https://find-sec-bugs.github.io/).
 
 You can also create a docker to integrate the tool and language of your choice!
 Check the **Docs** section for more information.
