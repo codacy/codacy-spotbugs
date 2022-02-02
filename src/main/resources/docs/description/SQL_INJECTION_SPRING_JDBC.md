@@ -9,10 +9,25 @@ Bind variables in prepared statements can be used to easily mitigate the risk of
 int count = jdbc.queryForObject("select count(*) from Users where name = '"+paramName+"'", Integer.class);
 </pre>
 
+<pre>@Value("properties")
+private String sql;
+
+public function count() {
+    JdcbOperation jdbc = new JdcbOperation();
+    int count = jdbc.query(sql);
+}</pre>
+
     **Solution:**  
 
 <pre>JdbcTemplate jdbc = new JdbcTemplate();
 int count = jdbc.queryForObject("select count(*) from Users where name = ?", Integer.class, paramName);</pre>
+
+<pre>private final static String sql = "select count(*) from Users";
+
+public function count() {
+    JdcbOperation jdbc = new JdcbOperation();
+    int count = jdbc.query(sql);
+}</pre>
 
 **References (Spring JDBC)**  
 

@@ -1,6 +1,6 @@
 # [Potential code injection when using Script Engine](https://find-sec-bugs.github.io/bugs.htm#SCRIPT_ENGINE_INJECTION)
 
-    Dynamic code is being evaluate. A careful analysis of the code construction should be made. Malicious code execution
+    Dynamic code is being evaluated. A careful analysis of the code construction should be made. Malicious code execution
     could lead to data leakage or operating system compromised.
 
     If the evaluation of user code is intended, a proper sandboxing should be applied (see references).

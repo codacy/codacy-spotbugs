@@ -6,14 +6,24 @@ In the following example the programmer has not considered the possibility that 
 
     **Vulnerable Code:**  
 
-<pre>String lang = request.getParameter("lang");
-GetMethod get = new GetMethod("http://www.host.com");
-get.setQueryString("lang=" + lang + "&amp;user_id=" + user_id);
+<pre>String input = request.getParameter("lang");
+GetMethod get = new GetMethod("http://www.host.com/viewDetails");
+get.setQueryString("lang=" + input + "&amp;user_id=" + userId);
 get.execute();</pre>
 
     **Solution:**  
 
-Sanitize user input before using it in HTTP parameters.
+You can either encode user input before placing it in HTTP parameters or use the
+[UriBuilder class](https://hc.apache.org/httpcomponents-client-4.3.x/httpclient/apidocs/org/apache/http/client/utils/URIBuilder.html)
+from [Apache HttpClient](https://hc.apache.org/httpcomponents-client-ga/).
+
+<pre>
+URIBuilder uriBuilder = new URIBuilder("http://www.host.com/viewDetails");
+uriBuilder.addParameter("lang", input);
+uriBuilder.addParameter("user_id", userId);
+
+HttpGet httpget = new HttpGet(uriBuilder.build().toString()); //OK
+</pre>
 
 **References**  
 
