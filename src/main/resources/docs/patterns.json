@@ -1,6 +1,6 @@
 {
   "name" : "spotbugs",
-  "version" : "4.1.2",
+  "version" : "4.5.3",
   "patterns" : [ {
     "patternId" : "ABC_ARRAY_BASED_COLLECTIONS",
     "level" : "Warning",
@@ -740,6 +740,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "DCN_NULLPOINTER_EXCEPTION",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "DC_DOUBLECHECK",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -1329,6 +1336,22 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "EI_EXPOSE_BUF",
+    "level" : "Error",
+    "category" : "Security",
+    "subcategory" : "MaliciousCode",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "EI_EXPOSE_BUF2",
+    "level" : "Error",
+    "category" : "Security",
+    "subcategory" : "MaliciousCode",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "EI_EXPOSE_REP",
     "level" : "Error",
     "category" : "Security",
@@ -1338,6 +1361,14 @@
     "enabled" : false
   }, {
     "patternId" : "EI_EXPOSE_REP2",
+    "level" : "Error",
+    "category" : "Security",
+    "subcategory" : "MaliciousCode",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "EI_EXPOSE_STATIC_BUF2",
     "level" : "Error",
     "category" : "Security",
     "subcategory" : "MaliciousCode",
@@ -1373,6 +1404,13 @@
     "level" : "Error",
     "category" : "Security",
     "subcategory" : "Visibility",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "EOS_BAD_END_OF_STREAM_CHECK",
+    "level" : "Warning",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -1742,6 +1780,13 @@
     "patternId" : "GC_UNRELATED_TYPES",
     "level" : "Warning",
     "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "GROOVY_SHELL",
+    "level" : "Error",
+    "category" : "Security",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -2184,6 +2229,13 @@
     "patternId" : "IMC_IMMATURE_CLASS_WRONG_FIELD_ORDER",
     "level" : "Info",
     "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "IMPROPER_UNICODE",
+    "level" : "Error",
+    "category" : "Security",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -2804,6 +2856,20 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_CLONE",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "MDM_BIGDECIMAL_EQUALS",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -2973,6 +3039,14 @@
     "enabled" : false
   }, {
     "patternId" : "MS_CANNOT_BE_FINAL",
+    "level" : "Error",
+    "category" : "Security",
+    "subcategory" : "MaliciousCode",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "MS_EXPOSE_BUF",
     "level" : "Error",
     "category" : "Security",
     "subcategory" : "MaliciousCode",
@@ -4092,6 +4166,20 @@
     "level" : "Error",
     "category" : "Security",
     "subcategory" : "Regex",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "REFLC_REFLECTION_MAY_INCREASE_ACCESSIBILITY_OF_CLASS",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "REFLF_REFLECTION_MAY_INCREASE_ACCESSIBILITY_OF_FIELD",
+    "level" : "Error",
+    "category" : "Security",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -5267,6 +5355,14 @@
     "enabled" : true
   }, {
     "patternId" : "SQL_INJECTION_TURBINE",
+    "level" : "Error",
+    "category" : "Security",
+    "subcategory" : "SQLInjection",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SQL_INJECTION_VERTX",
     "level" : "Error",
     "category" : "Security",
     "subcategory" : "SQLInjection",

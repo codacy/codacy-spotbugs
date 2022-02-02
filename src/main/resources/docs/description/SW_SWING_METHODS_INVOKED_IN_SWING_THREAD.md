@@ -1,4 +1,4 @@
-# [Certain swing methods needs to be invoked in Swing thread](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#SW_SWING_METHODS_INVOKED_IN_SWING_THREAD)
+# [Certain swing methods need to be invoked in Swing thread](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#SW_SWING_METHODS_INVOKED_IN_SWING_THREAD)
 
 ([From JDC Tech Tip](http://web.archive.org/web/20090526170426/http://java.sun.com/developer/JDCTechTips/2003/tt1208.html)): The Swing methods
 show(), setVisible(), and pack() will create the associated peer for the frame.

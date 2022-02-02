@@ -514,6 +514,11 @@
   "description" : "{1} uses the same code for two switch clauses",
   "parameters" : [ ]
 }, {
+  "patternId" : "DCN_NULLPOINTER_EXCEPTION",
+  "title" : "NullPointerException caught",
+  "description" : "Do not catch NullPointerException like in {1}",
+  "parameters" : [ ]
+}, {
   "patternId" : "DC_DOUBLECHECK",
   "title" : "Possible double check of field",
   "description" : "Possible doublecheck on {2} in {1}",
@@ -929,6 +934,16 @@
   "description" : "Using pointer equality to compare a {2.givenClass} with a {3.givenClass} in {1}",
   "parameters" : [ ]
 }, {
+  "patternId" : "EI_EXPOSE_BUF",
+  "title" : "May expose internal representation by returning a buffer sharing non-public data",
+  "description" : "{1} may expose internal representation by returning {2.givenClass}",
+  "parameters" : [ ]
+}, {
+  "patternId" : "EI_EXPOSE_BUF2",
+  "title" : "May expose internal representation by creating a buffer which incorporates reference to array",
+  "description" : "{1} may expose internal representation by creating a buffer which contains an external array into {2.givenClass}",
+  "parameters" : [ ]
+}, {
   "patternId" : "EI_EXPOSE_REP",
   "title" : "May expose internal representation by returning reference to mutable object",
   "description" : "{1} may expose internal representation by returning {2.givenClass}",
@@ -937,6 +952,11 @@
   "patternId" : "EI_EXPOSE_REP2",
   "title" : "May expose internal representation by incorporating reference to mutable object",
   "description" : "{1} may expose internal representation by storing an externally mutable object into {2.givenClass}",
+  "parameters" : [ ]
+}, {
+  "patternId" : "EI_EXPOSE_STATIC_BUF2",
+  "title" : "May expose internal static state by creating a buffer which stores an external array into a static field",
+  "description" : "{1} may expose internal static state by creating a buffer which stores an external array into static field {2}",
   "parameters" : [ ]
 }, {
   "patternId" : "EI_EXPOSE_STATIC_REP2",
@@ -957,6 +977,11 @@
   "patternId" : "ENTITY_MASS_ASSIGNMENT",
   "title" : "Mass assignment",
   "description" : "The persistent objects could be exploited by attacker to read sensitive information.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "EOS_BAD_END_OF_STREAM_CHECK",
+  "title" : "Data read is converted before comparison to -1",
+  "description" : "The return value of {2} in method {1} is converted to {3} before comparison to {4}.",
   "parameters" : [ ]
 }, {
   "patternId" : "EQ_ABSTRACT_SELF",
@@ -1217,6 +1242,11 @@
   "patternId" : "GC_UNRELATED_TYPES",
   "title" : "No relationship between generic parameter and method argument",
   "description" : "{2.givenClass} is incompatible with expected argument type {3.givenClass} in {1}",
+  "parameters" : [ ]
+}, {
+  "patternId" : "GROOVY_SHELL",
+  "title" : "Potential code injection when using GroovyShell",
+  "description" : "Potential code injection when using GroovyShell",
   "parameters" : [ ]
 }, {
   "patternId" : "HARD_CODE_KEY",
@@ -1527,6 +1557,11 @@
   "patternId" : "IMC_IMMATURE_CLASS_WRONG_FIELD_ORDER",
   "title" : "Class orders instance fields before static fields",
   "description" : "Class {0} orders instance fields before static fields",
+  "parameters" : [ ]
+}, {
+  "patternId" : "IMPROPER_UNICODE",
+  "title" : "Improper handling of Unicode transformations",
+  "description" : "Improper handling of Unicode transformations such as case mapping and normalization.",
   "parameters" : [ ]
 }, {
   "patternId" : "IMSE_DONT_CATCH_IMSE",
@@ -1959,6 +1994,16 @@
   "description" : "A malicious XSLT could be provided to trigger remote code execution",
   "parameters" : [ ]
 }, {
+  "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_CLONE",
+  "title" : "An overridable method is called from the clone() method.",
+  "description" : "Overridable method {2} is called from method clone() in class {0}.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR",
+  "title" : "An overridable method is called from a constructor",
+  "description" : "Overridable method {2} is called from constructor {1}.",
+  "parameters" : [ ]
+}, {
   "patternId" : "MDM_BIGDECIMAL_EQUALS",
   "title" : "Method calls BigDecimal.equals()",
   "description" : "Method {1} calls BigDecimal.equals(), which is normally a mistake",
@@ -2082,6 +2127,11 @@
   "patternId" : "MS_CANNOT_BE_FINAL",
   "title" : "Field isn't final and can't be protected from malicious code",
   "description" : "{1} isn't final and can't be protected from malicious code",
+  "parameters" : [ ]
+}, {
+  "patternId" : "MS_EXPOSE_BUF",
+  "title" : "May expose internal representation by returning a buffer sharing non-public data",
+  "description" : "{1} may expose internal representation by returning {2.givenClass}",
   "parameters" : [ ]
 }, {
   "patternId" : "MS_EXPOSE_REP",
@@ -2862,6 +2912,16 @@
   "patternId" : "REDOS",
   "title" : "Regex DOS (ReDOS)",
   "description" : "The regular expression \"{0}\" is vulnerable to a denial of service attack (ReDOS)",
+  "parameters" : [ ]
+}, {
+  "patternId" : "REFLC_REFLECTION_MAY_INCREASE_ACCESSIBILITY_OF_CLASS",
+  "title" : "Public method uses reflection to create a class it gets in its parameter which could increase the accessibility of any class",
+  "description" : "Public method {1} uses reflection to create a class it gets in its parameter which could increase the accessibility of any class",
+  "parameters" : [ ]
+}, {
+  "patternId" : "REFLF_REFLECTION_MAY_INCREASE_ACCESSIBILITY_OF_FIELD",
+  "title" : "Public method uses reflection to modify a field it gets in its parameter which could increase the accessibility of any class",
+  "description" : "Public method {1} uses reflection to modify a field it gets in its parameter which could increase the accessibility of any class.",
   "parameters" : [ ]
 }, {
   "patternId" : "REQUESTDISPATCHER_FILE_DISCLOSURE",
@@ -3679,6 +3739,11 @@
   "description" : "This use of {3} can be vulnerable to SQL injection (with Turbine)",
   "parameters" : [ ]
 }, {
+  "patternId" : "SQL_INJECTION_VERTX",
+  "title" : "Potential SQL Injection with Vert.x Sql Client",
+  "description" : "This use of {3} can be vulnerable to SQL injection (with Vert.x Sql Client)",
+  "parameters" : [ ]
+}, {
   "patternId" : "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE",
   "title" : "Nonconstant string passed to execute or addBatch method on an SQL statement",
   "description" : "{1} passes a nonconstant String to an execute or addBatch method on an SQL statement",
@@ -3820,7 +3885,7 @@
   "parameters" : [ ]
 }, {
   "patternId" : "SW_SWING_METHODS_INVOKED_IN_SWING_THREAD",
-  "title" : "Certain swing methods needs to be invoked in Swing thread",
+  "title" : "Certain swing methods need to be invoked in Swing thread",
   "description" : "Call to swing method in {1} needs to be performed in Swing event thread",
   "parameters" : [ ]
 }, {

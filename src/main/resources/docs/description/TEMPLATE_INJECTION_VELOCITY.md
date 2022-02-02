@@ -1,7 +1,7 @@
 # [Potential template injection with Velocity](https://find-sec-bugs.github.io/bugs.htm#TEMPLATE_INJECTION_VELOCITY)
 
 Velocity template engine is powerful. It is possible to add logic including condition statements, loops and external calls.
-It is not design to be sandbox to templating operations. A malicious user in control of a template can run malicious code
+It is not designed to be a sandbox to templating operations. A malicious user in control of a template can run malicious code
 on the server-side. Velocity templates should be seen as scripts.
 
     **Vulnerable Code:**

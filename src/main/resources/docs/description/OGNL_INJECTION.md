@@ -15,7 +15,7 @@ public void getUserProperty(String property) {
 
 **Solution:**
 
-In general, method evaluating OGNL expression should not receive user input. It is intended to be used in static configurations and JSP.
+In general, method evaluating OGNL expression should not receive user input. It is intended to be used in static configurations.
 
     **References**  
 
