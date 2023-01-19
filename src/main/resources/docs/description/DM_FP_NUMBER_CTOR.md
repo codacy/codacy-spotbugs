@@ -4,5 +4,5 @@
       `Double.valueOf(double)` allows caching of values to be done by the compiler, class library, or JVM.
       Using of cached values avoids object allocation and the code will be faster.
 
-      Unless the class must be compatible with JVMs predating Java 1.5,
+      Unless the class must be compatible with JVMs predating Java 5,
       use either autoboxing or the `valueOf()` method when creating instances of `Double` and `Float`.

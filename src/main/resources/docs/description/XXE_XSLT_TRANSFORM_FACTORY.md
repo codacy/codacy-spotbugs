@@ -36,21 +36,23 @@ transformer.transform(input, result);</pre>
 
 The following snippets show two available solutions. You can set one feature or both.
 
-**Solution using "Secure processing" mode:**
+**Solution disabling DTD:**
 
 This setting will protect you against remote file access but not denial of service.
 
 <pre>
 TransformerFactory factory = TransformerFactory.newInstance();
-factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "all");
-factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, "all");
+factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_DTD, "");
+factory.setAttribute(XMLConstants.ACCESS_EXTERNAL_STYLESHEET, "");
 
 Transformer transformer = factory.newTransformer();
 transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
 transformer.transform(input, result);</pre>
 
-**Solution disabling DTD:**
+An empty string denies all access to external references for both attributes.
+
+**Solution using "Secure processing" mode:**
 
 This setting will protect you against remote file access but not denial of service.
 

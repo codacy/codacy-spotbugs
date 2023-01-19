@@ -1,4 +1,4 @@
-# [Possible double check of field](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DC_DOUBLECHECK)
+# [Possible double-check of field](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DC_DOUBLECHECK)
 
  This method may contain an instance of double-checked locking. 
   This idiom is not correct according to the semantics of the Java memory

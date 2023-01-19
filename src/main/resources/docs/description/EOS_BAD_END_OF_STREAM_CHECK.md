@@ -6,3 +6,5 @@
       java.io.FileReader.read() also returns an int. If it is converted to a char then -1 becomes 0xFFFF which is
       Character.MAX_VALUE. Comparing the result to -1 is pointless, since characters are unsigned in Java. If the
       checking for EOF is the condition of a loop then this loop is infinite.
+
+      See SEI CERT rule [FIO08-J. Distinguish between characters or bytes read from a stream and -1](https://wiki.sei.cmu.edu/confluence/display/java/FIO08-J.+Distinguish+between+characters+or+bytes+read+from+a+stream+and+-1).

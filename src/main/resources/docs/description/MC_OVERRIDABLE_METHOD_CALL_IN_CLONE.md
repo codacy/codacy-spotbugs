@@ -4,4 +4,5 @@
       affecting the behavior of clone(). It can also observe or modify the clone object in a partially initialized
       state. Only static, final or private methods should be invoked from the clone() method.
 
-      See SEI CERT rule [MET06-J. Do not invoke overridable methods in clone()](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=88487921).
+      See SEI CERT rule
+      [MET06-J. Do not invoke overridable methods in clone()](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=88487921).

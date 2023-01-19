@@ -8,6 +8,6 @@
       and using `valueOf` is approximately 3.5 times faster than using constructor.
       For values outside the constant range the performance of both styles is the same.
 
-      Unless the class must be compatible with JVMs predating Java 1.5,
+      Unless the class must be compatible with JVMs predating Java 5,
       use either autoboxing or the `valueOf()` method when creating instances of
       `Long`, `Integer`, `Short`, `Character`, and `Byte`.

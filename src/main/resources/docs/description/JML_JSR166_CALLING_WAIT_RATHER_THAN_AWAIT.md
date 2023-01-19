@@ -3,7 +3,7 @@
  This method calls
 `wait()`,
 `notify()` or
-`notifyAll()()`
+`notifyAll()`
 on an object that also provides an
 `await()`,
 `signal()`,

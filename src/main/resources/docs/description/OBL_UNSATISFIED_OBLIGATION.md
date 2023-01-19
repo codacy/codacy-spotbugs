@@ -17,13 +17,14 @@
           usefulness of this bug pattern.
           For sending feedback, check:
 
-*   [contributing guideline](https://github.com/spotbugs/spotbugs/blob/master/CONTRIBUTING.md)
-*   [malinglist](https://github.com/spotbugs/discuss/issues?q=)
+*   [contributing guideline](https://github.com/spotbugs/spotbugs/blob/master/.github/CONTRIBUTING.md)
+*   [mailinglist](https://github.com/spotbugs/discuss/issues?q=)
 
           In particular,
           the false-positive suppression heuristics for this
           bug pattern have not been extensively tuned, so
           reports about false positives are helpful to us.
 
-          See Weimer and Necula, _Finding and Preventing Run-Time Error Handling Mistakes_, for
-          a description of the analysis technique.
+          See Weimer and Necula, _Finding and Preventing Run-Time Error Handling Mistakes_
+          ([PDF](https://people.eecs.berkeley.edu/~necula/Papers/rte_oopsla04.pdf)),
+          for a description of the analysis technique.
