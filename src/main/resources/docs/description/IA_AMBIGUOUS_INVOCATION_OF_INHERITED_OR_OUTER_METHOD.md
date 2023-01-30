@@ -13,5 +13,5 @@ that you want to invoke the inherited method, not the method in the outer class.
 
 If you call `this.foo(17)`, then the inherited method will be invoked. However, since SpotBugs only looks at
 classfiles, it
-can't tell the difference between an invocation of `this.foo(17)` and `foo(17)`, it will still
+cannot tell the difference between an invocation of `this.foo(17)` and `foo(17)`, it will still
 complain about a potential ambiguous invocation.

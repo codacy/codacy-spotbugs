@@ -7,7 +7,7 @@ In each iteration, the String is converted to a StringBuffer/StringBuilder,
    as the growing string is recopied in each iteration. 
 
 Better performance can be obtained by using
-a StringBuffer (or StringBuilder in Java 1.5) explicitly.
+a StringBuffer (or StringBuilder in Java 5) explicitly.
 
  For example:
 

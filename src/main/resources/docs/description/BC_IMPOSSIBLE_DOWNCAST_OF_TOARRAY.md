@@ -8,12 +8,14 @@ to a type more specific than `Object[]`, as in:
     }
 
 This will usually fail by throwing a ClassCastException. The `toArray()`
-of almost all collections return an `Object[]`. They can't really do anything else,
+of almost all collections return an `Object[]`. They cannot really do anything else,
 since the Collection object has no reference to the declared generic type of the collection.
 
 The correct way to do get an array of a specific type from a collection is to use
-  `c.toArray(new String[]);`
-  or `c.toArray(new String[c.size()]);` (the latter is slightly more efficient).
+  `c.toArray(new String[0]);`
+  or `c.toArray(new String[c.size()]);` (the former is
+  [slightly more efficient](https://shipilev.net/blog/2016/arrays-wisdom-ancients/#_historical_perspective)
+  since late Java 6 updates).
 
 There is one common/known exception to this. The `toArray()`
 method of lists returned by `Arrays.asList(...)` will return a covariantly

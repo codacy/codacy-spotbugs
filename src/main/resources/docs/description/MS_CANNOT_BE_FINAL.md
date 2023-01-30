@@ -1,4 +1,4 @@
-# [Field isn't final and can't be protected from malicious code](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#MS_CANNOT_BE_FINAL)
+# [Field isn't final and cannot be protected from malicious code](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#MS_CANNOT_BE_FINAL)
 
  A mutable static field could be changed by malicious code or
         by accident from another package.

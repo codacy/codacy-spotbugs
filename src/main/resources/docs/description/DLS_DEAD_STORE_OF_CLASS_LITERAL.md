@@ -6,5 +6,5 @@ In Java 1.4 and earlier, a reference to `Foo.class` would force the static initi
 for `Foo` to be executed, if it has not been executed already.
 In Java 5 and later, it does not.
 
-See Sun's [article on Java SE compatibility](http://www.oracle.com/technetwork/java/javase/compatibility-137462.html#literal)
-for more details and examples, and suggestions on how to force class initialization in Java 5.
+See Oracle's [article on Java SE compatibility](http://www.oracle.com/technetwork/java/javase/compatibility-137462.html#literal)
+for more details and examples, and suggestions on how to force class initialization in Java 5+.

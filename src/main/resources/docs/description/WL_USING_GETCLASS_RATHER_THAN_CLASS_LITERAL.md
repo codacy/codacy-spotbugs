@@ -14,7 +14,7 @@
     }
 
 Subclasses of `Label` won't synchronize on the same subclass, giving rise to a datarace.
-     Instead, this code should be synchronizing on `Label.class`
+     Instead, this code should be synchronizing on `Label.class`.
 
     private static final String base = "label";
     private static int nameCounter = 0;
@@ -25,4 +25,4 @@ Subclasses of `Label` won't synchronize on the same subclass, giving rise to a d
         }
     }
 
-Bug pattern contributed by Jason Mehrens
+Bug pattern contributed by Jason Mehrens.

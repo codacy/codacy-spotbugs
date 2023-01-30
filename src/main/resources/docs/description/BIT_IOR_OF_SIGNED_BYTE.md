@@ -13,13 +13,13 @@ to get `0xffffffff`, and thus give the value
 In particular, the following code for packing a byte array into an int is badly wrong: 
 
     int result = 0;
-    for(int i = 0; i < 4; i++) {
+    for (int i = 0; i < 4; i++) {
         result = ((result << 8) | b[i]);
     }
 
 The following idiom will work instead: 
 
     int result = 0;
-    for(int i = 0; i < 4; i++) {
+    for (int i = 0; i < 4; i++) {
         result = ((result << 8) | (b[i] & 0xff));
     }

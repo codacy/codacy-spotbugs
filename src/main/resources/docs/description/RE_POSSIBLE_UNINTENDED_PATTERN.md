@@ -8,3 +8,5 @@ For example
 *   s.split(".") _always_ returns a zero length array of String
 *   "ab|cd".replaceAll("|", "/") will return "/a/b/|/c/d/"
 *   "ab|cd".split("|") will return array with six (!) elements: [, a, b, |, c, d]
+
+Consider using `s.replace(".", "/")` or `s.split("\\.")` instead.

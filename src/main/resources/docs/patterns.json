@@ -1,6 +1,6 @@
 {
   "name" : "spotbugs",
-  "version" : "4.5.3",
+  "version" : "4.7.3",
   "patterns" : [ {
     "patternId" : "ABC_ARRAY_BASED_COLLECTIONS",
     "level" : "Warning",
@@ -722,6 +722,13 @@
     "patternId" : "CVAA_CONTRAVARIANT_ELEMENT_ASSIGNMENT",
     "level" : "Warning",
     "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "DANGEROUS_PERMISSION_COMBINATION",
+    "level" : "Error",
+    "category" : "Security",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -1737,6 +1744,13 @@
     "patternId" : "FI_USELESS",
     "level" : "Warning",
     "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "FL_FLOATS_AS_LOOP_COUNTERS",
+    "level" : "Warning",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -3017,6 +3031,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "MODIFICATION_AFTER_VALIDATION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "MOM_MISLEADING_OVERLOAD_MODEL",
     "level" : "Info",
     "category" : "CodeStyle",
@@ -3445,6 +3466,13 @@
     "patternId" : "NOISE_OPERATION",
     "level" : "Info",
     "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "NORMALIZATION_AFTER_VALIDATION",
+    "level" : "Error",
+    "category" : "Security",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -3922,6 +3950,13 @@
     "level" : "Error",
     "category" : "Security",
     "subcategory" : "HTTP",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "PERM_SUPER_NOT_CALLED_IN_GETPERMISSIONS",
+    "level" : "Error",
+    "category" : "Security",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -5400,6 +5435,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "SSD_DO_NOT_USE_INSTANCE_LOCK_ON_SHARED_STATIC_DATA",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "SSL_CONTEXT",
     "level" : "Error",
     "category" : "Security",
@@ -5652,6 +5694,27 @@
     "patternId" : "TESTING3",
     "level" : "Info",
     "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION",
+    "level" : "Warning",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "THROWS_METHOD_THROWS_CLAUSE_THROWABLE",
+    "level" : "Warning",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "THROWS_METHOD_THROWS_RUNTIMEEXCEPTION",
+    "level" : "Warning",
+    "category" : "BestPractice",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -6015,6 +6078,13 @@
     "patternId" : "USBR_UNNECESSARY_STORE_BEFORE_RETURN",
     "level" : "Info",
     "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "USC_POTENTIAL_SECURITY_CHECK_BASED_ON_UNTRUSTED_SOURCE",
+    "level" : "Error",
+    "category" : "Security",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false

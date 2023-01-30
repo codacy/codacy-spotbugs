@@ -6,5 +6,5 @@ Often, this indicates an error, because the value computed is never
 used.
 
 Note that Sun's javac compiler often generates dead stores for
-final local variables.  Because SpotBugs is a bytecode-based tool,
+final local variables. Because SpotBugs is a bytecode-based tool,
 there is no easy way to eliminate these false positives.

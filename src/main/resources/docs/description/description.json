@@ -141,7 +141,7 @@
 }, {
   "patternId" : "BC_IMPOSSIBLE_INSTANCEOF",
   "title" : "instanceof will always return false",
-  "description" : "instanceof will always return false in {1}, since a {2} can't be a {3}",
+  "description" : "instanceof will always return false in {1}, since a {2} cannot be a {3}",
   "parameters" : [ ]
 }, {
   "patternId" : "BC_NULL_INSTANCEOF",
@@ -426,7 +426,7 @@
 }, {
   "patternId" : "CO_COMPARETO_RESULTS_MIN_VALUE",
   "title" : "compareTo()/compare() returns Integer.MIN_VALUE",
-  "description" : "{1} returns Integer.MIN_VALUE, which can't be negated",
+  "description" : "{1} returns Integer.MIN_VALUE, which cannot be negated",
   "parameters" : [ ]
 }, {
   "patternId" : "CO_SELF_NO_OBJECT",
@@ -504,6 +504,11 @@
   "description" : "Method {1} performs a contravariant array element assignment",
   "parameters" : [ ]
 }, {
+  "patternId" : "DANGEROUS_PERMISSION_COMBINATION",
+  "title" : "Dangerous combination of permissions granted",
+  "description" : "Granting permission {2} on the target {3} in method {1} is dangerous.",
+  "parameters" : [ ]
+}, {
   "patternId" : "DB_DUPLICATE_BRANCHES",
   "title" : "Method uses the same code for two branches",
   "description" : "{1} uses the same code for two branches",
@@ -520,8 +525,8 @@
   "parameters" : [ ]
 }, {
   "patternId" : "DC_DOUBLECHECK",
-  "title" : "Possible double check of field",
-  "description" : "Possible doublecheck on {2} in {1}",
+  "title" : "Possible double-check of field",
+  "description" : "Possible double-check on {2} in {1}",
   "parameters" : [ ]
 }, {
   "patternId" : "DC_PARTIALLY_CONSTRUCTED",
@@ -625,7 +630,7 @@
   "parameters" : [ ]
 }, {
   "patternId" : "DMI_ANNOTATION_IS_NOT_VISIBLE_TO_REFLECTION",
-  "title" : "Can't use reflection to check for presence of annotation without runtime retention",
+  "title" : "Cannot use reflection to check for presence of annotation without runtime retention",
   "description" : "Use of reflection to check for the presence the annotation {3} which doesn't have runtime retention, in {1}",
   "parameters" : [ ]
 }, {
@@ -1214,6 +1219,11 @@
   "description" : "{1} does nothing except call super.finalize(); delete it",
   "parameters" : [ ]
 }, {
+  "patternId" : "FL_FLOATS_AS_LOOP_COUNTERS",
+  "title" : "Do not use floating-point variables as loop counters",
+  "description" : "Using floating-point loop counters can lead to unexpected behavior.",
+  "parameters" : [ ]
+}, {
   "patternId" : "FL_MATH_USING_FLOAT_PRECISION",
   "title" : "Method performs math using floating point precision",
   "description" : "{1} performs math using floating point precision",
@@ -1720,8 +1730,8 @@
   "parameters" : [ ]
 }, {
   "patternId" : "IT_NO_SUCH_ELEMENT",
-  "title" : "Iterator next() method can't throw NoSuchElementException",
-  "description" : "{1} can't throw NoSuchElementException",
+  "title" : "Iterator next() method cannot throw NoSuchElementException",
+  "description" : "{1} cannot throw NoSuchElementException",
   "parameters" : [ ]
 }, {
   "patternId" : "J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION",
@@ -2109,6 +2119,11 @@
   "description" : "{1} synchronizes on updated field {2.givenClass}",
   "parameters" : [ ]
 }, {
+  "patternId" : "MODIFICATION_AFTER_VALIDATION",
+  "title" : "String is modified after validation and not before it",
+  "description" : "String is modified after validation and not before it. Tricky attackers may pass malicious strings which bypass validation.",
+  "parameters" : [ ]
+}, {
   "patternId" : "MOM_MISLEADING_OVERLOAD_MODEL",
   "title" : "Class 'overloads' a method with both instance and static versions",
   "description" : "Class {0} 'overloads' a method with both instance and static versions",
@@ -2125,8 +2140,8 @@
   "parameters" : [ ]
 }, {
   "patternId" : "MS_CANNOT_BE_FINAL",
-  "title" : "Field isn't final and can't be protected from malicious code",
-  "description" : "{1} isn't final and can't be protected from malicious code",
+  "title" : "Field isn't final and cannot be protected from malicious code",
+  "description" : "{1} isn't final and cannot be protected from malicious code",
   "parameters" : [ ]
 }, {
   "patternId" : "MS_EXPOSE_BUF",
@@ -2409,6 +2424,11 @@
   "description" : "Bogus warning about an operation {1}",
   "parameters" : [ ]
 }, {
+  "patternId" : "NORMALIZATION_AFTER_VALIDATION",
+  "title" : "String is normalzied after validation and not before it",
+  "description" : "String is normalzied after validation and not before it. Tricky attackers may pass malicious strings which bypass validation.",
+  "parameters" : [ ]
+}, {
   "patternId" : "NOS_NON_OWNED_SYNCHRONIZATION",
   "title" : "Class uses non owned variables to synchronize on",
   "description" : "Class {0} uses non owned variables to synchronize on",
@@ -2451,7 +2471,7 @@
 }, {
   "patternId" : "NP_CLOSING_NULL",
   "title" : "close() invoked on a value that is always null",
-  "description" : "Can't close {2.givenClass} since it is always null in {1}",
+  "description" : "Cannot close {2.givenClass} since it is always null in {1}",
   "parameters" : [ ]
 }, {
   "patternId" : "NP_DEREFERENCE_OF_READLINE_VALUE",
@@ -2742,6 +2762,11 @@
   "patternId" : "PERMISSIVE_CORS",
   "title" : "Overly permissive CORS policy",
   "description" : "The program defines an overly permissive Cross-Origin Resource Sharing (CORS) policy",
+  "parameters" : [ ]
+}, {
+  "patternId" : "PERM_SUPER_NOT_CALLED_IN_GETPERMISSIONS",
+  "title" : "Custom class loader does not call its superclass's getPermissions()",
+  "description" : "Custom class loader {1} does not call its superclass's getPermissions()",
   "parameters" : [ ]
 }, {
   "patternId" : "PIS_POSSIBLE_INCOMPLETE_SERIALIZATION",
@@ -3764,6 +3789,11 @@
   "description" : "Method {1} calls a method from a class that has been shaded by a 3rdparty jar",
   "parameters" : [ ]
 }, {
+  "patternId" : "SSD_DO_NOT_USE_INSTANCE_LOCK_ON_SHARED_STATIC_DATA",
+  "title" : "Instance level lock was used on a shared static data",
+  "description" : "Static field \"{2}\" is modified by an instance level {3}.",
+  "parameters" : [ ]
+}, {
   "patternId" : "SSL_CONTEXT",
   "title" : "Weak SSLContext",
   "description" : "SSLContext needs to be compatible with TLS 1.2",
@@ -3937,6 +3967,21 @@
   "patternId" : "TESTING3",
   "title" : "Testing 3",
   "description" : "Test warning 3 generated in {1}",
+  "parameters" : [ ]
+}, {
+  "patternId" : "THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION",
+  "title" : "Method lists Exception in its throws clause.",
+  "description" : "Method lists Exception in its throws clause.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "THROWS_METHOD_THROWS_CLAUSE_THROWABLE",
+  "title" : "Method lists Throwable in its throws clause.",
+  "description" : "Method lists Throwable in its throws clause.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "THROWS_METHOD_THROWS_RUNTIMEEXCEPTION",
+  "title" : "Method intentionally throws RuntimeException.",
+  "description" : "Method intentionally throws RuntimeException.",
   "parameters" : [ ]
 }, {
   "patternId" : "TLW_TWO_LOCK_NOTIFY",
@@ -4192,6 +4237,11 @@
   "patternId" : "USBR_UNNECESSARY_STORE_BEFORE_RETURN",
   "title" : "Method stores return result in local before immediately returning it",
   "description" : "Method {1} stores return result in local before immediately returning it",
+  "parameters" : [ ]
+}, {
+  "patternId" : "USC_POTENTIAL_SECURITY_CHECK_BASED_ON_UNTRUSTED_SOURCE",
+  "title" : "Potential security check based on untrusted source.",
+  "description" : "Non-final method {4} was called at {5} before entering a doPrivileged block and was also called inside the block at {6} on a non-final class instance of {3} in public method {1}. If this call is a check before entering the doPrivileged() block then it may be unreliable since the method may receive an instance of a malicious descendant of the class which has this overridden to behave differently than expected.",
   "parameters" : [ ]
 }, {
   "patternId" : "USFW_UNSYNCHRONIZED_SINGLETON_FIELD_WRITES",
