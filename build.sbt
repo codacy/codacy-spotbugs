@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "com.h3xstream.findsecbugs" % "findsecbugs-plugin" % findsecbugsVersion,
   "com.mebigfatguy.sb-contrib" % "sb-contrib" % sbContribVersion,
   "org.scala-lang.modules" %% "scala-java8-compat" % "1.0.2",
-  "com.github.tkqubo" % "html-to-markdown" % "1.0.0"
+  "com.github.tkqubo" % "html-to-markdown" % "0.7.2"
 ).map(_.withSources())
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % Test
