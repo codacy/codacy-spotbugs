@@ -9,16 +9,16 @@ val sbContribVersion = "7.4.7"
 val spotBugsVersion = "4.7.3"
 
 libraryDependencies ++= Seq(
-  "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
+  "org.scala-lang.modules" %% "scala-xml" % "2.1.0",
   "com.codacy" %% "codacy-engine-scala-seed" % "5.0.1",
   "com.github.spotbugs" % "spotbugs" % spotBugsVersion,
   "com.h3xstream.findsecbugs" % "findsecbugs-plugin" % findsecbugsVersion,
   "com.mebigfatguy.sb-contrib" % "sb-contrib" % sbContribVersion,
-  "org.scala-lang.modules" %% "scala-java8-compat" % "0.9.0",
-  "com.github.tkqubo" % "html-to-markdown" % "0.7.2"
+  "org.scala-lang.modules" %% "scala-java8-compat" % "1.0.2",
+  "com.github.tkqubo" % "html-to-markdown" % "1.0.0"
 ).map(_.withSources())
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.7" % Test
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % Test
 
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
