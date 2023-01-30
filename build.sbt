@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "com.github.tkqubo" % "html-to-markdown" % "0.7.2"
 ).map(_.withSources())
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.15" % Test
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.7" % Test
 
 enablePlugins(JavaAppPackaging)
 enablePlugins(DockerPlugin)
