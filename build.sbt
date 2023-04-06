@@ -62,7 +62,7 @@ val dockerUser = "docker"
 Docker / daemonUser := dockerUser
 Docker / daemonGroup := dockerUser
 
-dockerBaseImage := "amazoncorretto:8-alpine3.14-jre"
+dockerBaseImage := "amazoncorretto:8-alpine3.17-jre"
 
 dockerEntrypoint := Seq("/opt/docker/bin/engine")
 
