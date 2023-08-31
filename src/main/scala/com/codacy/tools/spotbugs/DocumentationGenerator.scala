@@ -180,7 +180,8 @@ object DocumentationGenerator {
     "DES" -> Pattern.Subcategory.Cryptography,
     "FILE" -> Pattern.Subcategory.FileAccess,
     "PREDICTABLE_RANDOM" -> Pattern.Subcategory.Cryptography,
-    "ENTITY" -> Pattern.Subcategory.Visibility
+    "ENTITY" -> Pattern.Subcategory.Visibility,
+    "GROOVY_SHELL" -> Pattern.Subcategory.CommandInjection
   )
 
   private def getSubCategory(bugPattern: BugPattern): Option[Pattern.Subcategory] =
