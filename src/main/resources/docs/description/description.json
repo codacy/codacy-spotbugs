@@ -1,4 +1,9 @@
 [ {
+  "patternId" : "AA_ASSERTION_OF_ARGUMENTS",
+  "title" : "Assertion is used to validate an argument of a public method",
+  "description" : "Assertion validates method argument at {1}. If assertions are disabled, there won't be any argument validation.",
+  "parameters" : [ ]
+}, {
   "patternId" : "ABC_ARRAY_BASED_COLLECTIONS",
   "title" : "Method uses array as basis of collection",
   "description" : "Method {1} uses array as basis of collection",
@@ -72,6 +77,16 @@
   "patternId" : "AOM_ABSTRACT_OVERRIDDEN_METHOD",
   "title" : "Abstract method overrides a concrete implementation",
   "description" : "Abstract method {1} overrides a concrete implementation",
+  "parameters" : [ ]
+}, {
+  "patternId" : "ASE_ASSERTION_WITH_SIDE_EFFECT",
+  "title" : "Expression in assertion may produce a side effect",
+  "description" : "The expression used in assertion at {1} may produce a side effect. If assertions are disabled, the expression won't get executed and the result of the method might change.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "ASE_ASSERTION_WITH_SIDE_EFFECT_METHOD",
+  "title" : "Method invoked in assertion may produce a side effect",
+  "description" : "The method called in assertion at {1} may produce a side effect. If assertions are disabled, the method invocation won't get executed and the result of the method might change.",
   "parameters" : [ ]
 }, {
   "patternId" : "AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION",
@@ -469,6 +484,11 @@
   "description" : "This method {1} performs arithmetic operations on time values with different units",
   "parameters" : [ ]
 }, {
+  "patternId" : "CT_CONSTRUCTOR_THROW",
+  "title" : "Be wary of letting constructors throw exceptions.",
+  "description" : "Exception thrown in class {0} at {1} will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.",
+  "parameters" : [ ]
+}, {
   "patternId" : "CUSTOM_INJECTION",
   "title" : "Potential injection (custom)",
   "description" : "This use of {3} can be vulnerable to injection",
@@ -614,9 +634,14 @@
   "description" : "Synchronization on {2} in {1}",
   "parameters" : [ ]
 }, {
-  "patternId" : "DL_SYNCHRONIZATION_ON_SHARED_CONSTANT",
+  "patternId" : "DL_SYNCHRONIZATION_ON_INTERNED_STRING",
   "title" : "Synchronization on interned String",
   "description" : "Synchronization on interned String in {1}",
+  "parameters" : [ ]
+}, {
+  "patternId" : "DL_SYNCHRONIZATION_ON_SHARED_CONSTANT",
+  "title" : "Synchronization on String literal",
+  "description" : "Synchronization on String literal in {1}",
   "parameters" : [ ]
 }, {
   "patternId" : "DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE",
@@ -2150,7 +2175,7 @@
   "parameters" : [ ]
 }, {
   "patternId" : "MS_EXPOSE_REP",
-  "title" : "Public static method may expose internal representation by returning array",
+  "title" : "Public static method may expose internal representation by returning a mutable object or array",
   "description" : "Public static {1} may expose internal representation by returning {2.givenClass}",
   "parameters" : [ ]
 }, {
@@ -2335,8 +2360,8 @@
   "parameters" : [ ]
 }, {
   "patternId" : "NM_FIELD_NAMING_CONVENTION",
-  "title" : "Field names should start with a lower case letter",
-  "description" : "The field name {1} doesn't start with a lower case letter",
+  "title" : "Non-final field names should start with a lower case letter, final fields should be uppercase with words separated by underscores",
+  "description" : "The field name {1} is not conform to the naming convention. If final, it should be ALL_CAPS, otherwise lowerCamelCase.",
   "parameters" : [ ]
 }, {
   "patternId" : "NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER",
@@ -2744,6 +2769,21 @@
   "description" : "This API ({3}) writes to a file whose location might be specified by user input",
   "parameters" : [ ]
 }, {
+  "patternId" : "PA_PUBLIC_ARRAY_ATTRIBUTE",
+  "title" : "Array-type field is public",
+  "description" : "Array-type field {1} is public, which makes it too exposed. Consider making it private to limit external accessibility.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "PA_PUBLIC_MUTABLE_OBJECT_ATTRIBUTE",
+  "title" : "Mutable object-type field is public",
+  "description" : "Mutable object-type field {1} is public, which makes it too exposed. Consider making it private to limit external accessibility.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "PA_PUBLIC_PRIMITIVE_ATTRIBUTE",
+  "title" : "Primitive field is public",
+  "description" : "Primitive field {1} is public and set from inside the class, which makes it too exposed. Consider making it private to limit external accessibility.",
+  "parameters" : [ ]
+}, {
   "patternId" : "PCAIL_POSSIBLE_CONSTANT_ALLOCATION_IN_LOOP",
   "title" : "Method allocates an object that is used in a constant way in a loop",
   "description" : "Method {1} allocates an object that is used in a constant way in a loop",
@@ -2772,6 +2812,26 @@
   "patternId" : "PIS_POSSIBLE_INCOMPLETE_SERIALIZATION",
   "title" : "Class doesn't serialize superclass fields",
   "description" : "Class {0} doesn't serialize superclass fields",
+  "parameters" : [ ]
+}, {
+  "patternId" : "PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_CLASS_NAMES",
+  "title" : "Do not reuse public identifiers from JSL as class name",
+  "description" : "Class name {1} in source file {2} shadows the publicly available identifier from the Java Standard Library.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_FIELD_NAMES",
+  "title" : "Do not reuse public identifiers from JSL as field name",
+  "description" : "The used identifier {2} as field name in class {1} in source file {3} shadows the publicly available identifier from the Java Standard Library.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_LOCAL_VARIABLE_NAMES",
+  "title" : "Do not reuse public identifiers from JSL as method name",
+  "description" : "The used identifier {4} as variable name in the class {1} inside {2} method at line {3} shadows the publicly available identifier from the Java Standard Library.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_METHOD_NAMES",
+  "title" : "Do not reuse public identifiers from JSL as method name",
+  "description" : "The used identifier {2} as method name in class {1} at line {3} as a method name shadows the publicly available identifier from the Java Standard Library.",
   "parameters" : [ ]
 }, {
   "patternId" : "PLAY_UNVALIDATED_REDIRECT",
@@ -3387,6 +3447,11 @@
   "patternId" : "SE_NO_SUITABLE_CONSTRUCTOR_FOR_EXTERNALIZATION",
   "title" : "Class is Externalizable but doesn't define a void constructor",
   "description" : "{0} is Externalizable but doesn't define a void constructor",
+  "parameters" : [ ]
+}, {
+  "patternId" : "SE_PREVENT_EXT_OBJ_OVERWRITE",
+  "title" : "Prevent overwriting of externalizable objects",
+  "description" : "Any caller can reset the value of the object by using the readExternal() method.",
   "parameters" : [ ]
 }, {
   "patternId" : "SE_PRIVATE_READ_RESOLVE_NOT_INHERITED",
@@ -4442,6 +4507,11 @@
   "patternId" : "VR_UNRESOLVABLE_REFERENCE",
   "title" : "Class makes reference to unresolvable class or method",
   "description" : "Unresolvable reference to {1} by {0}",
+  "parameters" : [ ]
+}, {
+  "patternId" : "VSC_VULNERABLE_SECURITY_CHECK_METHODS",
+  "title" : "Non-Private and non-final security check methods are vulnerable",
+  "description" : "The method '{1}' performs security check by using '{2}' method of Security Manager Class, but is overrideable. Declare the method final or private in order to resolve the issue. ",
   "parameters" : [ ]
 }, {
   "patternId" : "WA_AWAIT_NOT_IN_LOOP",
