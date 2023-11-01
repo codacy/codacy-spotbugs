@@ -6,7 +6,7 @@ scalaVersion := "2.12.15"
 
 val findsecbugsVersion = "1.12.0"
 val sbContribVersion = "7.4.7"
-val spotBugsVersion = "4.7.3"
+val spotBugsVersion = "4.8.0"
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
@@ -62,7 +62,7 @@ val dockerUser = "docker"
 Docker / daemonUser := dockerUser
 Docker / daemonGroup := dockerUser
 
-dockerBaseImage := "amazoncorretto:8-alpine3.17-jre"
+dockerBaseImage := "amazoncorretto:8-alpine3.18-jre"
 
 dockerEntrypoint := Seq("/opt/docker/bin/engine")
 

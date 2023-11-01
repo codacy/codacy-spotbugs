@@ -1,8 +1,8 @@
-# [Synchronization on String literal](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DL_SYNCHRONIZATION_ON_SHARED_CONSTANT)
+# [Synchronization on interned String](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#DL_SYNCHRONIZATION_ON_INTERNED_STRING)
 
- The code synchronizes on String literal.
+ The code synchronizes on interned String.
 
-    private static String LOCK = "LOCK";
+    private static String LOCK = new String("LOCK").intern();
     ...
     synchronized(LOCK) {
         ...
