@@ -1009,6 +1009,11 @@
   "description" : "The persistent objects could be exploited by attacker to read sensitive information.",
   "parameters" : [ ]
 }, {
+  "patternId" : "ENV_USE_PROPERTY_INSTEAD_OF_ENV",
+  "title" : "It is preferable to use portable Java property instead of environment variable.",
+  "description" : "It is preferable to use portable Java property '{3}' instead of environment variable '{2}' in method {1}.",
+  "parameters" : [ ]
+}, {
   "patternId" : "EOS_BAD_END_OF_STREAM_CHECK",
   "title" : "Data read is converted before comparison to -1",
   "description" : "The return value of {2} in method {1} is converted to {3} before comparison to {4}.",
@@ -2816,22 +2821,22 @@
 }, {
   "patternId" : "PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_CLASS_NAMES",
   "title" : "Do not reuse public identifiers from JSL as class name",
-  "description" : "Class name {1} in source file {2} shadows the publicly available identifier from the Java Standard Library.",
+  "description" : "The name of the class {0} shadows the publicly available identifier from the Java Standard Library.",
   "parameters" : [ ]
 }, {
   "patternId" : "PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_FIELD_NAMES",
   "title" : "Do not reuse public identifiers from JSL as field name",
-  "description" : "The used identifier {2} as field name in class {1} in source file {3} shadows the publicly available identifier from the Java Standard Library.",
+  "description" : "Name of the field {1.name} in class {0} shadows the publicly available identifier from the Java Standard Library.",
   "parameters" : [ ]
 }, {
   "patternId" : "PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_LOCAL_VARIABLE_NAMES",
   "title" : "Do not reuse public identifiers from JSL as method name",
-  "description" : "The used identifier {4} as variable name in the class {1} inside {2} method at line {3} shadows the publicly available identifier from the Java Standard Library.",
+  "description" : "Variable name {2} in method {1} shadows the publicly available identifier from the Java Standard Library.",
   "parameters" : [ ]
 }, {
   "patternId" : "PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_METHOD_NAMES",
   "title" : "Do not reuse public identifiers from JSL as method name",
-  "description" : "The used identifier {2} as method name in class {1} at line {3} as a method name shadows the publicly available identifier from the Java Standard Library.",
+  "description" : "The name of the method {1} shadows the publicly available identifier from the Java Standard Library.",
   "parameters" : [ ]
 }, {
   "patternId" : "PLAY_UNVALIDATED_REDIRECT",

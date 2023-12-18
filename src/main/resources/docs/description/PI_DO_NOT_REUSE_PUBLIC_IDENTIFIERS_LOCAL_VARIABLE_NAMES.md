@@ -1,6 +1,6 @@
 # [Do not reuse public identifiers from JSL as method name](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_LOCAL_VARIABLE_NAMES)
 
-      When declaring local variables in Java, it is crucial to refrain from reusing public identifiers from the Java Standard Library.
+      When declaring local variables in Java, it is a good practice to refrain from reusing public identifiers from the Java Standard Library.
       Reusing these identifiers as local variable names can lead to confusion, hinder code comprehension, and potentially cause conflicts
       with existing publicly available identifier names from the Java Standard Library.
       To maintain code clarity and avoid such issues, it is best practice to select unique and descriptive names for your local variables.

@@ -1,6 +1,6 @@
 # [Potentially ambiguous invocation of either an inherited or outer method](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD)
 
-An inner class is invoking a method that could be resolved to either a inherited method or a method defined in an outer class.
+An inner class is invoking a method that could be resolved to either an inherited method or a method defined in an outer class.
 For example, you invoke `foo(17)`, which is defined in both a superclass and in an outer method.
 By the Java semantics,
 it will be resolved to invoke the inherited method, but this may not be what

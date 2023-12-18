@@ -6,4 +6,4 @@
   will only give up one lock and the notify will be unable to get both locks,
   and thus the notify will not succeed.
      If there is also a warning about a two lock wait, the
-   probably of a bug is quite high.
+   probability of a bug is quite high.

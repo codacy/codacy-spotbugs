@@ -1,6 +1,6 @@
 # [HTTP Response splitting vulnerability](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#HRS_REQUEST_PARAMETER_TO_HTTP_HEADER)
 
-This code directly writes an HTTP parameter to an HTTP header, which allows for a HTTP response splitting
+This code directly writes an HTTP parameter to an HTTP header, which allows for an HTTP response splitting
 vulnerability. See [http://en.wikipedia.org/wiki/HTTP_response_splitting](http://en.wikipedia.org/wiki/HTTP_response_splitting)
 for more information.
 

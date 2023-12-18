@@ -1,6 +1,6 @@
 {
   "name" : "spotbugs",
-  "version" : "4.8.0",
+  "version" : "4.8.3",
   "patterns" : [ {
     "patternId" : "AA_ASSERTION_OF_ARGUMENTS",
     "level" : "Warning",
@@ -1446,6 +1446,13 @@
     "level" : "Error",
     "category" : "Security",
     "subcategory" : "Visibility",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "ENV_USE_PROPERTY_INSTEAD_OF_ENV",
+    "level" : "Warning",
+    "category" : "BestPractice",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false

@@ -1,6 +1,6 @@
 # [HTTP cookie formed from untrusted input](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#HRS_REQUEST_PARAMETER_TO_COOKIE)
 
-This code constructs an HTTP Cookie using an untrusted HTTP parameter. If this cookie is added to an HTTP response, it will allow a HTTP response splitting
+This code constructs an HTTP Cookie using an untrusted HTTP parameter. If this cookie is added to an HTTP response, it will allow an HTTP response splitting
 vulnerability. See [http://en.wikipedia.org/wiki/HTTP_response_splitting](http://en.wikipedia.org/wiki/HTTP_response_splitting)
 for more information.
 
