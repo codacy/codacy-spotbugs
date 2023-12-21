@@ -3,7 +3,7 @@
  This code seems to be using non-short-circuit logic (e.g., &
 or |)
 rather than short-circuit logic (&& or ||). In addition,
-it seem possible that, depending on the value of the left hand side, you might not
+it seems possible that, depending on the value of the left hand side, you might not
 want to evaluate the right hand side (because it would have side effects, could cause an exception
 or could be expensive.
 

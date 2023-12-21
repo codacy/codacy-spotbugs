@@ -1,6 +1,6 @@
 # [Do not reuse public identifiers from JSL as class name](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#PI_DO_NOT_REUSE_PUBLIC_IDENTIFIERS_CLASS_NAMES)
 
-      It's essential to avoid reusing public identifiers from the Java Standard Library as class names.
+      It's a good practice to avoid reusing public identifiers from the Java Standard Library as class names.
       This is because the Java Standard Library is a part of the Java platform and is expected to be available in all Java environments.
       Doing so can lead to naming conflicts and confusion, making it harder to understand and maintain the code.
       It's best practice to choose unique and descriptive class names that accurately represent the purpose and functionality of your own code.

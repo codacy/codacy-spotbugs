@@ -1,8 +1,8 @@
 # [Return value of method without side effect is ignored](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT)
 
-This code calls a method and ignores the return value. However our analysis shows that
+This code calls a method and ignores the return value. However, our analysis shows that
 the method (including its implementations in subclasses if any) does not produce any effect
-other than return value. Thus this call can be removed.
+other than return value. Thus, this call can be removed.
 
 We are trying to reduce the false positives as much as possible, but in some cases this warning might be wrong.
 Common false-positive cases include:
