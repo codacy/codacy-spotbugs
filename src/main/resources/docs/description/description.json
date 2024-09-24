@@ -2044,6 +2044,11 @@
   "description" : "Overridable method {2} is called from constructor {1}.",
   "parameters" : [ ]
 }, {
+  "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_READ_OBJECT",
+  "title" : "An overridable method is called from the readObject method.",
+  "description" : "Overridable method {2} is called from readObject.",
+  "parameters" : [ ]
+}, {
   "patternId" : "MDM_BIGDECIMAL_EQUALS",
   "title" : "Method calls BigDecimal.equals()",
   "description" : "Method {1} calls BigDecimal.equals(), which is normally a mistake",
@@ -3537,6 +3542,36 @@
   "patternId" : "SIL_SQL_IN_LOOP",
   "title" : "Method executes SQL queries inside of loops",
   "description" : "Method {1} executes SQL queries inside of loops",
+  "parameters" : [ ]
+}, {
+  "patternId" : "SING_SINGLETON_GETTER_NOT_SYNCHRONIZED",
+  "title" : "Instance-getter method of class using singleton design pattern is not synchronized.",
+  "description" : "Instance-getter method of class using singleton design pattern ({0}) is not synchronized.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "SING_SINGLETON_HAS_NONPRIVATE_CONSTRUCTOR",
+  "title" : "Class using singleton design pattern has non-private constructor.",
+  "description" : "Class ({0}) using singleton design pattern has non-private constructor.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "SING_SINGLETON_IMPLEMENTS_CLONEABLE",
+  "title" : "Class using singleton design pattern directly implements Cloneable interface.",
+  "description" : "Class ({0}) using singleton design pattern directly implements Cloneable interface.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "SING_SINGLETON_IMPLEMENTS_CLONE_METHOD",
+  "title" : "Class using singleton design pattern implements clone() method without being an unconditional CloneNotSupportedException-thrower.",
+  "description" : "Class ({0}) using singleton design pattern implements clone() method without being an unconditional CloneNotSupportedException-thrower.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "SING_SINGLETON_IMPLEMENTS_SERIALIZABLE",
+  "title" : "Class using singleton design pattern directly or indirectly implements Serializable interface.",
+  "description" : "Class ({0}) using singleton design pattern directly or indirectly implements Serializable interface.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "SING_SINGLETON_INDIRECTLY_IMPLEMENTS_CLONEABLE",
+  "title" : "Class using singleton design pattern indirectly implements Cloneable interface.",
+  "description" : "Class ({0}) using singleton design pattern indirectly implements Cloneable interface.",
   "parameters" : [ ]
 }, {
   "patternId" : "SIO_SUPERFLUOUS_INSTANCEOF",

@@ -2,3 +2,10 @@
 
 This format string includes a newline character (\n). In format strings, it is generally
  preferable to use %n, which will produce the platform-specific line separator.
+
+ When using text blocks introduced in Java 15, use the `\` escape sequence:
+
+`String value = """
+                first line%n\
+                second line%n\
+                """;`
