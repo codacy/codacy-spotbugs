@@ -1,6 +1,6 @@
 {
   "name" : "spotbugs",
-  "version" : "4.8.3",
+  "version" : "4.8.4",
   "patterns" : [ {
     "patternId" : "AA_ASSERTION_OF_ARGUMENTS",
     "level" : "Warning",
@@ -2927,6 +2927,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_READ_OBJECT",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "MDM_BIGDECIMAL_EQUALS",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -5065,6 +5072,48 @@
     "patternId" : "SIL_SQL_IN_LOOP",
     "level" : "Warning",
     "category" : "Performance",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SING_SINGLETON_GETTER_NOT_SYNCHRONIZED",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SING_SINGLETON_HAS_NONPRIVATE_CONSTRUCTOR",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SING_SINGLETON_IMPLEMENTS_CLONEABLE",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SING_SINGLETON_IMPLEMENTS_CLONE_METHOD",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SING_SINGLETON_IMPLEMENTS_SERIALIZABLE",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "SING_SINGLETON_INDIRECTLY_IMPLEMENTS_CLONEABLE",
+    "level" : "Warning",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
