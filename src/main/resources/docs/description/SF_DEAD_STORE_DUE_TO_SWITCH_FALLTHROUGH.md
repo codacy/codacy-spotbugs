@@ -2,3 +2,5 @@
 
  A value stored in the previous switch case is overwritten here due to a switch fall through. It is likely that
     you forgot to put a break or return at the end of the previous case.
+
+See [CWE-484: Omitted Break Statement in Switch](https://cwe.mitre.org/data/definitions/484.html).

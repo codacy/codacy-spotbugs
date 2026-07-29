@@ -10,3 +10,5 @@ any other thread from accessing the stored object until it is fully initialized.
 Even if you feel confident that the method is never called by multiple
 threads, it might be better to not set the static field until the value
 you are setting it to is fully populated/initialized.
+
+See [CWE-543: Use of Singleton Pattern Without Synchronization in a Multithreaded Context](https://cwe.mitre.org/data/definitions/543.html).

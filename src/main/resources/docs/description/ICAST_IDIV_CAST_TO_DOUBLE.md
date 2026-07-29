@@ -15,3 +15,5 @@ double _before_ performing the division.  Here is an example:
 
     // Right: yields result 0.4
     double value2 = x / (double) y;
+
+See [CWE-192: Integer Coercion Error](https://cwe.mitre.org/data/definitions/192.html).

@@ -7,3 +7,5 @@ the object on all exception paths out of the method.  Failure to
 close database resources on all paths out of a method may
 result in poor performance, and could cause the application to
 have problems communicating with the database.
+
+See [CWE-459: Incomplete Cleanup](https://cwe.mitre.org/data/definitions/459.html).

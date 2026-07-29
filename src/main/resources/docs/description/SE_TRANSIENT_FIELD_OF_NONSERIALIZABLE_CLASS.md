@@ -6,3 +6,5 @@ This may be leftover marking from a previous version of the code in which the cl
 it may indicate a misunderstanding of how serialization works.
 
 _This bug is reported only if special option <tt>reportTransientFieldOfNonSerializableClass</tt> is set._
+
+See [CWE-1066: Missing Serialization Control Element](https://cwe.mitre.org/data/definitions/1066.html).

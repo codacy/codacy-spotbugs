@@ -3,3 +3,5 @@
 The code here uses a regular expression that is invalid according to the syntax
 for regular expressions. This statement will throw a PatternSyntaxException when
 executed.
+
+See [CWE-185: Incorrect Regular Expression](https://cwe.mitre.org/data/definitions/185.html).

@@ -4,3 +4,5 @@
 and will assume that the default platform encoding is suitable. This will cause the application
 behavior to vary between platforms. Use an alternative API and specify a charset name or Charset
 object explicitly.
+
+See [CWE-173: Improper Handling of Alternate Encoding](https://cwe.mitre.org/data/definitions/173.html).

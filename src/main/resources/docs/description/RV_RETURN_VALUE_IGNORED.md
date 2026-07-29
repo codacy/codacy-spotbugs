@@ -15,3 +15,5 @@ should be corrected to:
 
     String dateString = getHeaderField(name);
     dateString = dateString.trim();
+
+See [CWE-252: Unchecked Return Value](https://cwe.mitre.org/data/definitions/252.html).

@@ -10,3 +10,5 @@ For example
 *   "ab|cd".split("|") will return array with six (!) elements: [, a, b, |, c, d]
 
 Consider using `s.replace(".", "/")` or `s.split("\\.")` instead.
+
+See [CWE-185: Incorrect Regular Expression](https://cwe.mitre.org/data/definitions/185.html).

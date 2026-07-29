@@ -9,3 +9,6 @@ SpotBugs looks only for the most blatant, obvious cases of cross site scripting.
 If SpotBugs found _any_, you _almost certainly_ have more cross site scripting
 vulnerabilities that SpotBugs doesn't report. If you are concerned about cross site scripting, you should seriously
 consider using a commercial static analysis or pen-testing tool.
+
+See [CWE-81: Improper Neutralization of Script in an Error Message Web Page](https://cwe.mitre.org/data/definitions/81.html)
+and [CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')](https://cwe.mitre.org/data/definitions/79.html).

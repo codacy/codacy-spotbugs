@@ -18,3 +18,7 @@ The existing code might be OK, but it is confusing and a
 future refactoring, such as the "Remove Boxing" refactoring in IntelliJ,
 might replace this with the use of an interned Integer object shared
 throughout the JVM, leading to very confusing behavior and potential deadlock.
+
+See CERT [LCK01-J. Do not synchronize on objects that may be reused](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/locking-lck/lck01-j/)
+and [CWE-412: Unrestricted Externally Accessible Lock](https://cwe.mitre.org/data/definitions/412.html)
+for more information.

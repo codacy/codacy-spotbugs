@@ -11,3 +11,6 @@ for using a JSR-166 lock is:
     } finally {
         l.unlock();
     }
+
+See [CWE-413: Improper Resource Locking](https://cwe.mitre.org/data/definitions/413.html)
+and [CWE-459: Incomplete Cleanup](https://cwe.mitre.org/data/definitions/459.html).

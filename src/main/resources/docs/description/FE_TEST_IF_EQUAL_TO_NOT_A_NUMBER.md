@@ -10,3 +10,5 @@
     is the special Not A Number value, use
     `Double.isNaN(x)` (or `Float.isNaN(x)` if
     `x` is floating point precision).
+
+See [CWE-570: Expression is Always False](https://cwe.mitre.org/data/definitions/570.html).

@@ -20,3 +20,5 @@ Correct implementations for the above method are:
 
     // better, works for all dates
     Date getDate(long seconds) { return new Date(seconds * 1000); }
+
+See [CWE-192: Integer Coercion Error](https://cwe.mitre.org/data/definitions/192.html).

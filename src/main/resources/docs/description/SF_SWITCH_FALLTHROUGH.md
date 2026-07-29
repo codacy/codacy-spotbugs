@@ -2,3 +2,5 @@
 
  This method contains a switch statement where one case branch will fall through to the next case.
   Usually you need to end this case with a break or return.
+
+See [CWE-484: Omitted Break Statement in Switch](https://cwe.mitre.org/data/definitions/484.html).

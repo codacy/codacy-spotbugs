@@ -2,4 +2,5 @@
 
  The class is annotated with net.jcip.annotations.Immutable or javax.annotation.concurrent.Immutable,
   and the rules for those annotations require that all fields are final.
-   .
+
+See [CWE-471: Modification of Assumed-Immutable Data (MAID)](https://cwe.mitre.org/data/definitions/471.html).

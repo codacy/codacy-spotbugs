@@ -4,3 +4,5 @@
    by accident.
    The field could be made package protected to avoid
    this vulnerability.
+
+See [CWE-607: Public Static Final Field References Mutable Object](https://cwe.mitre.org/data/definitions/607.html).

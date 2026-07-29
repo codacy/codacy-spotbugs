@@ -6,3 +6,5 @@ declared in an anonymous class, it seems that this method is uncallable. The met
 might simply be dead code, but it is also possible that the method is intended to
 override a method declared in a superclass, and due to a typo or other error the method does not,
 in fact, override the method it is intended to.
+
+See [CWE-561: Dead Code](https://cwe.mitre.org/data/definitions/561.html).

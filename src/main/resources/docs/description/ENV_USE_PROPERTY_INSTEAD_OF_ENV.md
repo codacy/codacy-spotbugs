@@ -72,4 +72,4 @@
  </tbody> 
 </table>
 
-      See SEI CERT rule [ENV02-J. Do not trust the values of environment variables](https://wiki.sei.cmu.edu/confluence/display/java/ENV02-J.+Do+not+trust+the+values+of+environment+variables).
+      See SEI CERT rule [ENV02-J. Do not trust the values of environment variables](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/runtime-environment-env/env02-j/).

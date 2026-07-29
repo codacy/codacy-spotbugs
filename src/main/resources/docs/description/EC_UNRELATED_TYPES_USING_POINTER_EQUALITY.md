@@ -2,3 +2,5 @@
 
  This method uses pointer equality to compare two references that seem to be of
 different types. The result of this comparison will always be false at runtime.
+
+See [CWE-570: Expression is Always False](https://cwe.mitre.org/data/definitions/570.html).

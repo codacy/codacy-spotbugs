@@ -4,3 +4,5 @@
   superclass's `finalize()` method.  So, any finalizer
   actions defined for the superclass will not be performed. 
   Add a call to `super.finalize()`.
+
+See [CWE-568: finalize() Method Without super.finalize()](https://cwe.mitre.org/data/definitions/568.html).

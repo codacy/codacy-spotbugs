@@ -5,6 +5,6 @@
      idea was used in several Map implementations, but introduces the possibility
      of nasty coding mistakes. If a map `m` returns
      such an iterator for an entrySet, then
-     `c.addAll(m.entrySet())` will go badly wrong. All of
+     `c.addAll(m.entrySet())` will go badly wrong. All
      the Map implementations in OpenJDK 7 have been rewritten to avoid this,
      you should too.

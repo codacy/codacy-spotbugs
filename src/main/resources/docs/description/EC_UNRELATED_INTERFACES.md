@@ -12,3 +12,5 @@ objects of different
 classes should always compare as unequal; therefore, according to the
 contract defined by java.lang.Object.equals(Object),
 the result of this comparison will always be false at runtime.
+
+See [CWE-570: Expression is Always False](https://cwe.mitre.org/data/definitions/570.html).

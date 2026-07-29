@@ -1,6 +1,6 @@
 {
   "name" : "spotbugs",
-  "version" : "4.8.4",
+  "version" : "4.10.3",
   "patterns" : [ {
     "patternId" : "AA_ASSERTION_OF_ARGUMENTS",
     "level" : "Warning",
@@ -134,7 +134,35 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "AT_NONATOMIC_64BIT_PRIMITIVE",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "AT_NONATOMIC_OPERATIONS_ON_SHARED_VARIABLE",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "AT_STALE_THREAD_WRITE_OF_PRIMITIVE",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "AT_UNSAFE_RESOURCE_ACCESS_IN_THREAD",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
@@ -228,13 +256,6 @@
     "enabled" : false
   }, {
     "patternId" : "BC_IMPOSSIBLE_INSTANCEOF",
-    "level" : "Warning",
-    "category" : "ErrorProne",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : false
-  }, {
-    "patternId" : "BC_NULL_INSTANCEOF",
     "level" : "Warning",
     "category" : "ErrorProne",
     "parameters" : [ ],
@@ -358,13 +379,6 @@
     "patternId" : "BRPI_BACKPORT_REUSE_PUBLIC_IDENTIFIERS",
     "level" : "Warning",
     "category" : "Performance",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : false
-  }, {
-    "patternId" : "BRSA_BAD_RESULTSET_ACCESS",
-    "level" : "Warning",
-    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -754,6 +768,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "CWO_CLOSED_WITHOUT_OPENED",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "DANGEROUS_PERMISSION_COMBINATION",
     "level" : "Error",
     "category" : "Security",
@@ -1063,6 +1084,13 @@
     "patternId" : "DMI_LONG_BITS_TO_DOUBLE_INVOKED_ON_INT",
     "level" : "Warning",
     "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "DMI_MISLEADING_SUBSTRING",
+    "level" : "Info",
+    "category" : "CodeStyle",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -1826,6 +1854,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "FS_BAD_DATE_FORMAT_FLAG_COMBO",
+    "level" : "Warning",
+    "category" : "BestPractice",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "GC_UNCHECKED_TYPE_IN_GENERIC_CALL",
     "level" : "Warning",
     "category" : "BestPractice",
@@ -1979,6 +2014,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "HSM_HIDING_METHOD",
+    "level" : "Warning",
+    "category" : "ErrorProne",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "HTTPONLY_COOKIE",
     "level" : "Error",
     "category" : "Security",
@@ -1999,6 +2041,13 @@
     "level" : "Error",
     "category" : "Security",
     "subcategory" : "HTTP",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "IAOM_DO_NOT_INCREASE_METHOD_ACCESSIBILITY",
+    "level" : "Warning",
+    "category" : "ErrorProne",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -2758,13 +2807,6 @@
     "languages" : [ ],
     "enabled" : false
   }, {
-    "patternId" : "LI_LAZY_INIT_INSTANCE",
-    "level" : "Warning",
-    "category" : "ErrorProne",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : false
-  }, {
     "patternId" : "LI_LAZY_INIT_STATIC",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -3334,6 +3376,13 @@
     "patternId" : "NCMU_NON_COLLECTION_METHOD_USE",
     "level" : "Info",
     "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "NCR_NOT_PROPERLY_CHECKED_READ",
+    "level" : "Warning",
+    "category" : "BestPractice",
     "parameters" : [ ],
     "languages" : [ ],
     "enabled" : false
@@ -5867,13 +5916,6 @@
     "languages" : [ ],
     "enabled" : false
   }, {
-    "patternId" : "TLW_TWO_LOCK_NOTIFY",
-    "level" : "Warning",
-    "category" : "ErrorProne",
-    "parameters" : [ ],
-    "languages" : [ ],
-    "enabled" : false
-  }, {
     "patternId" : "TLW_TWO_LOCK_WAIT",
     "level" : "Warning",
     "category" : "ErrorProne",
@@ -6136,6 +6178,13 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "UNS_UNSAFE_CALL",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "UNVALIDATED_REDIRECT",
     "level" : "Error",
     "category" : "Security",
@@ -6223,6 +6272,27 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "USBC_UNSAFE_SYNCHRONIZATION_WITH_ACCESSIBLE_BACKING_COLLECTION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "USBC_UNSAFE_SYNCHRONIZATION_WITH_BACKING_COLLECTION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "USBC_UNSAFE_SYNCHRONIZATION_WITH_INHERITABLE_BACKING_COLLECTION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "USBR_UNNECESSARY_STORE_BEFORE_RETURN",
     "level" : "Info",
     "category" : "CodeStyle",
@@ -6258,7 +6328,84 @@
     "languages" : [ ],
     "enabled" : false
   }, {
+    "patternId" : "USO_UNSAFE_ACCESSIBLE_OBJECT_SYNCHRONIZATION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "USO_UNSAFE_EXPOSED_OBJECT_SYNCHRONIZATION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "USO_UNSAFE_INHERITABLE_OBJECT_SYNCHRONIZATION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "USO_UNSAFE_METHOD_SYNCHRONIZATION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "USO_UNSAFE_OBJECT_SYNCHRONIZATION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "USO_UNSAFE_STATIC_METHOD_SYNCHRONIZATION",
+    "level" : "Error",
+    "category" : "Security",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
     "patternId" : "USS_USE_STRING_SPLIT",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "US_USELESS_SUPPRESSION_ON_CLASS",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "US_USELESS_SUPPRESSION_ON_FIELD",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "US_USELESS_SUPPRESSION_ON_METHOD",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "US_USELESS_SUPPRESSION_ON_METHOD_PARAMETER",
+    "level" : "Info",
+    "category" : "CodeStyle",
+    "parameters" : [ ],
+    "languages" : [ ],
+    "enabled" : false
+  }, {
+    "patternId" : "US_USELESS_SUPPRESSION_ON_PACKAGE",
     "level" : "Info",
     "category" : "CodeStyle",
     "parameters" : [ ],

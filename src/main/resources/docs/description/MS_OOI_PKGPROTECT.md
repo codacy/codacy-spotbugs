@@ -1,6 +1,6 @@
 # [Field should be moved out of an interface and made package protected](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#MS_OOI_PKGPROTECT)
 
- A final static field that is
+ A static final field that is
 defined in an interface references a mutable
    object such as an array or hashtable.
    This mutable object could

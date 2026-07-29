@@ -6,4 +6,4 @@
       therefore object initialization is not complete until readObject exits.
 
       See SEI CERT rule [
-      SER09-J. Do not invoke overridable methods from the readObject() method](https://wiki.sei.cmu.edu/confluence/display/java/SER09-J.+Do+not+invoke+overridable+methods+from+the+readObject%28%29+method).
+      SER09-J. Do not invoke overridable methods from the readObject() method](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/serialization-ser/ser09-j/).

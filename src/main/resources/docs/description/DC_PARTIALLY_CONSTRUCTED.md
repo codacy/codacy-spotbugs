@@ -6,3 +6,5 @@ Looks like this method uses lazy field initialization with double-checked lockin
 
 To fix this problem consider storing the object into the local variable first
   and save it to the volatile field only after it's fully constructed.
+
+See [CWE-609: Double-Checked Locking](https://cwe.mitre.org/data/definitions/609.html).

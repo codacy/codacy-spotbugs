@@ -7,7 +7,6 @@ return value of `String.toLowerCase()`).
 
 We are guessing that ignoring the return value might be a bad idea just from
 a simple analysis of the body of the method. You can use a @CheckReturnValue annotation
-to instruct SpotBugs as to whether ignoring the return value of this method
-is important or acceptable.
+to instruct SpotBugs that ignoring the return value of this method is acceptable.
 
 Please investigate this closely to decide whether it is OK to ignore the return value.

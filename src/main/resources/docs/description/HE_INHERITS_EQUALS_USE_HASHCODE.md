@@ -11,3 +11,5 @@ If you don't want to define a hashCode method, and/or don't
    believe the object will ever be put into a HashMap/Hashtable,
    define the `hashCode()` method
    to throw `UnsupportedOperationException`.
+
+See [CWE-581: Object Model Violation: Just One of Equals and Hashcode Defined](https://cwe.mitre.org/data/definitions/581.html).

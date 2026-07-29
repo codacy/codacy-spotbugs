@@ -5,3 +5,5 @@ equality using the == or != operators. Requiring callers to
 pass only String constants or interned strings to a method is unnecessarily
 fragile, and rarely leads to measurable performance gains. Consider
 using the `equals(Object)` method instead.
+
+See [CWE-595: Comparison of Object References Instead of Object Contents](https://cwe.mitre.org/data/definitions/595.html).

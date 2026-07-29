@@ -4,3 +4,5 @@
 possible that the method will be invoked through reflection,
 it is more likely that the method is never used, and should be
 removed.
+
+See [CWE-561: Dead Code](https://cwe.mitre.org/data/definitions/561.html).

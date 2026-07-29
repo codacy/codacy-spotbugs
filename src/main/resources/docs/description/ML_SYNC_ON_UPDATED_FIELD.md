@@ -4,3 +4,5 @@
    referenced from a mutable field.
    This is unlikely to have useful semantics, since different
 threads may be synchronizing on different objects.
+
+See [CWE-821: Incorrect Synchronization](https://cwe.mitre.org/data/definitions/821.html).

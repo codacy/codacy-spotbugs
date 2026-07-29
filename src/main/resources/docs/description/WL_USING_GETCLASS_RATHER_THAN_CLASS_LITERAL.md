@@ -26,3 +26,5 @@ Subclasses of `Label` won't synchronize on the same subclass, giving rise to a d
     }
 
 Bug pattern contributed by Jason Mehrens.
+
+See [CWE-821: Incorrect Synchronization](https://cwe.mitre.org/data/definitions/821.html).

@@ -8,3 +8,5 @@ If a connected set of objects beings finalizable, then the VM will invoke the
 finalize method on all the finalizable object, possibly at the same time in different threads.
 Thus, it is a particularly bad idea, in the finalize method for a class X, invoke finalize
 on objects referenced by X, because they may already be getting finalized in a separate thread.
+
+See [CWE-586: Explicit Call to Finalize()](https://cwe.mitre.org/data/definitions/586.html).

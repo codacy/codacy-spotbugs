@@ -8,3 +8,5 @@ SpotBugs looks only for the most blatant, obvious cases of HTTP response splitti
 If SpotBugs found _any_, you _almost certainly_ have more
 vulnerabilities that SpotBugs doesn't report. If you are concerned about HTTP response splitting, you should seriously
 consider using a commercial static analysis or pen-testing tool.
+
+See [CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Request/Response Splitting')](https://cwe.mitre.org/data/definitions/113.html).

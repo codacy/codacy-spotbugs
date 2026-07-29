@@ -6,3 +6,5 @@ by accident from another package.
 The field could be made final to avoid
 this vulnerability. However, the static initializer contains more than one write
 to the field, so doing so will require some refactoring.
+
+See [CWE-500: Public Static Field Not Marked Final](https://cwe.mitre.org/data/definitions/500.html).

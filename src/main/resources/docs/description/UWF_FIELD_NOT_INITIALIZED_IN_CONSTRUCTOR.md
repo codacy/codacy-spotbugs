@@ -5,3 +5,5 @@ the object is constructed. Elsewhere, it is loaded and dereferenced without a nu
 This could be either an error or a questionable design, since
 it means a null pointer exception will be generated if that field is dereferenced
 before being initialized.
+
+See [CWE-457: Use of Uninitialized Variable](https://cwe.mitre.org/data/definitions/457.html).

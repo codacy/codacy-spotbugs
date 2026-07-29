@@ -2,3 +2,5 @@
 
  A class's `finalize()` method should have protected access,
    not public.
+
+See [CWE-583: finalize() Method Declared Public](https://cwe.mitre.org/data/definitions/583.html).

@@ -7,3 +7,5 @@
    the array would compromise security or other
    important properties, you will need to do something different.
   Storing a copy of the array is a better approach in many situations.
+
+See [CWE-374: Passing Mutable Objects to an Untrusted Method](https://cwe.mitre.org/data/definitions/374.html).

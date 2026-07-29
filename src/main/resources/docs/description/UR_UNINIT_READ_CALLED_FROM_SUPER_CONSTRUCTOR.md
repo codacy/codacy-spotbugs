@@ -31,3 +31,5 @@ the constructor for the `A` class is invoked
 _before_ the constructor for `B` sets `value`.
 Thus, when the constructor for `A` invokes `getValue`,
 an uninitialized value is read for `value`.
+
+See [CWE-457: Use of Uninitialized Variable](https://cwe.mitre.org/data/definitions/457.html).

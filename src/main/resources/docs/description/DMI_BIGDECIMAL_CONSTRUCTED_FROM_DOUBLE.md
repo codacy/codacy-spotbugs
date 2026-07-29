@@ -5,3 +5,5 @@ decimal number.
 For example, one might assume that writing new BigDecimal(0.1) in Java creates a BigDecimal which is exactly equal to 0.1 (an unscaled value of 1, with a scale of 1), but it is actually equal to 0.1000000000000000055511151231257827021181583404541015625.
 You probably want to use the BigDecimal.valueOf(double d) method, which uses the String representation
 of the double to create the BigDecimal (e.g., BigDecimal.valueOf(0.1) gives 0.1).
+
+See [CWE-1339: Insufficient Precision or Accuracy of a Real Number](https://cwe.mitre.org/data/definitions/1339.html).

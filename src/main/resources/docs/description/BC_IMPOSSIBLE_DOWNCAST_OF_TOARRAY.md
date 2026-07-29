@@ -22,3 +22,5 @@ method of lists returned by `Arrays.asList(...)` will return a covariantly
 typed array. For example, `Arrays.asArray(new String[] { "a" }).toArray()`
 will return a `String []`. SpotBugs attempts to detect and suppress
 such cases, but may miss some.
+
+See [CWE-704: Incorrect Type Conversion or Cast](https://cwe.mitre.org/data/definitions/704.html).

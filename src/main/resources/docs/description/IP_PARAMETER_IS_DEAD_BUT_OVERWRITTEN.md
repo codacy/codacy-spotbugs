@@ -4,3 +4,5 @@ The initial value of this parameter is ignored, and the parameter
 is overwritten here. This often indicates a mistaken belief that
 the write to the parameter will be conveyed back to
 the caller.
+
+See [CWE-563: Assignment to Variable without Use](https://cwe.mitre.org/data/definitions/563.html).

@@ -2,3 +2,5 @@
 
  This class defines an equals method that always returns true. This is imaginative, but not very smart.
 Plus, it means that the equals method is not symmetric.
+
+See [CWE-571: Expression is Always True](https://cwe.mitre.org/data/definitions/571.html).

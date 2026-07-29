@@ -8,3 +8,5 @@ used.
 Note that Sun's javac compiler often generates dead stores for
 final local variables. Because SpotBugs is a bytecode-based tool,
 there is no easy way to eliminate these false positives.
+
+See [CWE-563: Assignment to Variable without Use](https://cwe.mitre.org/data/definitions/563.html).

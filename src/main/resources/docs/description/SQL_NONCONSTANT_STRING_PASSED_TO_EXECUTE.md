@@ -4,3 +4,5 @@ The method invokes the execute or addBatch method on an SQL statement with a Str
 to be dynamically generated. Consider using
 a prepared statement instead. It is more efficient and less vulnerable to
 SQL injection attacks.
+
+See [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html).

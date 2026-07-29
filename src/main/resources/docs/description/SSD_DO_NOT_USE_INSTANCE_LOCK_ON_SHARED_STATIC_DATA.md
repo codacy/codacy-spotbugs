@@ -8,4 +8,5 @@
 
       See SEI CERT rule
       [
-      LCK06-J. Do not use an instance lock to protect shared static data](https://wiki.sei.cmu.edu/confluence/display/java/LCK06-J.+Do+not+use+an+instance+lock+to+protect+shared+static+data).
+      LCK06-J. Do not use an instance lock to protect shared static data](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/locking-lck/lck06-j/)
+      and [CWE-667: Improper Locking](https://cwe.mitre.org/data/definitions/667.html).

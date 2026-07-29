@@ -5,3 +5,5 @@ could be changed by malicious code or
         by accident from another package.
         The field could be made final to avoid
         this vulnerability.
+
+See [CWE-500: Public Static Field Not Marked Final](https://cwe.mitre.org/data/definitions/500.html).

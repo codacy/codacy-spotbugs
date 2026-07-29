@@ -5,3 +5,5 @@ but the value is not read or used in any subsequent instruction.
 Often, this indicates an error, because the value computed is never
 used. There is a field with the same name as the local variable. Did you
 mean to assign to that variable instead?
+
+See [CWE-563: Assignment to Variable without Use](https://cwe.mitre.org/data/definitions/563.html).

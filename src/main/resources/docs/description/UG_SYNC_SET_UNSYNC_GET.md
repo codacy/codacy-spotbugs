@@ -5,3 +5,5 @@
   This may result in incorrect behavior at runtime, as callers of the get
   method will not necessarily see a consistent state for the object. 
   The get method should be made synchronized.
+
+See [CWE-820: Missing Synchronization](https://cwe.mitre.org/data/definitions/820.html).

@@ -9,3 +9,5 @@
    important properties, you will need to do something different.
   Returning a read-only buffer (using its asReadOnly() method) or copying the array to a new buffer (using its put()
   method) is a better approach in many situations.
+
+See [CWE-374: Passing Mutable Objects to an Untrusted Method](https://cwe.mitre.org/data/definitions/374.html).
