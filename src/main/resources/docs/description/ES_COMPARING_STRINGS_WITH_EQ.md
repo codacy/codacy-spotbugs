@@ -6,3 +6,5 @@ Unless both strings are either constants in a source file, or have been
 interned using the `String.intern()` method, the same string
 value may be represented by two different String objects. Consider
 using the `equals(Object)` method instead.
+
+See [CWE-595: Comparison of Object References Instead of Object Contents](https://cwe.mitre.org/data/definitions/595.html).

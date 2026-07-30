@@ -16,3 +16,5 @@ A better approach is to either explicitly catch the specific exceptions that are
     } catch (Exception e) {
         ... deal with all non-runtime exceptions ...
     }
+
+See [CWE-396: Declaration of Catch for Generic Exception](https://cwe.mitre.org/data/definitions/396.html).

@@ -7,3 +7,5 @@ such as a `TreeMap`, then the `TreeMap`
 will be serializable only if the comparator is also serializable.
 As most comparators have little or no state, making them serializable
 is generally easy and good defensive programming.
+
+See [CWE-1066: Missing Serialization Control Element](https://cwe.mitre.org/data/definitions/1066.html).

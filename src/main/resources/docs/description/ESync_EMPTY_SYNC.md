@@ -9,3 +9,5 @@ Empty synchronized blocks are far more subtle and hard to use correctly
 than most people recognize, and empty synchronized blocks
 are almost never a better solution
 than less contrived solutions.
+
+See [CWE-585: Empty Synchronized Block](https://cwe.mitre.org/data/definitions/585.html).

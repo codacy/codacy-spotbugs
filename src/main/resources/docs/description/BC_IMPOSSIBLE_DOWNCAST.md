@@ -4,3 +4,5 @@ This cast will always throw a ClassCastException.
 The analysis believes it knows
 the precise type of the value being cast, and the attempt to
 downcast it to a subtype will always fail by throwing a ClassCastException.
+
+See [CWE-704: Incorrect Type Conversion or Cast](https://cwe.mitre.org/data/definitions/704.html).

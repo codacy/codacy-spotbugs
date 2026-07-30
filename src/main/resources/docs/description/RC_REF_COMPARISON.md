@@ -13,3 +13,5 @@ system property with comma-separated classes:
     <systemPropertyVariables>
                   <frc.suspicious>java.time.LocalDate,java.util.List</frc.suspicious>
                </systemPropertyVariables>
+
+See [CWE-595: Comparison of Object References Instead of Object Contents](https://cwe.mitre.org/data/definitions/595.html).

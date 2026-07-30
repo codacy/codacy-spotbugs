@@ -7,3 +7,5 @@ _if the method can be called by multiple threads_.
 You can make the field volatile to correct the problem.
 For more information, see the
 [Java Memory Model web site](http://www.cs.umd.edu/~pugh/java/memoryModel/).
+
+See [CWE-543: Use of Singleton Pattern Without Synchronization in a Multithreaded Context](https://cwe.mitre.org/data/definitions/543.html).

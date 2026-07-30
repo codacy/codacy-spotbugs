@@ -2,3 +2,5 @@
 
 A primitive boxed value constructed and then immediately converted into a different primitive type
 (e.g., `new Double(d).intValue()`). Just perform direct primitive coercion (e.g., `(int) d`).
+
+See [CWE-192: Integer Coercion Error](https://cwe.mitre.org/data/definitions/192.html).

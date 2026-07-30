@@ -8,3 +8,5 @@ since converting an integer to a float should give a number with no fractional p
 It is likely that the operation that generated the value to be passed
 to Math.round was intended to be performed using
 floating point arithmetic.
+
+See [CWE-192: Integer Coercion Error](https://cwe.mitre.org/data/definitions/192.html).

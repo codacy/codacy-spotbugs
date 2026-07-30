@@ -1,6 +1,6 @@
 # [Primitive field is public](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html#PA_PUBLIC_PRIMITIVE_ATTRIBUTE)
 
-    [SEI CERT rule OBJ01-J](https://wiki.sei.cmu.edu/confluence/display/java/OBJ01-J.+Limit+accessibility+of+fields) requires that accessibility to fields must be limited.
+    [SEI CERT rule OBJ01-J](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/object-orientation-obj/obj01-j/) requires that accessibility to fields must be limited.
     Otherwise, the values of the fields may be manipulated from outside the class, which may be unexpected or
     undesired behaviour.
     In general, requiring that no fields are allowed to be public is overkill and unrealistic. Even
@@ -13,3 +13,5 @@
     setters, if necessary. Please note that constructors, initializers and finalizers are
     exceptions, if only they write the field inside the class, the field is not considered as
     written by the class itself.
+
+See [CWE-766: Critical Data Element Declared Public](https://cwe.mitre.org/data/definitions/766.html).

@@ -4,5 +4,5 @@ Classes that throw exceptions in their constructors are vulnerable to Finalizer 
 
 A finalizer attack can be prevented, by declaring the class final, using an empty finalizer declared as final, or by a clever use of a private constructor.
 
-See [`SEI CERT Rule OBJ-11`](https://wiki.sei.cmu.edu/confluence/display/java/OBJ11-J.+Be+wary+of+letting+constructors+throw+exceptions)
+See [`SEI CERT Rule OBJ-11`](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/object-orientation-obj/obj11-j/)
             for more information.

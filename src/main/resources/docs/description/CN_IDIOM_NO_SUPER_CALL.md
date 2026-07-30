@@ -8,3 +8,5 @@ which violates the standard contract for clone().
 
  If all clone() methods call super.clone(), then they are guaranteed
 to use Object.clone(), which always returns an object of the correct type.
+
+See [CWE-580: clone() Method Without super.clone()](https://cwe.mitre.org/data/definitions/580.html).

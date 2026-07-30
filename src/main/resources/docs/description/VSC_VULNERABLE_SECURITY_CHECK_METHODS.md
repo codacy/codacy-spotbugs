@@ -4,4 +4,4 @@
         private or final. Otherwise, these methods can be compromised when a malicious subclass overrides them
         and omits the checks.
 
-        See SEI CERT rule [MET03-J. Methods that perform a security check must be declared private or final](https://wiki.sei.cmu.edu/confluence/display/java/MET03-J.+Methods+that+perform+a+security+check+must+be+declared+private+or+final).
+        See SEI CERT rule [MET03-J. Methods that perform a security check must be declared private or final](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/methods-met/met03-j/).

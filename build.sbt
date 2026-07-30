@@ -2,11 +2,11 @@ import com.typesafe.sbt.packager.docker.Cmd
 
 name := "codacy-spotbugs"
 
-scalaVersion := "2.12.15"
+scalaVersion := "2.12.21"
 
 val findsecbugsVersion = "1.12.0"
 val sbContribVersion = "7.4.7"
-val spotBugsVersion = "4.8.4"
+val spotBugsVersion = "4.10.3"
 
 libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-xml" % "1.2.0",
@@ -62,7 +62,7 @@ val dockerUser = "docker"
 Docker / daemonUser := dockerUser
 Docker / daemonGroup := dockerUser
 
-dockerBaseImage := "amazoncorretto:8-alpine3.18-jre"
+dockerBaseImage := "amazoncorretto:11-alpine3.18"
 
 dockerEntrypoint := Seq("/opt/docker/bin/engine")
 

@@ -5,4 +5,4 @@
       state. Only static, final or private methods should be invoked from the clone() method.
 
       See SEI CERT rule
-      [MET06-J. Do not invoke overridable methods in clone()](https://wiki.sei.cmu.edu/confluence/pages/viewpage.action?pageId=88487921).
+      [MET06-J. Do not invoke overridable methods in clone()](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/methods-met/met06-j/).

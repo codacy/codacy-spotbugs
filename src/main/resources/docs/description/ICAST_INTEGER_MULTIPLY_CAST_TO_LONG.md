@@ -15,3 +15,5 @@ or
 
     static final long MILLISECONDS_PER_DAY = 24L*3600*1000;
     long convertDaysToMilliseconds(int days) { return days * MILLISECONDS_PER_DAY; }
+
+See [CWE-192: Integer Coercion Error](https://cwe.mitre.org/data/definitions/192.html).

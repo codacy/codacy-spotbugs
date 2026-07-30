@@ -6,3 +6,5 @@ platforms, where the `File.separator` is a backslash, which is interpreted in a
 regular expression as an escape character. Among other options, you can just use
 `File.separatorChar=='\\' ? "\\\\" : File.separator` instead of
 `File.separator`
+
+See [CWE-185: Incorrect Regular Expression](https://cwe.mitre.org/data/definitions/185.html).

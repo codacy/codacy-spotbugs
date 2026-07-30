@@ -3,3 +3,5 @@
  The arguments to this method call seem to be in the wrong order.
 For example, a call `Preconditions.checkNotNull("message", message)`
 has reserved arguments: the value to be checked is the first argument.
+
+See [CWE-683: Function Call With Incorrect Order of Arguments](https://cwe.mitre.org/data/definitions/683.html).

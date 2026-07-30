@@ -3,3 +3,5 @@
 The code stores null into a local variable, and the stored value is not
 read. This store may have been introduced to assist the garbage collector, but
 as of Java SE 6.0, this is no longer needed or useful.
+
+See [CWE-563: Assignment to Variable without Use](https://cwe.mitre.org/data/definitions/563.html).

@@ -89,9 +89,29 @@
   "description" : "The method called in assertion at {1} may produce a side effect. If assertions are disabled, the method invocation won't get executed and the result of the method might change.",
   "parameters" : [ ]
 }, {
+  "patternId" : "AT_NONATOMIC_64BIT_PRIMITIVE",
+  "title" : "This write of this 64-bit primitive variable may not be atomic",
+  "description" : "This write of the 64-bit primitive variable \"{2.name}\" may not be atomic",
+  "parameters" : [ ]
+}, {
+  "patternId" : "AT_NONATOMIC_OPERATIONS_ON_SHARED_VARIABLE",
+  "title" : "Operation on shared variable is not atomic",
+  "description" : "Operation on the \"{2.name}\" shared variable in \"{0.simpleName}\" class is not atomic",
+  "parameters" : [ ]
+}, {
   "patternId" : "AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION",
   "title" : "Sequence of calls to concurrent abstraction may not be atomic",
   "description" : "Sequence of calls to {2} may not be atomic in {1}",
+  "parameters" : [ ]
+}, {
+  "patternId" : "AT_STALE_THREAD_WRITE_OF_PRIMITIVE",
+  "title" : "This write of this shared primitive variable may not be visible to other threads",
+  "description" : "Shared primitive variable \"{2.name}\" in one thread may not yield the value of the most recent write from another thread",
+  "parameters" : [ ]
+}, {
+  "patternId" : "AT_UNSAFE_RESOURCE_ACCESS_IN_THREAD",
+  "title" : "Operation on resource is not safe in a multithreaded context",
+  "description" : "Operation on resource {3} is not safe in a multithreaded context in {1}",
   "parameters" : [ ]
 }, {
   "patternId" : "AWCBR_ARRAY_WRAPPED_CALL_BY_REFERENCE",
@@ -157,11 +177,6 @@
   "patternId" : "BC_IMPOSSIBLE_INSTANCEOF",
   "title" : "instanceof will always return false",
   "description" : "instanceof will always return false in {1}, since a {2} cannot be a {3}",
-  "parameters" : [ ]
-}, {
-  "patternId" : "BC_NULL_INSTANCEOF",
-  "title" : "A known null value is checked to see if it is an instance of a type",
-  "description" : "A known null value is checked to see if it is an instance of {2} in {1}",
   "parameters" : [ ]
 }, {
   "patternId" : "BC_UNCONFIRMED_CAST",
@@ -247,11 +262,6 @@
   "patternId" : "BRPI_BACKPORT_REUSE_PUBLIC_IDENTIFIERS",
   "title" : "Method uses backported libraries that are now built in",
   "description" : "Method {1} uses backported libraries that are now built in",
-  "parameters" : [ ]
-}, {
-  "patternId" : "BRSA_BAD_RESULTSET_ACCESS",
-  "title" : "Method attempts to access a result set field with index 0",
-  "description" : "{1} attempts to access a result set field with index 0",
   "parameters" : [ ]
 }, {
   "patternId" : "BSB_BLOATED_SYNCHRONIZED_BLOCK",
@@ -524,6 +534,11 @@
   "description" : "Method {1} performs a contravariant array element assignment",
   "parameters" : [ ]
 }, {
+  "patternId" : "CWO_CLOSED_WITHOUT_OPENED",
+  "title" : "Method releases lock without opening it",
+  "description" : "{1} releases lock without acquiring it in the first place",
+  "parameters" : [ ]
+}, {
   "patternId" : "DANGEROUS_PERMISSION_COMBINATION",
   "title" : "Dangerous combination of permissions granted",
   "description" : "Granting permission {2} on the target {3} in method {1} is dangerous.",
@@ -744,9 +759,14 @@
   "description" : "Double.longBitsToDouble invoked on an int in {1}",
   "parameters" : [ ]
 }, {
+  "patternId" : "DMI_MISLEADING_SUBSTRING",
+  "title" : "Invocation of substring(0), which returns the same as toString()",
+  "description" : "{1} invokes substring(0), which might be misleading because it returns the entire String",
+  "parameters" : [ ]
+}, {
   "patternId" : "DMI_NONSERIALIZABLE_OBJECT_WRITTEN",
-  "title" : "Non serializable object written to ObjectOutput",
-  "description" : "Non serializable {2} written to ObjectOutput in {1}",
+  "title" : "Non-serializable object written to ObjectOutput",
+  "description" : "Non-serializable {2} written to ObjectOutput in {1}",
   "parameters" : [ ]
 }, {
   "patternId" : "DMI_RANDOM_USED_ONLY_ONCE",
@@ -1274,6 +1294,11 @@
   "description" : "Method {1} does not define one or more parameters as final, but could",
   "parameters" : [ ]
 }, {
+  "patternId" : "FS_BAD_DATE_FORMAT_FLAG_COMBO",
+  "title" : "Date-format strings may lead to unexpected behavior",
+  "description" : "The '{3}' date format string may lead to unexpected behavior used in {1.nameAndSignature}",
+  "parameters" : [ ]
+}, {
   "patternId" : "GC_UNCHECKED_TYPE_IN_GENERIC_CALL",
   "title" : "Unchecked type in generic call",
   "description" : "Unchecked argument of type Object provided where type {3.givenClass} is expected in {1}",
@@ -1379,6 +1404,11 @@
   "description" : "{1} is initialized to a string constant {2} characters long that is duplicated in {3} other class files",
   "parameters" : [ ]
 }, {
+  "patternId" : "HSM_HIDING_METHOD",
+  "title" : "Method hiding should be avoided.",
+  "description" : "The method '{1.nameAndSignature}' in class '{0.simpleName}' hides a method in class '{2.simpleName}'. Declare the respective methods non-static or private to eradicate the problem.",
+  "parameters" : [ ]
+}, {
   "patternId" : "HTTPONLY_COOKIE",
   "title" : "Cookie without the HttpOnly flag",
   "description" : "Cookie without the HttpOnly flag could be read by a malicious script in the browser",
@@ -1392,6 +1422,11 @@
   "patternId" : "HTTP_RESPONSE_SPLITTING",
   "title" : "Potential HTTP Response Splitting",
   "description" : "This use of {3} might be used to include CRLF characters into HTTP headers",
+  "parameters" : [ ]
+}, {
+  "patternId" : "IAOM_DO_NOT_INCREASE_METHOD_ACCESSIBILITY",
+  "title" : "Accessibility of the overridden or hidden method was increased.",
+  "description" : "Accessibility of the overridden or hidden method {1} was increased from {2} to {3}.",
   "parameters" : [ ]
 }, {
   "patternId" : "IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD",
@@ -1765,8 +1800,8 @@
   "parameters" : [ ]
 }, {
   "patternId" : "J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION",
-  "title" : "Store of non serializable object into HttpSession",
-  "description" : "Store of non serializable {2} into HttpSession in {1}",
+  "title" : "Store of non-serializable object into HttpSession",
+  "description" : "Store of non-serializable {2} into HttpSession in {1}",
   "parameters" : [ ]
 }, {
   "patternId" : "JACKSON_UNSAFE_DESERIALIZATION",
@@ -1924,11 +1959,6 @@
   "description" : "Method {1} uses integer based for loops to iterate over a List",
   "parameters" : [ ]
 }, {
-  "patternId" : "LI_LAZY_INIT_INSTANCE",
-  "title" : "Incorrect lazy initialization of instance field",
-  "description" : "Incorrect lazy initialization of instance field {2} in {1}",
-  "parameters" : [ ]
-}, {
   "patternId" : "LI_LAZY_INIT_STATIC",
   "title" : "Incorrect lazy initialization of static field",
   "description" : "Incorrect lazy initialization of static field {2} in {1}",
@@ -2036,17 +2066,17 @@
 }, {
   "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_CLONE",
   "title" : "An overridable method is called from the clone() method.",
-  "description" : "Overridable method {2} is called from method clone() in class {0}.",
+  "description" : "Overridable method {2.nameAndSignature} is called from method clone() in class {0}.",
   "parameters" : [ ]
 }, {
   "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_CONSTRUCTOR",
   "title" : "An overridable method is called from a constructor",
-  "description" : "Overridable method {2} is called from constructor {1}.",
+  "description" : "Overridable method {2.nameAndSignature} is called from constructor {1}.",
   "parameters" : [ ]
 }, {
   "patternId" : "MC_OVERRIDABLE_METHOD_CALL_IN_READ_OBJECT",
   "title" : "An overridable method is called from the readObject method.",
-  "description" : "Overridable method {2} is called from readObject.",
+  "description" : "Overridable method {2.nameAndSignature} is called from readObject.",
   "parameters" : [ ]
 }, {
   "patternId" : "MDM_BIGDECIMAL_EQUALS",
@@ -2327,6 +2357,11 @@
   "patternId" : "NCMU_NON_COLLECTION_METHOD_USE",
   "title" : "Method uses old non collections interface methods",
   "description" : "Method {1} uses old non collections interface methods",
+  "parameters" : [ ]
+}, {
+  "patternId" : "NCR_NOT_PROPERLY_CHECKED_READ",
+  "title" : "Return value of read() is not properly checked, array may be partially filled",
+  "description" : "The return value of method {2.nameAndSignature} is not properly checked in {1.name}, which may result in using a partially filled array.",
   "parameters" : [ ]
 }, {
   "patternId" : "NCS_NEEDLESS_CUSTOM_SERIALIZATION",
@@ -4075,23 +4110,18 @@
   "parameters" : [ ]
 }, {
   "patternId" : "THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION",
-  "title" : "Method lists Exception in its throws clause.",
-  "description" : "Method lists Exception in its throws clause.",
+  "title" : "Method lists Exception in its throws clause, but it could be more specific.",
+  "description" : "Method lists Exception in its throws clause, but it could be more specific.",
   "parameters" : [ ]
 }, {
   "patternId" : "THROWS_METHOD_THROWS_CLAUSE_THROWABLE",
-  "title" : "Method lists Throwable in its throws clause.",
-  "description" : "Method lists Throwable in its throws clause.",
+  "title" : "Method lists Throwable in its throws clause, but it could be more specific.",
+  "description" : "Method lists Throwable in its throws clause, but it could be more specific.",
   "parameters" : [ ]
 }, {
   "patternId" : "THROWS_METHOD_THROWS_RUNTIMEEXCEPTION",
   "title" : "Method intentionally throws RuntimeException.",
   "description" : "Method intentionally throws RuntimeException.",
-  "parameters" : [ ]
-}, {
-  "patternId" : "TLW_TWO_LOCK_NOTIFY",
-  "title" : "Notify with two locks held",
-  "description" : "notify() or notifyAll*() with two locks held in {1}",
   "parameters" : [ ]
 }, {
   "patternId" : "TLW_TWO_LOCK_WAIT",
@@ -4279,6 +4309,11 @@
   "description" : "Unsafe comparison of hash that are susceptible to timing attack",
   "parameters" : [ ]
 }, {
+  "patternId" : "UNS_UNSAFE_CALL",
+  "title" : "Call to Unsafe.",
+  "description" : "Do not use {4}. As the class name indicates, its methods are not safe to use.\n    ",
+  "parameters" : [ ]
+}, {
   "patternId" : "UNVALIDATED_REDIRECT",
   "title" : "Unvalidated Redirect",
   "description" : "The following redirection could be used by an attacker to redirect users to a phishing website.",
@@ -4339,6 +4374,21 @@
   "description" : "{2.name} isn't initialized in {1} when invoked from constructor for superclass",
   "parameters" : [ ]
 }, {
+  "patternId" : "USBC_UNSAFE_SYNCHRONIZATION_WITH_ACCESSIBLE_BACKING_COLLECTION",
+  "title" : "Do not synchronize on a collection view, when the backing collection is accessible through methods",
+  "description" : "The collection lock object {2}, used in method {1} at line {4}, has {3} as a backing collection that is made accessible from outside class {0}, by method(s) {5}.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "USBC_UNSAFE_SYNCHRONIZATION_WITH_BACKING_COLLECTION",
+  "title" : "Do not synchronize on a collection view when the backing collection is accessible",
+  "description" : "The collection lock object {2}, used in method {1} at line {4}, that has {3} as a visible backing collection outside of class {0}.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "USBC_UNSAFE_SYNCHRONIZATION_WITH_INHERITABLE_BACKING_COLLECTION",
+  "title" : "Do not synchronize on a collection view, when the backing collection is made accessible through class extension",
+  "description" : "The collection lock object {2}, used in method {1} at line {4}, has {3} as a backing collection, that is exposed to untrusted code outside of class {0}, because the class is open for extension.",
+  "parameters" : [ ]
+}, {
   "patternId" : "USBR_UNNECESSARY_STORE_BEFORE_RETURN",
   "title" : "Method stores return result in local before immediately returning it",
   "description" : "Method {1} stores return result in local before immediately returning it",
@@ -4364,9 +4414,64 @@
   "description" : "{1} superfluously delegates to parent class method",
   "parameters" : [ ]
 }, {
+  "patternId" : "USO_UNSAFE_ACCESSIBLE_OBJECT_SYNCHRONIZATION",
+  "title" : "Use private final lock objects in synchronization blocks when the lock is accessible",
+  "description" : "The lock object {2} used in method {1} is exposed to untrusted code outside of class {0}, through updating or returning its value from {3}.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "USO_UNSAFE_EXPOSED_OBJECT_SYNCHRONIZATION",
+  "title" : "Do not expose inherited lock objects through methods by updating or returning them",
+  "description" : "The lock object {2} - used in method {1} from super class - is exposed to untrusted in class {0}, through updating or returning it in {3}.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "USO_UNSAFE_INHERITABLE_OBJECT_SYNCHRONIZATION",
+  "title" : "Use private final lock objects in synchronization blocks, when class can be extended",
+  "description" : "The lock object {2} used in method {1} is exposed to untrusted code outside of class {0}, because the class is open for extension.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "USO_UNSAFE_METHOD_SYNCHRONIZATION",
+  "title" : "Instead of synchronized methods, use private final lock objects with block synchronization",
+  "description" : "Method {1} uses intrinsic lock of class {0} for synchronization, that is exposed by {2}.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "USO_UNSAFE_OBJECT_SYNCHRONIZATION",
+  "title" : "Use private final lock objects in synchronization blocks",
+  "description" : "The lock object {2} used in method {1} is visible outside the class, thus exposing class {0}.",
+  "parameters" : [ ]
+}, {
+  "patternId" : "USO_UNSAFE_STATIC_METHOD_SYNCHRONIZATION",
+  "title" : "Instead of static synchronized methods, use private final lock objects with block synchronization",
+  "description" : "Static synchronized method {1} uses intrinsic lock of class {0} for synchronization, exposing the class to untrusted code.",
+  "parameters" : [ ]
+}, {
   "patternId" : "USS_USE_STRING_SPLIT",
   "title" : "Method builds String array using String Tokenizing",
   "description" : "Method {1} builds String array using String Tokenizing",
+  "parameters" : [ ]
+}, {
+  "patternId" : "US_USELESS_SUPPRESSION_ON_CLASS",
+  "title" : "Useless suppression on a class",
+  "description" : "Suppressing annotation {1}on the class {0} is unnecessary",
+  "parameters" : [ ]
+}, {
+  "patternId" : "US_USELESS_SUPPRESSION_ON_FIELD",
+  "title" : "Useless suppression on a field",
+  "description" : "Suppressing annotation {2}on the field {1} is unnecessary",
+  "parameters" : [ ]
+}, {
+  "patternId" : "US_USELESS_SUPPRESSION_ON_METHOD",
+  "title" : "Useless suppression on a method",
+  "description" : "Suppressing annotation {2}on the method {1} is unnecessary",
+  "parameters" : [ ]
+}, {
+  "patternId" : "US_USELESS_SUPPRESSION_ON_METHOD_PARAMETER",
+  "title" : "Useless suppression on a method parameter",
+  "description" : "Suppressing annotation {3}on the parameter {2} of the method {1} is unnecessary",
+  "parameters" : [ ]
+}, {
+  "patternId" : "US_USELESS_SUPPRESSION_ON_PACKAGE",
+  "title" : "Useless suppression on a package",
+  "description" : "Suppressing annotation {1}on the package {0} is unnecessary",
   "parameters" : [ ]
 }, {
   "patternId" : "UTAO_JUNIT_ASSERTION_ODDITIES_ACTUAL_CONSTANT",
@@ -4551,7 +4656,7 @@
 }, {
   "patternId" : "VSC_VULNERABLE_SECURITY_CHECK_METHODS",
   "title" : "Non-Private and non-final security check methods are vulnerable",
-  "description" : "The method '{1}' performs security check by using '{2}' method of Security Manager Class, but is overrideable. Declare the method final or private in order to resolve the issue. ",
+  "description" : "The method '{1}' performs security check by using '{2}' method of Security Manager Class, but is overridable. Declare the method final or private in order to resolve the issue. ",
   "parameters" : [ ]
 }, {
   "patternId" : "WA_AWAIT_NOT_IN_LOOP",

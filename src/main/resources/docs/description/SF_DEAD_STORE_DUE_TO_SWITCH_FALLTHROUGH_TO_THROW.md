@@ -3,3 +3,5 @@
  A value stored in the previous switch case is ignored here due to a switch fall through to a place where
     an exception is thrown. It is likely that
     you forgot to put a break or return at the end of the previous case.
+
+See [CWE-484: Omitted Break Statement in Switch](https://cwe.mitre.org/data/definitions/484.html).

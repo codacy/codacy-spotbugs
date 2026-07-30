@@ -7,3 +7,5 @@ of values returned from methods and loaded from fields.
 Thus, it may have more precise information than just
 the declared type of a variable, and can use this to determine
 that a cast will always throw an exception at runtime.
+
+See [CWE-704: Incorrect Type Conversion or Cast](https://cwe.mitre.org/data/definitions/704.html).

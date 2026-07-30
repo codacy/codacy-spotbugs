@@ -5,3 +5,5 @@ Although this is safe, make sure it isn't
 an indication of some misunderstanding or some other logic error.
 If you really want to test the value for being null, perhaps it would be clearer to do
 better to do a null test rather than an instanceof test.
+
+See [CWE-571: Expression is Always True](https://cwe.mitre.org/data/definitions/571.html).

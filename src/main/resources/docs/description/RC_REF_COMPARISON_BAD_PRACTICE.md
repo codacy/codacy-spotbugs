@@ -7,3 +7,5 @@ It is possible to create distinct instances that are equal but do not compare as
 they are different objects.
 Examples of classes which should generally
 not be compared by reference are java.lang.Integer, java.lang.Float, etc.
+
+See [CWE-595: Comparison of Object References Instead of Object Contents](https://cwe.mitre.org/data/definitions/595.html).

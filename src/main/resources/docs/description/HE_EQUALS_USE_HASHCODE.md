@@ -14,3 +14,5 @@ the recommended `hashCode` implementation to use is:
         assert false : "hashCode not designed";
         return 42; // any arbitrary constant will do
     }
+
+See [CWE-581: Object Model Violation: Just One of Equals and Hashcode Defined](https://cwe.mitre.org/data/definitions/581.html).

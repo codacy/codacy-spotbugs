@@ -4,3 +4,5 @@
 such as 1 or -1\. When invoking these methods, you should only check the sign of the result, not for any specific
 non-zero value. While many or most compareTo and compare methods only return -1, 0 or 1, some of them
 will return other values.
+
+See [CWE-253: Incorrect Check of Function Return Value](https://cwe.mitre.org/data/definitions/253.html).

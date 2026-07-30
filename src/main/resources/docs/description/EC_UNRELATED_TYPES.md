@@ -6,3 +6,5 @@ at runtime. Further, examination of the equals methods that would be invoked sug
 this call will always return false, or else the equals method is not symmetric (which is
 a property required by the contract
 for equals in class Object).
+
+See [CWE-570: Expression is Always False](https://cwe.mitre.org/data/definitions/570.html).

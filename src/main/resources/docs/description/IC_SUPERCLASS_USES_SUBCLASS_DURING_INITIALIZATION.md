@@ -11,3 +11,5 @@ For example, in the following code, `foo` will be null.
 
         static CircularClassInitialization foo = InnerClassSingleton.singleton;
     }
+
+See [CWE-457: Use of Uninitialized Variable](https://cwe.mitre.org/data/definitions/457.html).

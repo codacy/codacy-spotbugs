@@ -4,4 +4,4 @@
       leak the this reference of the partially constructed object. Only static, final or private methods should be
       invoked from a constructor.
 
-      See SEI CERT rule [MET05-J. Ensure that constructors do not call overridable methods](https://wiki.sei.cmu.edu/confluence/display/java/MET05-J.+Ensure+that+constructors+do+not+call+overridable+methods).
+      See SEI CERT rule [MET05-J. Ensure that constructors do not call overridable methods](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/methods-met/met05-j/).

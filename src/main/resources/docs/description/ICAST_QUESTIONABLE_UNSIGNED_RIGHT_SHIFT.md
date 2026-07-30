@@ -4,3 +4,5 @@ The code performs an unsigned right shift, whose result is then
 cast to a short or byte, which discards the upper bits of the result.
 Since the upper bits are discarded, there may be no difference between
 a signed and unsigned right shift (depending upon the size of the shift).
+
+See [CWE-192: Integer Coercion Error](https://cwe.mitre.org/data/definitions/192.html).

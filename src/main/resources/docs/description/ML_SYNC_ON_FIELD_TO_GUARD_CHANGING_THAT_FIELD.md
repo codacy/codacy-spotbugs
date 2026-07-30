@@ -16,3 +16,5 @@ of this pattern would be:
          }
          return result;
     }
+
+See [CWE-821: Incorrect Synchronization](https://cwe.mitre.org/data/definitions/821.html).

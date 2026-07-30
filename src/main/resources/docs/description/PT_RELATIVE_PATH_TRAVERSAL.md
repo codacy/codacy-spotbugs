@@ -9,3 +9,5 @@ SpotBugs looks only for the most blatant, obvious cases of relative path travers
 If SpotBugs found _any_, you _almost certainly_ have more
 vulnerabilities that SpotBugs doesn't report. If you are concerned about relative path traversal, you should seriously
 consider using a commercial static analysis or pen-testing tool.
+
+See [CWE-23: Relative Path Traversal](https://cwe.mitre.org/data/definitions/23.html).

@@ -7,3 +7,10 @@
   This is a particularly insidious kind of bug, because in many programs,
   reads from input streams usually do read the full amount of data requested,
   causing the program to fail only sporadically.
+
+See [CWE-252: Unchecked Return Value](https://cwe.mitre.org/data/definitions/252.html).
+
+Additionally, it is not sufficient to simply check for the end of the file (EOF)
+  as an indicator that the entire array has been filled. The return value of
+  `read()` must be verified to ensure that the correct number of bytes
+  have been read.

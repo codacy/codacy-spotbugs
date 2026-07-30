@@ -6,3 +6,5 @@ but it is possible to create other Boolean objects using the `new Boolean(b)`
 constructor. It is best to avoid such objects, but if they do exist,
 then checking Boolean objects for equality using == or != will give results
 than are different than you would get using `.equals(...)`.
+
+See [CWE-595: Comparison of Object References Instead of Object Contents](https://cwe.mitre.org/data/definitions/595.html).

@@ -10,3 +10,5 @@ SpotBugs looks only for the most blatant, obvious cases of absolute path travers
 If SpotBugs found _any_, you _almost certainly_ have more
 vulnerabilities that SpotBugs doesn't report. If you are concerned about absolute path traversal, you should seriously
 consider using a commercial static analysis or pen-testing tool.
+
+See [CWE-36: Absolute Path Traversal](https://cwe.mitre.org/data/definitions/36.html).

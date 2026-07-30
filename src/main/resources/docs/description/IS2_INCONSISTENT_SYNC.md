@@ -22,3 +22,5 @@
   a lock is held.  Also, even when the detector is accurate in
   distinguishing locked vs. unlocked accesses, the code in question may still
   be correct.
+
+See [CWE-366: Race Condition within a Thread](https://cwe.mitre.org/data/definitions/366.html).

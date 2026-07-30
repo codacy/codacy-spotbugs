@@ -9,3 +9,5 @@
   causing the program to fail only sporadically. With Buffered streams, however,
   skip() will only skip data in the buffer, and will routinely fail to skip the
   requested number of bytes.
+
+See [CWE-252: Unchecked Return Value](https://cwe.mitre.org/data/definitions/252.html).

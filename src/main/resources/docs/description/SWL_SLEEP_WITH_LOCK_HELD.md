@@ -5,3 +5,5 @@
       be waiting to acquire the lock.  It is a much better idea to call
       wait() on the lock, which releases the lock and allows other threads
       to run.
+
+See [CWE-667: Improper Locking](https://cwe.mitre.org/data/definitions/667.html).

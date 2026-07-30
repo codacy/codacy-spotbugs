@@ -2,6 +2,5 @@
 
 Expressions used in assertions must not produce side effects.
 
-See <https: wiki.sei.cmu.edu confluence display java exp06-j.+expressions+used+in+assertions+must+not+produce+side+effects>
- `SEI CERT Rule EXP06` for more information. 
-</https:>
+See [SEI CERT Rule EXP06](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/expressions-exp/exp06-j)
+            for more information.

@@ -7,3 +7,5 @@
         you run the risk of retaining a value that is not the one that is associated with the key in the map.
         If it matters which one you use and you use the one that isn't stored in the map,
         your program will behave incorrectly.
+
+See [CWE-252: Unchecked Return Value](https://cwe.mitre.org/data/definitions/252.html).

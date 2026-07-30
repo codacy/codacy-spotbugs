@@ -7,3 +7,5 @@ if the file could not be successfully deleted (rather than
 throwing an Exception).
 If you don't check the result, you won't notice if the method invocation
 signals unexpected behavior by returning an atypical return value.
+
+See [CWE-253: Incorrect Check of Function Return Value](https://cwe.mitre.org/data/definitions/253.html).

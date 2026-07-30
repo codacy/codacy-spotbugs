@@ -11,4 +11,10 @@
       the copy constructor of the class used as the type of the formal parameter. This ensures that the
       method behaves exactly as expected.
 
-      See SEI CERT rule [SEC02-J. Do not base security checks on untrusted sources](https://wiki.sei.cmu.edu/confluence/display/java/SEC02-J.+Do+not+base+security+checks+on+untrusted+sources).
+      See SEI CERT rule [SEC02-J. Do not base security checks on untrusted sources](https://cmu-sei.github.io/secure-coding-standards/sei-cert-oracle-coding-standard-for-java/rules/platform-security-sec/sec02-j),
+      [CWE-302: Authentication Bypass by Assumed-Immutable Data](https://cwe.mitre.org/data/definitions/302.html), and
+      [CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')](https://cwe.mitre.org/data/definitions/470.html).
+
+      The `java.security.AccessController` class, which contains the `doPrivileged` methods,
+      got deprecated in Java 17 (see [JEP 411](https://openjdk.org/jeps/411)), and removed in Java 24 (see [JEP 486](https://openjdk.org/jeps/486)).
+      For this reason, this bug isn't reported in classes targeted Java 17 and above.

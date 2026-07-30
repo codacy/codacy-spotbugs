@@ -2,3 +2,5 @@
 
  This class has a `writeObject()` method which is synchronized;
   however, no other method of the class is synchronized.
+
+See [CWE-820: Missing Synchronization](https://cwe.mitre.org/data/definitions/820.html).

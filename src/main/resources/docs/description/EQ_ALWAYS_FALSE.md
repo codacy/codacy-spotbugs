@@ -9,3 +9,5 @@ superclass, you can use:
     public boolean equals(Object o) {
         return this == o;
     }
+
+See [CWE-570: Expression is Always False](https://cwe.mitre.org/data/definitions/570.html).

@@ -8,3 +8,5 @@ In Java 5 and later, it does not.
 
 See Oracle's [article on Java SE compatibility](http://www.oracle.com/technetwork/java/javase/compatibility-137462.html#literal)
 for more details and examples, and suggestions on how to force class initialization in Java 5+.
+
+See [CWE-563: Assignment to Variable without Use](https://cwe.mitre.org/data/definitions/563.html).

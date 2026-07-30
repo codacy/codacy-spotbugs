@@ -6,3 +6,5 @@
   `readObject()` to be synchronized.  If the `readObject()`
   method itself is causing the object to become visible to another thread,
   that is an example of very dubious coding style.
+
+See [CWE-820: Missing Synchronization](https://cwe.mitre.org/data/definitions/820.html).

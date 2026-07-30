@@ -3,3 +3,5 @@
 The code creates an SQL prepared statement from a nonconstant String.
 If unchecked, tainted data from a user is used in building this String, SQL injection could
 be used to make the prepared statement do something unexpected and undesirable.
+
+See [CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')](https://cwe.mitre.org/data/definitions/89.html).

@@ -7,3 +7,5 @@ the stream on all paths out of the method.  This may result in
 a file descriptor leak.  It is generally a good
 idea to use a `finally` block to ensure that streams are
 closed.
+
+See [CWE-459: Incomplete Cleanup](https://cwe.mitre.org/data/definitions/459.html).
